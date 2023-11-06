@@ -1,0 +1,576 @@
+@import 'global_Classes.css';
+
+:root {
+    --backgroudbody: #fbfbfb;
+    --colorone: #6b53ff;
+    --boxshadow: 0px 21px 49px 0px rgba(216, 216, 216, 0.61);
+    --bodyfont: yekanbakh;
+    --haedfont: kalame;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: yekanbakh;
+    font-size: 14px;
+    background: var(--backgroudbody);
+    /* background-color: #eee; */
+}
+
+p,
+a,
+li,
+div,
+form,
+span,
+strong {
+    font-family: var(--bodyfont);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #474747;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--bodyfont);
+
+    overflow-wrap: break-word;
+}
+
+
+.top-header {
+    background: #fff;
+    box-shadow: 0 10px 15px -15px rgba(0, 0, 0, 0.06);
+    position: relative;
+}
+
+.box-top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.left-bar {
+    display: flex;
+    align-items: center;
+}
+
+.login-but a {
+    display: flex;
+    align-items: center;
+}
+
+.login-but a p {
+    font-size: 11px;
+    font-weight: bold;
+    color: #252630;
+}
+
+.login-but a i {
+    background: #eee;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 0 10px;
+    color: #262731;
+    box-shadow: 0px 5px 13px 0px rgba(202, 202, 202, 0.37);
+}
+
+.cart-but a {
+    display: flex;
+    align-items: center;
+    background: #536dfe;
+    padding: 5px 10px;
+    padding-left: 20px;
+    margin-right: 20px;
+    border-radius: 50px 50px 50px 4px;
+    box-shadow: 0px 5px 13px 0px rgba(83, 109, 254, 0.37);
+}
+
+.cart-but a p {
+    font-size: 11px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.cart-but a i {
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    color: #fff;
+    position: relative;
+}
+
+.cart-but a i::after {
+    content: "";
+    width: 1px;
+    height: 15px;
+    position: absolute;
+    background: #fff;
+    top: 30%;
+    left: 0;
+}
+
+.bottom-header {
+    background: #fafbfb;
+    padding: 20px;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.06);
+}
+
+.box-bottom-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-cat ul li.base {
+    display: flex;
+    align-items: center;
+    color: #4d67f5;
+    font-weight: bold;
+    position: relative;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.list-cat ul li.base i {
+    margin-left: 10px;
+}
+
+.list-cat ul li.base ul {
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0 10px 15px -15px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    width: 150px;
+    height: 300px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    border-radius: 10px;
+    transition: .3s ease-in all;
+}
+
+.list-cat ul li.base:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-bar .menu ul {
+    display: flex;
+    justify-content: start
+}
+
+.menu-bar .menu ul li {
+    margin-left: 30px;
+}
+
+.menu-bar .menu ul li a {
+    display: flex;
+    align-items: center;
+    color: #262731;
+    font-weight: 400;
+}
+
+.menu-bar .menu ul li a i {
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.call-us {
+    display: flex;
+    align-items: center;
+}
+
+.call-us .icon i {
+    font-size: 40px;
+    color: #536dfe;
+    margin-left: 10px;
+}
+
+.call-us .text h3 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.call-us .text h3 span {
+    color: #536dfe;
+    margin-left: 5px;
+}
+
+.call-us .text p {
+    font-size: 13px;
+    margin-top: -10px;
+}
+
+/***** main__Products__Groups *****/
+.Products_Container {
+    width: 90%;
+    height: 11rem;
+
+    position: relative;
+    margin: 2.5rem auto;
+}
+
+.Products_Container .next {
+    width: 150px;
+    position: relative;
+    background-color: #4d67f5;
+}
+
+.Products_Container .next img {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%) scale(1.3);
+}
+
+.Products_Container .prev {
+    width: 150px;
+    position: relative;
+}
+
+.Products_Container .prev img {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%) scale(1.3);
+}
+
+.Products {
+    width: 95%;
+    height: 100%;
+    padding: 0 1rem;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 100;
+}
+
+.Product {
+    width: 180px;
+    height: 100%;
+    border: 1px solid #fff;
+
+    gap: 5px;
+
+    cursor: pointer;
+    z-index: 30;
+    transition: all .2s ease-in;
+}
+
+.Product:hover {
+    border-color: var(--colorone);
+}
+
+.Product h1 {
+    font-size: 12px;
+    text-align: center;
+    font-family: var(--haedfont);
+
+}
+
+.Product .img_Container {
+    width: 65%;
+    height: 100px;
+
+}
+
+.Product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/***** End main__Products__Groups *****/
+
+/***** Main *****/
+.main {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+main {
+    width: 68%;
+    height: 6rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main .title {
+    width: 100%;
+    height: 100%;
+
+    padding: .3rem 1rem;
+}
+
+main .title .text {
+    width: 30%;
+    height: 100%;
+}
+
+main .title .text h2 {
+    font-size: 18px;
+    font-family: var(--haedfont);
+
+}
+
+main .title .text .navigation {
+    gap: 10px;
+}
+
+
+main .title .text .navigation li {
+    display: flex;
+    gap: 10px;
+}
+
+main .title .text .navigation p {
+    font-size: 11px;
+}
+
+.navigation .home-icon img {
+    width: 18px;
+}
+
+.navigation .left-Arrow img {
+    height: 10px;
+}
+
+main .title .controlls {
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main .title .controlls .filter {
+    padding: .3rem 10px;
+    font-size: 13px;
+    font-family: var(--haedfont);
+
+    gap: 2rem;
+    background: #eee;
+}
+
+main .title .controlls .filter img {
+    height: 5px;
+}
+
+main .title .controlls .layout_1 img {
+    height: 50px;
+}
+
+main .title .controlls .layout_2 img {
+    width: 20px;
+}
+
+/***** End Main *****/
+
+/***** aside *****/
+.main aside {
+    width: 28%;
+    gap: 20px;
+}
+
+.applied-filters {
+    width: 100%;
+    height: 150px;
+
+    padding: 4rem 1.4rem;
+}
+
+.applied-filters h1 {
+    font-size: 15px;
+    font-family: var(--haedfont);
+}
+
+.selected-filter {
+    color: #888;
+    gap: 5px;
+    padding: .53rem 1rem;
+    background-color: #dadada;
+}
+
+.selected-filter.active {
+    color: #fff;
+    background-color: #536dfe !important;
+}
+
+.categories {
+    width: 100%;
+    padding: 1.2rem 1rem;
+    position: relative;
+}
+
+.categories h2 {
+    width: 100%;
+    font-size: 15px;
+    font-family: var(--haedfont);
+}
+
+.categories ul li {
+    padding: .5rem  0;
+    position: relative;
+    overflow: hidden;
+}
+
+.categories ul li p {
+    width: 100%;
+    font-family: var(--haedfont);
+}
+
+.categories ul li span {
+    padding: 8px;
+    border-radius: 10px;
+    text-align: start;
+    background-color: #eee;
+    transition: all .3s ease;
+}
+
+.categories .submenu {
+    width: 100%;
+    height: 100%;
+    height: 0;
+    opacity: 0;
+    padding-right: 1rem;
+    transition: all .3s ease;
+}
+
+.categories .open {
+    visibility: visible;
+    height: 100%;
+    opacity: 1;
+}
+
+
+.categories .rotate {
+    transform: rotate(180deg);
+}
+
+.categories .submenu p {
+    font-family: var(--bodyfont);
+}
+
+.categories .submenu .subLink {
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.categories .submenu .subLink .sub-icon {
+    font-size: 10px;
+    background: none;
+}
+
+.categories .submenu .subLink:hover {
+    color: #6775f1;
+    padding-right: .4rem;
+}
+/***** End aside *****/
