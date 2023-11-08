@@ -10495,7 +10495,7 @@
 //# sourceMappingURL=bootstrap.bundle.min.js.map
 
 /**
- * Swiper 10.3.1
+ *  10.3.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
