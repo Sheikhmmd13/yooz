@@ -379,6 +379,202 @@
 					<input type="checkbox" name="" id="toggle" class="toggle" />
 					<label for="toggle">کالا های تخفیف دار</label>
 				</div>
+				<div
+					class="bg-defualt flex flex-col items-center brands-filter">
+					<div class="w-100 flex gap-4 justify-between brand-title">
+						<h2>برند ها</h2>
+						<span id="icon" class="yoz-arrow-up-2"></span>
+					</div>
+					<hr class="w-100" />
+					<div class="hidden brands-list w-100">
+						<div
+							class="w-100 flex flex-col items-center gap-4 first-brands-group">
+							<ul class="w-100 pt-3 pb-4 flex flex-col gap-4">
+								<li
+									class="w-100 flex justify-between brand-name">
+									<div
+										class="flex items-center gap-2 selected-brand">
+										<div class="brand-selected"></div>
+										<p>سونی</p>
+									</div>
+									<div class="brand">Sony</div>
+								</li>
+								<li
+									class="w-100 flex justify-between brand-name">
+									<div
+										class="flex items-center gap-2 selected-brand">
+										<div class="brand-selected"></div>
+										<p>سونی</p>
+									</div>
+									<div class="brand">Sony</div>
+								</li>
+								<li
+									class="w-100 flex justify-between brand-name">
+									<div
+										class="flex items-center gap-2 selected-brand">
+										<div class="brand-selected"></div>
+										<p>سونی</p>
+									</div>
+									<div class="brand">Sony</div>
+								</li>
+								<li
+									class="w-100 flex justify-between brand-name">
+									<div
+										class="flex items-center gap-2 selected-brand">
+										<div class="brand-selected"></div>
+										<p>سونی</p>
+									</div>
+									<div class="brand">Sony</div>
+								</li>
+
+								<li
+									class="w-100 flex justify-between brand-name">
+									<div
+										class="flex items-center gap-2 selected-brand">
+										<div class="brand-selected"></div>
+										<p>سونی</p>
+									</div>
+									<div class="brand">Sony</div>
+								</li>
+								<li
+									class="w-100 flex justify-between brand-name">
+									<div
+										class="flex items-center gap-2 selected-brand">
+										<div class="brand-selected"></div>
+										<p>سونی</p>
+									</div>
+									<div class="brand">Sony</div>
+								</li>
+								<li
+									class="w-100 flex justify-between brand-name">
+									<div
+										class="flex items-center gap-2 selected-brand">
+										<div class="brand-selected"></div>
+										<p>سونی</p>
+									</div>
+									<div class="brand">Sony</div>
+								</li>
+							</ul>
+							<button
+								onclick="showMoreBrand()"
+								class="flex items-center gap-2 showMoreButton">
+								<span class="yoz-add"></span>
+								نمایش بیشتر
+							</button>
+						</div>
+						<div
+							class="w-100 flex flex-col items-center gap-4 second-brands-group"
+							style="display: none">
+							<ul class="w-100 pb-3 flex flex-col gap-4">
+								<li
+									class="w-100 flex justify-between brand-name">
+									<div
+										class="flex items-center gap-2 selected-brand">
+										<div class="brand-selected"></div>
+										<p>سونی</p>
+									</div>
+									<div class="brand">Sony</div>
+								</li>
+								<li
+									class="w-100 flex justify-between brand-name">
+									<div
+										class="flex items-center gap-2 selected-brand">
+										<div class="brand-selected"></div>
+										<p>سونی</p>
+									</div>
+									<div class="brand">Sony</div>
+								</li>
+								<li
+									class="w-100 flex justify-between brand-name">
+									<div
+										class="flex items-center gap-2 selected-brand">
+										<div class="brand-selected"></div>
+										<p>سونی</p>
+									</div>
+									<div class="brand">Sony</div>
+								</li>
+								<li
+									class="w-100 flex justify-between brand-name">
+									<div
+										class="flex items-center gap-2 selected-brand">
+										<div class="brand-selected"></div>
+										<p>سونی</p>
+									</div>
+									<div class="brand">Sony</div>
+								</li>
+
+								<li
+									class="w-100 flex justify-between brand-name">
+									<div
+										class="flex items-center gap-2 selected-brand">
+										<div class="brand-selected"></div>
+										<p>سونی</p>
+									</div>
+									<div class="brand">Sony</div>
+								</li>
+								<li
+									class="w-100 flex justify-between brand-name">
+									<div
+										class="flex items-center gap-2 selected-brand">
+										<div class="brand-selected"></div>
+										<p>سونی</p>
+									</div>
+									<div class="brand">Sony</div>
+								</li>
+								<li
+									class="w-100 flex justify-between brand-name">
+									<div
+										class="flex items-center gap-2 selected-brand">
+										<div class="brand-selected"></div>
+										<p>سونی</p>
+									</div>
+									<div class="brand">Sony</div>
+								</li>
+							</ul>
+							<button
+								onclick="showLessBrand(event)"
+								class="flex items-center gap-2 showLessButton"
+								style="display: none">
+								<span class="yoz-minus"></span>
+								نمایش کمتر
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="w-100 px-5 py-4 bg-defualt price-filter">
+					<h2>قیمت</h2>
+					<hr />
+					<div
+						class="flex items-center py-2 justify-between price-container">
+						<p>حداقل قیمت</p>
+						<input type="number" />
+						<p>هزار تومن</p>
+					</div>
+					<div
+						class="flex items-center py-2 justify-between price-container">
+						<p>حداکثر قیمت</p>
+						<input type="number" />
+						<p>هزار تومن</p>
+					</div>
+				</div>
+				<div class="w-100 bg-defualt px-5 py-4 price-range">
+					<h2>قیمت</h2>
+					<hr />
+					<div class="price-range-container">
+						<div
+							class="w-100 flex justify-between price-limits position-relative">
+							<p>100هزار</p>
+							<span class="flex justify-center items-center sliderValue">100</span>
+							<p>1 میلیون</p>
+						</div>
+						<input
+							type="range"
+							class="w-100 my-1"
+
+							value="50"
+							step="1" />
+					</div>
+				</div>
 			</aside>
 			<main>
 				<div class="bg-defualt flex items-center justify-between title">
@@ -423,12 +619,12 @@
 							</select>
 						</div>
 						<div
-							class="flex items-center justify-center layout selected"
+							class="flex items-center justify-center layout"
 							id="square">
 							<span class="yoz-grid-1 icon"></span>
 						</div>
 						<div
-							class="flex items-center justify-center layout"
+							class="flex items-center justify-center layout selected"
 							id="line">
 							<span class="yoz-menu-1 icon"></span>
 						</div>
@@ -436,7 +632,8 @@
 				</div>
 				<div
 					class="square_layout container cards-container"
-					id="square_layout">
+					id="square_layout"
+					style="display: none">
 					<!-- ========== Start row ========== -->
 					<div class="row my-3">
 						<!-- ========== Start card  ========== -->
@@ -1044,8 +1241,160 @@
 					</div>
 					<!-- ========== End row ========== -->
 				</div>
-				<div id="line_layout" style="display: none">
-					<p>line layout</p>
+				<div id="line_layout">
+					<div
+						class="cards-container flex flex-col gap-4 line-layout">
+						<div class="bg-defualt flex flex-row-reverse card-body">
+							<div class="card-img">
+								<img src="./assets/img/poster.png" />
+							</div>
+							<div
+								class="card-info flex flex-col align-items-center justify-center gap-3">
+								<h1>
+									افزونه درگاه پلاس، کاملترین پلاگین پرداخت
+								</h1>
+								<div class="flex justify-between description">
+									<div
+										class="flex w-50 gap-2 align-items-center justify-content-start success-sales position-relative">
+										<span>8</span>
+										<p class="text-muted">فروش موفق</p>
+										<div class="line"></div>
+									</div>
+									<div
+										class="flex w-50 gap-2 align-items-center justify-content-end satisfaction-rate">
+										<span>%90</span>
+										<p class="text-muted">رضایت خرید</p>
+									</div>
+								</div>
+								<div class="flex w-100 buy">
+									<div
+										class="flex flex-column justify-between w-50 price-tags">
+										<span class="w-50 discount-tag"
+											>%30</span
+										>
+										<div class="price text-end">
+											<p class="w-100">183/000 تومان</p>
+										</div>
+										<div class="old-price text-end">
+											<del>198/000 تومان</del>
+										</div>
+									</div>
+									<div
+										class="flex flex-column align-content-center justify-center gap-3 w-50 btns">
+										<button class="mx-auto preview-btn">
+											پیش نمایش
+										</button>
+										<button
+											class="mx-auto flex justify-around buy-btn">
+											<span
+												class="h-100 flex justify-center items-center yoz-shopping-bag"></span>
+											خرید
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bg-defualt flex flex-row-reverse card-body">
+							<div class="card-img">
+								<img src="./assets/img/poster.png" />
+							</div>
+							<div
+								class="card-info flex flex-col align-items-center justify-center gap-3">
+								<h1>
+									افزونه درگاه پلاس، کاملترین پلاگین پرداخت
+								</h1>
+								<div class="flex justify-between description">
+									<div
+										class="flex w-50 gap-2 align-items-center justify-content-start success-sales position-relative">
+										<span>8</span>
+										<p class="text-muted">فروش موفق</p>
+										<div class="line"></div>
+									</div>
+									<div
+										class="flex w-50 gap-2 align-items-center justify-content-end satisfaction-rate">
+										<span>%90</span>
+										<p class="text-muted">رضایت خرید</p>
+									</div>
+								</div>
+								<div class="flex w-100 buy">
+									<div
+										class="flex flex-column justify-between w-50 price-tags">
+										<span class="w-50 discount-tag"
+											>%30</span
+										>
+										<div class="price text-end">
+											<p class="w-100">183/000 تومان</p>
+										</div>
+										<div class="old-price text-end">
+											<del>198/000 تومان</del>
+										</div>
+									</div>
+									<div
+										class="flex flex-column align-content-center justify-center gap-3 w-50 btns">
+										<button class="mx-auto preview-btn">
+											پیش نمایش
+										</button>
+										<button
+											class="mx-auto flex justify-around buy-btn">
+											<span
+												class="h-100 flex justify-center items-center yoz-shopping-bag"></span>
+											خرید
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bg-defualt flex flex-row-reverse card-body">
+							<div class="card-img">
+								<img src="./assets/img/poster.png" />
+							</div>
+							<div
+								class="card-info flex flex-col align-items-center justify-center gap-3">
+								<h1>
+									افزونه درگاه پلاس، کاملترین پلاگین پرداخت
+								</h1>
+								<div class="flex justify-between description">
+									<div
+										class="flex w-50 gap-2 align-items-center justify-content-start success-sales position-relative">
+										<span>8</span>
+										<p class="text-muted">فروش موفق</p>
+										<div class="line"></div>
+									</div>
+									<div
+										class="flex w-50 gap-2 align-items-center justify-content-end satisfaction-rate">
+										<span>%90</span>
+										<p class="text-muted">رضایت خرید</p>
+									</div>
+								</div>
+								<div class="flex w-100 buy">
+									<div
+										class="flex flex-column justify-between w-50 price-tags">
+										<span class="w-50 discount-tag"
+											>%30</span
+										>
+										<div class="price text-end">
+											<p class="w-100">183/000 تومان</p>
+										</div>
+										<div class="old-price text-end">
+											<del>198/000 تومان</del>
+										</div>
+									</div>
+									<div
+										class="flex flex-column align-content-center justify-center gap-3 w-50 btns">
+										<button class="mx-auto preview-btn">
+											پیش نمایش
+										</button>
+										<button
+											class="mx-auto flex justify-around buy-btn">
+											<span
+												class="h-100 flex justify-center items-center yoz-shopping-bag"></span>
+											خرید
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</main>
 		</div>

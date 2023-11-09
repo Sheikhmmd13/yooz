@@ -1,6 +1,11 @@
 // const Layouts = document.querySelectorAll('.layout');
 const CategoryLinks = document.querySelectorAll('.category');
 const ShowingFilters = document.querySelectorAll('.showing-filter');
+const BrandsFilter = document.querySelectorAll('.brand-name')
+const BrandTitle = document.querySelector('.brand-title');
+const inputSlider = document.querySelector('input[type=range]');
+const sliderValue = document.querySelector('.sliderValue')
+
 
 const square = document.querySelector('#square');
 const line = document.querySelector('#line');
@@ -56,3 +61,48 @@ ShowingFilters.forEach((Filter) => {
 		}
 	});
 });
+
+
+BrandTitle.addEventListener('click', () => {
+	const icon = BrandTitle.querySelector('#icon');
+	const BrandsList = document.querySelector('.brands-list');
+	BrandsList.classList.toggle('hidden')
+	icon.classList.toggle('rotate')
+})
+
+BrandsFilter.forEach(BrandName => {
+	const selectBrand = BrandName.querySelector('.brand-selected');
+
+	BrandName.addEventListener('click', () => {
+		selectBrand.classList.toggle('select');
+	})
+})
+
+function showMoreBrand() {
+	const showMoreButton = document.querySelector('.showMoreButton')
+	const showLessButton = document.querySelector('.showLessButton')
+	showLessButton.style.display= 'block'
+	showMoreButton.style.display = 'none'
+	const ul = document.querySelector('.second-brands-group');
+	ul.style.display ='flex'
+}
+
+function showLessBrand() {
+	const showLessButton = document.querySelector('.showLessButton')
+	const showMoreButton = document.querySelector('.showMoreButton')
+	showMoreButton.style.display= 'block'
+	showLessButton.style.display = 'none'
+	const ul = document.querySelector('.second-brands-group');
+	ul.style.display = 'none'
+}
+
+inputSlider.oninput =  (() => {
+	let value = inputSlider.value;
+	sliderValue.textContent = value + 'هزار';
+	sliderValue.style.right = (value) + '%';
+	sliderValue.classList.add('show')
+});
+
+inputSlider.onblur= () => {
+	sliderValue.classList.remove('show')
+};
