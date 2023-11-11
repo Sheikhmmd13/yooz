@@ -1,8 +1,9 @@
 .bg-defualt {
     background-color: #fbfbfb;
-    box-shadow:0px 10px 15px -10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.6);
     border-radius: 25px;
-} 
+}
+
 .border-radius {
     border-radius: 25px;
 }

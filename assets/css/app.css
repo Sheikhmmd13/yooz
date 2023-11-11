@@ -1102,15 +1102,91 @@ input[type="range"]::-moz-range-track {
     transform: rotate(-40deg);
 }
 
-.next-page span{
+.next-page span {
     transform: rotate(40deg);
 }
 
 .prev-page {
     transform: rotate(-225deg);
 }
+
 .prev-page span {
     transform: rotate(225deg);
+}
+
+.discounted-product {
+    overflow: hidden;
+    border: 1px solid transparent;
+    transition: border .3s ease;
+}
+
+.discounted-product .time {
+    width: 80%;
+    height: 2rem;
+    margin: 0 auto;
+}
+
+.discounted-product .product-title h2 {
+    font-size: 15px;
+    font-family: var(--haedfont);
+}
+
+.discounted-product .product-price {
+    padding-right: 3rem;
+}
+
+.discounted-product .price {
+    font-size: 15px;
+    font-family: var(--haedfont);
+}
+
+.discounted-product .price span {
+    font-weight: bold;
+    color: #ff0d0c;
+}
+
+.discounted-product .add__to__product {
+    position: relative;
+    z-index: 111;
+}
+
+.discounted-product .add__to__product span {
+    color: #6b53ff;
+    font-size: 20px;
+    padding: .9rem;
+    border-radius: 50% 50% 0px 50%;
+
+    position: absolute;
+    top: -35px;
+    left: 2px;
+
+    transition: all .3s ease;
+}
+
+.discounted-product .add__to__product::before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    bottom: -90px;
+    width: 100px;
+    height: 100px;
+    background: #ff0d0c;
+    transition: all .5s ease;
+}
+
+.discounted-product:hover {
+    border: 1px solid #ff0d0c;
+}
+
+.discounted-product:hover .add__to__product::before {
+    border-radius: 25px;
+    transform: rotate(180deg);
+    left: -200px;
+    opacity: 0;
+}
+
+.discounted-product:hover .add__to__product span {
+    color: #ff0d0c;
 }
 
 /***** End aside *****/
@@ -1122,9 +1198,10 @@ input[type="range"]::-moz-range-track {
     margin: 5rem auto;
 }
 
+
 .features .feature {
     display: flex;
-    gap: .rem;
+    gap: .3rem;
     flex-direction: column;
     justify-items: center;
     align-items: center;
@@ -1145,4 +1222,5 @@ input[type="range"]::-moz-range-track {
     font-size: 14px;
     color: #262731;
 }
+
 /***** End feature *****/
