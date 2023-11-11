@@ -1,17 +1,14 @@
 // const Layouts = document.querySelectorAll('.layout');
 const CategoryLinks = document.querySelectorAll('.category');
 const ShowingFilters = document.querySelectorAll('.showing-filter');
-const BrandsFilter = document.querySelectorAll('.brand-name')
-const BrandTitle = document.querySelector('.brand-title');
+const FilterList = document.querySelectorAll('.filter-lists');
 const inputSlider = document.querySelector('input[type=range]');
-const sliderValue = document.querySelector('.sliderValue')
-
+const sliderValue = document.querySelector('.sliderValue');
 
 const square = document.querySelector('#square');
 const line = document.querySelector('#line');
-const squareContainer = document.getElementById('square_layout')
-const lineContainer = document.getElementById('line_layout')
-
+const squareContainer = document.getElementById('square_layout');
+const lineContainer = document.getElementById('line_layout');
 
 square.addEventListener('click', () => {
 	lineContainer.style.display = 'none';
@@ -62,47 +59,87 @@ ShowingFilters.forEach((Filter) => {
 	});
 });
 
+// const FilterTitles = FilterList.querySelectorAll('.title');
+// const ItemsList = FilterList.querySelectorAll('.items-list');
 
-BrandTitle.addEventListener('click', () => {
-	const icon = BrandTitle.querySelector('#icon');
-	const BrandsList = document.querySelector('.brands-list');
-	BrandsList.classList.toggle('hidden')
-	icon.classList.toggle('rotate')
-})
+FilterList.forEach((filterlist) => {
+	const FilterTitles = filterlist.querySelectorAll('.title');
+	const ItemsList = filterlist.querySelectorAll('.items-list');
+	const selectedItems = filterlist.querySelectorAll('.selected-item');
 
-BrandsFilter.forEach(BrandName => {
-	const selectBrand = BrandName.querySelector('.brand-selected');
+	FilterTitles.forEach((title) => {
+		const icons = title.querySelectorAll('#icon');
 
-	BrandName.addEventListener('click', () => {
-		selectBrand.classList.toggle('select');
-	})
-})
+		icons.forEach((icon) => {
+			title.addEventListener('click', () => {
+				icon.classList.toggle('rotate');
+				ItemsList.forEach((Itemlist) => {
+					Itemlist.classList.toggle('hidden');
+				});
+			});
+		});
+	});
 
-function showMoreBrand() {
-	const showMoreButton = document.querySelector('.showMoreButton')
-	const showLessButton = document.querySelector('.showLessButton')
-	showLessButton.style.display= 'block'
-	showMoreButton.style.display = 'none'
-	const ul = document.querySelector('.second-brands-group');
-	ul.style.display ='flex'
-}
-
-function showLessBrand() {
-	const showLessButton = document.querySelector('.showLessButton')
-	const showMoreButton = document.querySelector('.showMoreButton')
-	showMoreButton.style.display= 'block'
-	showLessButton.style.display = 'none'
-	const ul = document.querySelector('.second-brands-group');
-	ul.style.display = 'none'
-}
-
-inputSlider.oninput =  (() => {
-	let value = inputSlider.value;
-	sliderValue.textContent = value + 'هزار';
-	sliderValue.style.right = (value) + '%';
-	sliderValue.classList.add('show')
+	selectedItems.forEach((selectedItem) => {
+		selectedItem.addEventListener('click', () => {
+			const brandColorName = selectedItem.querySelector('.item-selected');
+			brandColorName.classList.toggle('select');
+		});
+	});
 });
 
-inputSlider.onblur= () => {
-	sliderValue.classList.remove('show')
+const showMoreBtns = document.querySelectorAll('.showMoreButton');
+const showLessBtns = document.querySelectorAll('.showLessButton');
+const secondGroupOfItems = document.querySelectorAll('.second-items-group');
+
+function showMoreOfFirstGroup() {
+	showMoreBtns[0].style.display = 'none';
+	secondGroupOfItems[0].style.display = 'flex';
+}
+function showMoreOfSecondGroup() {
+	showMoreBtns[1].style.display = 'none';
+	secondGroupOfItems[1].style.display = 'flex';
+}
+
+function showLessOfFirstGroup() {
+	showMoreBtns[0].style.display = 'block';
+	secondGroupOfItems[0].style.display = 'none';
+}
+
+function showLessOfSecondGroup() {
+	showMoreBtns[1].style.display = 'block';
+	secondGroupOfItems[1].style.display = 'none';
+}
+
+const inputNumberOfPriceFilter = document.querySelectorAll(
+	'.price-filter input[type=number]'
+);
+
+inputNumberOfPriceFilter.forEach((input) => {
+	input.oninput = () => {
+		if (input.value <= 0) {
+			input.value = 0;
+		}
+	};
+});
+
+inputSlider.oninput = () => {
+	let value = inputSlider.value;
+	sliderValue.textContent = !(value * 10 === 1000)
+		? value * 10 + 'هزار'
+		: 1 + 'میلیون';
+	switch (value) {
+		case 100:
+			sliderValue.style.right = value - 15 + '%';
+			break;
+		case 0:
+			sliderValue.style.right = '5%';
+			break;
+	}
+	sliderValue.style.right = value + '%';
+	sliderValue.classList.add('show');
+};
+
+inputSlider.onblur = () => {
+	sliderValue.classList.remove('show');
 };

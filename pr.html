@@ -3,51 +3,31 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
+		<!-- <link
 			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+			href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+		<!-- <link rel="stylesheet" href="./assets/css/base.css" /> -->
+		<link rel="stylesheet" href="./pr.css">
 		<title>Document</title>
 	</head>
 	<body>
-		<style>
-			body {
-				margin: 0;
-				padding: 0;
-				box-sizing: border-box;
-				overflow: hidden;
-			}
-			.swiper-wrapper {
-				width: 100vw;
-				height: 100vh;
-			}
-			.swiper-slide {
-				width: 100%;
-				height: 100%;
-				background: #888;
-
-				font-size: 25px;
-				font: #333;
-
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
-		</style>
-		<!-- Slider main container -->
 		<div class="swiper">
 			<!-- Additional required wrapper -->
 			<div class="swiper-wrapper">
+				<!-- Slides -->
 				<div class="swiper-slide">Slide 1</div>
 				<div class="swiper-slide">Slide 2</div>
 				<div class="swiper-slide">Slide 3</div>
+				...
 			</div>
 			<!-- If we need pagination -->
-			<div class="swiper-pagination"></div>
-
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
 
 			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+
+			<!-- If we need scrollbar -->
 		</div>
 		<script src="./pr.js" type="module"></script>
 	</body>

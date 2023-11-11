@@ -379,166 +379,310 @@
 					<input type="checkbox" name="" id="toggle" class="toggle" />
 					<label for="toggle">کالا های تخفیف دار</label>
 				</div>
-				<div
-					class="bg-defualt flex flex-col items-center brands-filter">
-					<div class="w-100 flex gap-4 justify-between brand-title">
+				<div class="bg-defualt flex flex-col items-center filter-lists">
+					<div class="w-100 flex gap-4 justify-between title">
 						<h2>برند ها</h2>
 						<span id="icon" class="yoz-arrow-up-2"></span>
 					</div>
 					<hr class="w-100" />
-					<div class="hidden brands-list w-100">
+					<div class="items-list w-100">
+						<!-- ========== Start first items group ========== -->
 						<div
-							class="w-100 flex flex-col items-center gap-4 first-brands-group">
+							class="w-100 flex flex-col items-center gap-4 first-items-group">
 							<ul class="w-100 pt-3 pb-4 flex flex-col gap-4">
 								<li
-									class="w-100 flex justify-between brand-name">
+									class="w-100 flex justify-between item-name">
 									<div
-										class="flex items-center gap-2 selected-brand">
-										<div class="brand-selected"></div>
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
 										<p>سونی</p>
 									</div>
-									<div class="brand">Sony</div>
+									<div class="brand__color_name">Sony</div>
 								</li>
 								<li
-									class="w-100 flex justify-between brand-name">
+									class="w-100 flex justify-between item-name">
 									<div
-										class="flex items-center gap-2 selected-brand">
-										<div class="brand-selected"></div>
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
 										<p>سونی</p>
 									</div>
-									<div class="brand">Sony</div>
+									<div class="brand__color_name">Sony</div>
 								</li>
 								<li
-									class="w-100 flex justify-between brand-name">
+									class="w-100 flex justify-between item-name">
 									<div
-										class="flex items-center gap-2 selected-brand">
-										<div class="brand-selected"></div>
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
 										<p>سونی</p>
 									</div>
-									<div class="brand">Sony</div>
+									<div class="brand__color_name">Sony</div>
 								</li>
 								<li
-									class="w-100 flex justify-between brand-name">
+									class="w-100 flex justify-between item-name">
 									<div
-										class="flex items-center gap-2 selected-brand">
-										<div class="brand-selected"></div>
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
 										<p>سونی</p>
 									</div>
-									<div class="brand">Sony</div>
-								</li>
-
-								<li
-									class="w-100 flex justify-between brand-name">
-									<div
-										class="flex items-center gap-2 selected-brand">
-										<div class="brand-selected"></div>
-										<p>سونی</p>
-									</div>
-									<div class="brand">Sony</div>
+									<div class="brand__color_name">Sony</div>
 								</li>
 								<li
-									class="w-100 flex justify-between brand-name">
+									class="w-100 flex justify-between item-name">
 									<div
-										class="flex items-center gap-2 selected-brand">
-										<div class="brand-selected"></div>
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
 										<p>سونی</p>
 									</div>
-									<div class="brand">Sony</div>
+									<div class="brand__color_name">Sony</div>
 								</li>
 								<li
-									class="w-100 flex justify-between brand-name">
+									class="w-100 flex justify-between item-name">
 									<div
-										class="flex items-center gap-2 selected-brand">
-										<div class="brand-selected"></div>
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
 										<p>سونی</p>
 									</div>
-									<div class="brand">Sony</div>
+									<div class="brand__color_name">Sony</div>
+								</li>
+								<li
+									class="w-100 flex justify-between item-name">
+									<div
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
+										<p>سونی</p>
+									</div>
+									<div class="brand__color_name">Sony</div>
 								</li>
 							</ul>
 							<button
-								onclick="showMoreBrand()"
+								onclick="showMoreOfFirstGroup()"
 								class="flex items-center gap-2 showMoreButton">
 								<span class="yoz-add"></span>
 								نمایش بیشتر
 							</button>
 						</div>
+						<!-- ========== End first items group ========== -->
+						<!-- ========== Start second items group ========== -->
 						<div
-							class="w-100 flex flex-col items-center gap-4 second-brands-group"
+							class="hidden w-100 flex flex-col items-center gap-4 second-items-group"
 							style="display: none">
-							<ul class="w-100 pb-3 flex flex-col gap-4">
+							<ul class="w-100 pb-4 flex flex-col gap-4">
 								<li
-									class="w-100 flex justify-between brand-name">
+									class="w-100 flex justify-between item-name">
 									<div
-										class="flex items-center gap-2 selected-brand">
-										<div class="brand-selected"></div>
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
 										<p>سونی</p>
 									</div>
-									<div class="brand">Sony</div>
+									<div class="brand__color_name">Sony</div>
 								</li>
 								<li
-									class="w-100 flex justify-between brand-name">
+									class="w-100 flex justify-between item-name">
 									<div
-										class="flex items-center gap-2 selected-brand">
-										<div class="brand-selected"></div>
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
 										<p>سونی</p>
 									</div>
-									<div class="brand">Sony</div>
+									<div class="brand__color_name">Sony</div>
 								</li>
 								<li
-									class="w-100 flex justify-between brand-name">
+									class="w-100 flex justify-between item-name">
 									<div
-										class="flex items-center gap-2 selected-brand">
-										<div class="brand-selected"></div>
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
 										<p>سونی</p>
 									</div>
-									<div class="brand">Sony</div>
+									<div class="brand__color_name">Sony</div>
 								</li>
 								<li
-									class="w-100 flex justify-between brand-name">
+									class="w-100 flex justify-between item-name">
 									<div
-										class="flex items-center gap-2 selected-brand">
-										<div class="brand-selected"></div>
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
 										<p>سونی</p>
 									</div>
-									<div class="brand">Sony</div>
-								</li>
-
-								<li
-									class="w-100 flex justify-between brand-name">
-									<div
-										class="flex items-center gap-2 selected-brand">
-										<div class="brand-selected"></div>
-										<p>سونی</p>
-									</div>
-									<div class="brand">Sony</div>
+									<div class="brand__color_name">Sony</div>
 								</li>
 								<li
-									class="w-100 flex justify-between brand-name">
+									class="w-100 flex justify-between item-name">
 									<div
-										class="flex items-center gap-2 selected-brand">
-										<div class="brand-selected"></div>
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
 										<p>سونی</p>
 									</div>
-									<div class="brand">Sony</div>
+									<div class="brand__color_name">Sony</div>
 								</li>
 								<li
-									class="w-100 flex justify-between brand-name">
+									class="w-100 flex justify-between item-name">
 									<div
-										class="flex items-center gap-2 selected-brand">
-										<div class="brand-selected"></div>
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
 										<p>سونی</p>
 									</div>
-									<div class="brand">Sony</div>
+									<div class="brand__color_name">Sony</div>
+								</li>
+								<li
+									class="w-100 flex justify-between item-name">
+									<div
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
+										<p>سونی</p>
+									</div>
+									<div class="brand__color_name">Sony</div>
 								</li>
 							</ul>
 							<button
-								onclick="showLessBrand(event)"
-								class="flex items-center gap-2 showLessButton"
-								style="display: none">
-								<span class="yoz-minus"></span>
+								onclick="showLessOfFirstGroup()"
+								class="flex items-center gap-2 showLessButton">
+								<span class="yoz-add"></span>
 								نمایش کمتر
 							</button>
 						</div>
+						<!-- ========== End second items group ========== -->
+					</div>
+				</div>
+				<div class="bg-defualt flex flex-col items-center filter-lists">
+					<div class="w-100 flex gap-4 justify-between title">
+						<h2>رنگ ها</h2>
+						<span id="icon" class="yoz-arrow-up-2"></span>
+					</div>
+					<hr class="w-100" />
+					<div class="items-list color-list w-100">
+						<!-- ========== Start first items group ========== -->
+						<div
+							class="w-100 flex flex-col items-center gap-4 first-items-group">
+							<ul class="w-100 pt-3 pb-4 flex flex-col gap-4">
+								<li
+									class="w-100 flex justify-between item-name">
+									<div
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
+										<p>قرمز</p>
+									</div>
+									<div class="brand__color_name color"></div>
+								</li>
+								<li
+									class="w-100 flex justify-between item-name">
+									<div
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
+										<p>قرمز</p>
+									</div>
+									<div class="brand__color_name color"></div>
+								</li>
+								<li
+									class="w-100 flex justify-between item-name">
+									<div
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
+										<p>قرمز</p>
+									</div>
+									<div class="brand__color_name color"></div>
+								</li>
+								<li
+									class="w-100 flex justify-between item-name">
+									<div
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
+										<p>قرمز</p>
+									</div>
+									<div class="brand__color_name color"></div>
+								</li>
+								<li
+									class="w-100 flex justify-between item-name">
+									<div
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
+										<p>قرمز</p>
+									</div>
+									<div class="brand__color_name color"></div>
+								</li>
+								<li
+									class="w-100 flex justify-between item-name">
+									<div
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
+										<p>قرمز</p>
+									</div>
+									<div class="brand__color_name color"></div>
+								</li>
+							</ul>
+							<button
+								onclick="showMoreOfSecondGroup()"
+								class="flex items-center gap-2 showMoreButton">
+								<span class="yoz-add"></span>
+								نمایش بیشتر
+							</button>
+						</div>
+						<!-- ========== End first items group ========== -->
+						<!-- ========== Start second items group ========== -->
+						<div
+							class="w-100 flex flex-col items-center gap-4 second-items-group"
+							style="display: none">
+							<ul class="w-100 pb-4 flex flex-col gap-4">
+								<li
+									class="w-100 flex justify-between item-name">
+									<div
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
+										<p>قرمز</p>
+									</div>
+									<div class="brand__color_name color"></div>
+								</li>
+								<li
+									class="w-100 flex justify-between item-name">
+									<div
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
+										<p>قرمز</p>
+									</div>
+									<div class="brand__color_name color"></div>
+								</li>
+								<li
+									class="w-100 flex justify-between item-name">
+									<div
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
+										<p>قرمز</p>
+									</div>
+									<div class="brand__color_name color"></div>
+								</li>
+								<li
+									class="w-100 flex justify-between item-name">
+									<div
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
+										<p>قرمز</p>
+									</div>
+									<div class="brand__color_name color"></div>
+								</li>
+								<li
+									class="w-100 flex justify-between item-name">
+									<div
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
+										<p>قرمز</p>
+									</div>
+									<div class="brand__color_name color"></div>
+								</li>
+								<li
+									class="w-100 flex justify-between item-name">
+									<div
+										class="flex items-center gap-2 selected-item">
+										<div class="item-selected"></div>
+										<p>قرمز</p>
+									</div>
+									<div class="brand__color_name color"></div>
+								</li>
+							</ul>
+							<button
+								onclick="showLessOfSecondGroup()"
+								class="flex items-center gap-2 showLessButton">
+								<span class="yoz-add"></span>
+								نمایش کمتر
+							</button>
+						</div>
+						<!-- ========== End second items group ========== -->
 					</div>
 				</div>
 				<div class="w-100 px-5 py-4 bg-defualt price-filter">
@@ -564,13 +708,15 @@
 						<div
 							class="w-100 flex justify-between price-limits position-relative">
 							<p>100هزار</p>
-							<span class="flex justify-center items-center sliderValue">100</span>
+							<span
+								class="flex justify-center items-center w-auto gap-1 sliderValue"
+								>100</span
+							>
 							<p>1 میلیون</p>
 						</div>
 						<input
 							type="range"
 							class="w-100 my-1"
-
 							value="50"
 							step="1" />
 					</div>
