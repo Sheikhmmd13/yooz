@@ -665,7 +665,6 @@ main .title .controlls .layout.selected span {
 
 .line-layout .card-body {
     padding: .8rem;
-    /* background-color: red; */
 }
 
 .line-layout .card-img {
@@ -703,7 +702,6 @@ main .title .controlls .layout.selected span {
 .line-layout .description {
     width: 100%;
 }
-
 
 
 .line-layout .description .line {
@@ -1062,4 +1060,89 @@ input[type="range"]::-moz-range-track {
 }
 
 
+.page-conatainer {
+    margin: 3rem auto;
+    width: 30%;
+    height: 2rem;
+}
+
+.page {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    border-radius: 50%;
+    padding: .8rem;
+    cursor: pointer;
+}
+
+.page.active {
+    color: #fff;
+    background-color: #6b53ff;
+}
+
+.prev-page,
+.next-page {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+
+    border: 1px solid #fff;
+    border-radius: 0px 50% 50% 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    box-shadow: var(--backgroudbody);
+    background-color: #fff;
+}
+
+.next-page {
+    transform: rotate(-40deg);
+}
+
+.next-page span{
+    transform: rotate(40deg);
+}
+
+.prev-page {
+    transform: rotate(-225deg);
+}
+.prev-page span {
+    transform: rotate(225deg);
+}
+
 /***** End aside *****/
+
+/***** feature *****/
+.features {
+    width: 70%;
+    padding: 1rem .8rem;
+    margin: 5rem auto;
+}
+
+.features .feature {
+    display: flex;
+    gap: .rem;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.features .feature .feature-icon {
+    border-radius: 25px;
+    padding: 2rem;
+    margin-bottom: .8rem;
+}
+
+.features .feature h2 {
+    font-size: 16px;
+    font-family: var(--haedfont);
+}
+
+.features .feature p {
+    font-size: 14px;
+    color: #262731;
+}
+/***** End feature *****/
