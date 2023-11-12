@@ -723,8 +723,26 @@
 				</div>
 				<div
 					class="w-100 bg-defualt py-3 px-4 flex flex-col gap-4 discounted-product">
-					<div class="bg-info time"></div>
-					<div class="product-img flex items-center justify-center">
+					<div class="time">
+						<div
+							class="time-section hours position-relative px-2 flex items-center justify-center h-100">
+							<span id="hours">00</span>
+						</div>
+						<span class="two-points h-100 flex items-center"
+							>:</span
+						>
+						<div class="time-section minutes px-2">
+							<span id="minutes">00</span>
+						</div>
+						<span class="two-points h-100 flex items-center"
+							>:</span
+						>
+
+						<div class="time-section seconds px-2">
+							<span id="seconds">00</span>
+						</div>
+					</div>
+					<div class="product-img position-relative flex items-center justify-center">
 						<img src="./assets/img/card-img.png" alt="" />
 					</div>
 					<div class="product-title flex flex-col gap-2">
@@ -733,7 +751,8 @@
 						</h2>
 						<p class="text-center">ظرفیت 30000 میلی آمپر ساعت</p>
 					</div>
-					<div class="product-footer flex justify-between items-center">
+					<div
+						class="product-footer flex justify-between items-center">
 						<div class="product-price">
 							<div class="price flex gap-1">
 								<span>1,390,000</span>
