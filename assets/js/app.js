@@ -38,9 +38,12 @@ CategoryLinks.forEach((link) => {
 
 ShowingFilters.forEach((Filter) => {
 	const toggle_btn = Filter.querySelector('label');
+	console.log(toggle_btn)
 	var toggleValue = false; //* by default toggle button in false
 
-	toggle_btn.addEventListener('click', () => {
+	toggle_btn.addEventListener('click', (event) => {
+		event.preventDefault();
+		console.log(toggle_btn.offsetLeft)
 		if (!toggleValue) {
 			toggle_btn.style.setProperty('--afterLeft', '1.3em');
 			toggle_btn.style.setProperty('--beforeBG', '#edeffe');
@@ -58,9 +61,6 @@ ShowingFilters.forEach((Filter) => {
 		}
 	});
 });
-
-// const FilterTitles = FilterList.querySelectorAll('.title');
-// const ItemsList = FilterList.querySelectorAll('.items-list');
 
 FilterList.forEach((filterlist) => {
 	const FilterTitles = filterlist.querySelectorAll('.title');

@@ -97,7 +97,7 @@ video {
 
 body {
     min-height: 100vh;
-    max-width: 2000px;
+    max-width: 1400px;
     margin: auto auto;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
@@ -494,7 +494,7 @@ main .title .controlls .layout.selected span {
     /* width: 25%; */
     gap: .8rem;
     padding: 2.5rem .1rem;
-    border: 1px solid transparent;
+    outline: 1px solid transparent;
     text-align: center;
 
     position: relative;
@@ -632,7 +632,7 @@ main .title .controlls .layout.selected span {
 }
 
 .card-body:hover {
-    border: 1px solid #6b53ff;
+    outline: 1px solid #6b53ff;
     box-shadow: var(--bs-box-shadow);
 }
 
@@ -736,10 +736,18 @@ main .title .controlls .layout.selected span {
 .line-layout .btns .preview-btn {
     width: 75%;
     padding: .65rem 0;
-    border: 1px solid #5b6cfe;
-    color: #5b6cfe;
+    border: 1px solid #6b53ff;
+    color: #6b53ff;
     border-radius: 25px;
     background-color: var(--backgroudbody);
+    transition: all .3s ease;
+}
+
+.line-layout .btns .preview-btn:hover {
+    background: #6b53ff;
+    color: #fff;
+    border-radius: 5px 25px 25px 25px;
+
 }
 
 .line-layout .btns .buy-btn {
@@ -747,10 +755,20 @@ main .title .controlls .layout.selected span {
     color: var(--backgroudbody);
     padding: .65rem .5rem;
 
-    border: none;
+    border: 1px solid transparent;
     border-radius: 5px 25px 25px 25px;
 
     background: #6b53ff;
+    transition: all .3s ease;
+
+}
+
+.line-layout .btns .buy-btn:hover {
+    background: #fff;
+    color: #6b53ff;
+    border-color: #6b53ff;
+    border-radius: 25px;
+
 }
 
 /*** End Main *****/
@@ -1241,9 +1259,11 @@ input[type="range"]::-moz-range-track {
 .discounted-product:hover .add__to__product span {
     color: #ff0d0c;
 }
+
 .discounted-product:hover .product-img::before {
     opacity: 0;
 }
+
 /***** End aside *****/
 
 /***** feature *****/
