@@ -493,13 +493,13 @@
                 </div>
                 <div class="w-100 p-5 user-opinion">
                     <header class="w-100 d-flex justify-content-between align-items-center mb-4">
-                        <div class="icon d-flex align-items-center justify-content-center py-2 gap-2">
+                        <div class="icon d-flex align-items-center justify-content-center py-2 px-3 gap-2">
                             <span class="yoz-message-text"></span>
                             <p>دیدگاه کاربران</p>
                         </div>
                         <p class="text-muted">8 دیدگاه ثبت شده</p>
                     </header>
-                    <main class="w-100 border border-secondary p-3">
+                    <main class="w-100 border border-secondary-subtle p-3">
                         <div class="w-100 p-3 mb-3 border-bottom opinion">
                             <div class="w-100 p-2 my-2 user-info d-flex justify-content-between align-items-center">
                                 <div class="user-profile d-flex align-items-center gap-3">
@@ -535,9 +535,9 @@
                                         </ol>
                                     </div>
                                     <div class="week-points  d-flex flex-column justify-content-between gap-2 px-3">
-                                        <div class="week point py-2 px-1 my-2 d-flex gap-2 justify-content-start align-items-center">
-                                            <span class="yoz-add-circle"></span>
-                                            <p>نقاط قوت</p>
+                                        <div class="week point py-2 px-1 d-flex gap-2 justify-content-start align-items-center">
+                                            <span class="yoz-minus-cirlce"></span>
+                                            <p>نقاط ضعف</p>
                                         </div>
                                         <ol>
                                             <li class="py-1">کیفیت دوربین</li>
@@ -555,16 +555,189 @@
                                     <p>12</p>
                                     <span class="yoz-like-1"></span>
                                 </div>
-                                <div class="dislike p-1 px-3 d-flex align-items-center justify-content-center gap-2">
+                                <div class="dislike p-1 px-3 d-flex align-items-center justify-content-center gap-2 rounded-4">
                                     <p>3</p>
                                     <span class="yoz-dislike"></span>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-100 p-4 faqs"></div>
+                        <div class="w-100 p-4 faqs border border-secondary-subtle">
+                            <header class="w-100 d-flex justify-content-between align-items-start mb-4  position-relative">
+                                <div class="w-100 gap-4 user-info d-flex align-items-start justify-content-center">
+                                    <div class=" profile d-flex justify-content-center align-items-center" style="width: 110px;">
+                                        <span class="yoz-user"></span>
+                                    </div>
+                                    <div class="text d-flex gap-3 flex-column align-items-start justify-content-between">
+                                        <p class="text-muted">محمد حیدری کارشناس سایت</p>
+                                        <p class="w-10">
+                                            <span>
+                                                <img src="./assets/img/icon for p.png" alt="">
+                                            </span>
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="opinion-date">
+                                    <small class="text-muted position-absolute p-2 top-0 start-0">3 شهریور 1402</small>
+                                </div>
+                            </header>
+                            <div class="user-comment p-4 border border-secondary-subtle position-relative">
+                                <div class="w-100 gap-4 user-info d-flex align-items-center justify-content-center">
+                                    <div class=" profile d-flex justify-content-center align-items-center" style="width: 10%;">
+                                        <span class="yoz-user"></span>
+                                    </div>
+                                    <div class="text d-flex gap-3 flex-column align-items-start justify-content-between">
+                                        <p class="text-muted">فهیمه سلطانی</p>
+                                        <p class="w-10">
+                                            <span>
+                                                <img src="./assets/img/icon for p.png" alt="">
+                                            </span>
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="opinion-date">
+                                    <small class="text-muted position-absolute p-3" style="left: 15px; top: 15px;">3 شهریور 1402</small>
+                                </div>
+                            </div>
+                        </div>
                     </main>
+                    <div class="w-100 py-3 send-comments d-flex gap-4">
+                        <header class="w-75">
+                            <h1 class="pb-3">ارسال دیدگاه</h1>
+                            <div class="sending-form d-flex flex-column">
+                                <form class="w-100 d-flex gap-2">
+                                    <div class="w-50 form-group border border-secondary-subtle p-3 rounded-2 d-flex flex-row-reverse gap-3 justify-content-end align-items-center">
+                                        <input
+                                            type="text"
+                                            id="FullName"
+                                            class="h-100 input"
+                                            placeholder="نام و نام خانوادگی"
+                                        >
+                                        <label for="FullName">
+                                            <span class="yoz-user"></span>
+                                        </label>
+                                    </div>
+                                    <div class="w-50 form-group border border-secondary-subtle p-3 rounded-2 d-flex flex-row-reverse gap-3 justify-content-end align-items-center">
+                                        <input
+                                            type="number"
+                                            class="h-100"
+                                            id="PhoneNum"
+                                            placeholder="شماره تماس"
+                                        >
+                                        <label for="PhoneNum">
+                                            <span class="yoz-call"></span>
+                                        </label>
+                                    </div>
+                                </form>
+                                <div class="w-100 points-container border border-secondary-subtle my-2 d-flex p-4 position-relative rounded-2">
+                                    <div class="strength-points w-50 h-100 py-2 border-start border-secondary-subtle d-flex flex-column justify-content-center align-items-center">
+                                        <p id="strength-point" class="text-muted d-flex justify-content-start align-items-center gap-2">
+                                            <span class="yoz-add-circle d-flex justify-content-center align-items-center" style="color:#4ad060 ;"></span>
+                                            ثبت نقاط مثبت
+                                        </p>
+                                        <div class="points my-2 d-flex flex-wrap gap-3">
+                                            <div class="user-point d-flex align-items-center justify-content-center gap-1 py-2 px-4 rounded-5">
+                                                <span class="yoz-add d-flex justify-content-center align-items-center" style="transform: rotate(45deg);"></span>
+                                                <p>فوکوس و قدرت بالای دوربین</p>
+                                            </div>
+                                            <div class="user-point d-flex align-items-center justify-content-center gap-1 py-2 px-4 rounded-5">
+                                                <span class="yoz-add d-flex justify-content-center align-items-center" style="transform: rotate(45deg);"></span>
+                                                <p>سرعت بالا</p>
+                                            </div>
+                                            <div class="user-point d-flex align-items-center justify-content-center gap-1 py-2 px-4 rounded-5">
+                                                <span class="yoz-add d-flex justify-content-center align-items-center" style="transform: rotate(45deg);"></span>
+                                                <p>رنگ متنوع</p>
+                                            </div>
+                                            <div class="user-point d-flex align-items-center justify-content-center gap-1 py-2 px-4 rounded-5">
+                                                <span class="yoz-add d-flex justify-content-center align-items-center" style="transform: rotate(45deg);"></span>
+                                                <p>شارژدهی عالی</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add-user-point p-3 position-absolute h-50 rounded-3">
+                                        <form action="" class="w-100">
+                                            <input
+                                                type="text"
+                                                name=""
+                                                value=""
+                                                placeholder="نظر خود را بنویسید!"
+                                                class="w-100 p-2 rounded-2"
+                                                id="add-user-comment"
+                                            >
+                                            <div class="btns d-flex justify-content-center align-content-center gap-3 mt-3">
+                                                <input
+                                                    id="submit"
+                                                    type="submit"
+                                                    value="ثبت نظر"
+                                                    class="w-50 p-2 rounded-2 mx-auto add-user-opinion-controlls"
+                                                >
+                                                <input
+                                                    id="exit"
+                                                    type="submit"
+                                                    value="خروج"
+                                                    class="w-50 p-2 rounded-2 mx-auto add-user-opinion-controlls"
+                                                >
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="week-points w-50 h-100 py-2  d-flex flex-column justify-content-center align-items-center">
+                                        <p id="week-points" class="text-muted d-flex justify-content-start align-items-center gap-2">
+                                            <span class="yoz-minus-cirlce d-flex justify-content-center align-items-center" style="color: #f1004f;"></span>
+                                            ثبت نقاط منفی
+                                        </p>
+                                        <div class="points my-2 d-flex flex-wrap gap-3">
+                                            <div class="user-point d-flex align-items-center justify-content-center gap-1 py-2 px-4 rounded-5">
+                                                <span class="yoz-add d-flex justify-content-center align-items-center" style="transform: rotate(45deg);"></span>
+                                                <p>قیمت بالا</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <main class="w-25 d-flex flex-column justify-content-center align-items-start rate-to-product">
+                            <p>امتیازدهی به محصول</p>
+                            <form action="" class="w-100 mt-3 px-2">
+                                <div class="w-100 my-2">
+                                    <label for="">کیفیت ساخت</label>
+                                    <input
+                                        type="range"
+                                        name=""
+                                        id=""
+                                        class="w-100"
+                                    >
+                                </div>
+                                <div class="w-100 my-2">
+                                    <label for="">قیمت</label>
+                                    <input
+                                        type="range"
+                                        name=""
+                                        id=""
+                                        class="w-100"
+                                    >
+                                </div>
+                                <div class="w-100 my-2">
+                                    <label for="">سایر امکانات</label>
+                                    <input
+                                        type="range"
+                                        name=""
+                                        id=""
+                                        class="w-100"
+                                    >
+                                </div>
+                            </form>
+                        </main>
+                    </div>
+                    <div class="send-user-view w-100 p-2 d-flex flex-column gap-4">
+                        <h1>دیدگاه</h1>
+                        <textarea class="w-100 border border-secondary-subtle rounded-3 p-2"></textarea>
+                        <button class="align-self-end py-3 px-5"> ارسال دیدگاه</button>
+                    </div>
                 </div>
-            </main>
-        </div>
-    </body>
+            </div>
+        </main>
+    </div>
+    <script src="./assets/js/descriptionMobile.js"></script>
+</body>
 </html>
