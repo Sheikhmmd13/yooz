@@ -7,13 +7,14 @@ const StrengthPoint = document.querySelector("#strength-point");
 const addPoint = document.querySelector(".add-user-point");
 const closeAddPoint = document.querySelector("#exit");
 const submitAddPoint = document.querySelector("#submit");
+const inputsRange = document.querySelectorAll("input[type=range]");
 
 function deleteUserPoint() {
 	const UserPoints = document.querySelectorAll(".user-point");
 
 	UserPoints.forEach((userPoint) => {
 		userPoint.querySelector("span").addEventListener("click", () => {
-			userPoint.classList.add('hidden');
+			userPoint.classList.add("hidden");
 			setTimeout(() => {
 				userPoint.remove();
 			}, 300);
@@ -60,14 +61,28 @@ submitAddPoint.addEventListener("click", (event) => {
 	if (isModalOpenInLeftSide) {
 		addPoint.classList.remove("open-left");
 		WeekPointContainer.innerHTML += htmlTemplate;
-        deleteUserPoint();
+		deleteUserPoint();
 		userComment.value = "";
 	}
 
 	if (isModalOpenInrRghtSide) {
 		addPoint.classList.remove("open-right");
 		StrengthPointContainer.innerHTML += htmlTemplate;
-        deleteUserPoint();
+		deleteUserPoint();
 		userComment.value = "";
 	}
+});
+
+inputsRange.forEach((input) => {
+	input.oninput = () => {
+		input.style.setProperty("--rangeInputBeforWidth", input.value + "%");
+	};
+
+	input.addEventListener("mouseover", (event) => {
+		console.log("add");
+	});
+
+	input.addEventListener("mouseout", () => {
+		console.log("remove");
+	});
 });
