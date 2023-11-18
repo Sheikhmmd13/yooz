@@ -11,7 +11,7 @@
     --black: #101010;
     --gray__Dark: #484848;
     --gray__Light: #818185;
-    --gray__ExtraLight: #d7dce3;
+    --gray__ExtraLight: #eee;
     --blue__Dark: #4d67f5;
     --blue__Light: #c3cbfc;
     --cyan__Dark: #16b8cb;
@@ -144,3 +144,72 @@ body {
 }
 
 /***** End header of dashboard *****/
+
+
+/***** style of aside *****/
+aside p {
+    font-size: var(--small__fontsize);
+    font-weight: bold;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    /* padding: 1rem 0; */
+    cursor: pointer;
+}
+
+aside ul li span {
+    font-size: var(--small__fontsize);
+}
+
+aside ul li p {
+    font-size: var(--small__fontsize);
+    font-weight: normal;
+    color: var(--gray__Dark);
+}
+
+aside ul li span.link-icon {
+    font-size: var(--regular__fontsize) !important;
+    color: var(--black)
+}
+
+aside ul li span.left-arrow {
+    color: var(--gray__Dark);
+    border-radius: 7px;
+    background: var(--gray__ExtraLight);
+}
+
+aside ul li:hover {
+    box-shadow: var(--boxshadow);
+    background: var(--white);
+}
+
+/* aside ul li hover styles */
+aside ul li:hover p,
+aside ul li:hover .link-icon {
+    color: var(--blue__Dark);
+}
+
+aside ul li:hover .left-arrow {
+    background: var(--blue__Light);
+}
+
+aside p:last-child span {
+    font-size: var(--big__fontsize);
+}
+
+aside p:last-child {
+    color: var(--red__Dark);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+aside p:last-child:hover {
+    border-radius: 25px;
+    background-color: var(--red__Light);
+}
+
+/***** End style of aside *****/
