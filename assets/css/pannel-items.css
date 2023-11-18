@@ -116,8 +116,11 @@ body {
     color: var(--gray__Dark);
 }
 
+.user_notification .notification_text p {
+    font-size: 14px;
+}
+
 .user_notification .notification_text p:first-child {
-    font-size: var(--samll__fontsize);
     color: var(--gray__Dark);
     font-weight: bold;
 }
@@ -284,3 +287,185 @@ section.tickets table tr:hover {
 /* table End */
 
 /***** End Main Ticket Section *****/
+
+/***** notices section *****/
+section.notices .title {
+    color: var(--gray__Dark);
+}
+
+section.notices .title span {
+    font-size: var(--regular__fontsize);
+}
+
+section.notices .text {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 27px;
+}
+
+section.notices .text p:first-child {
+    color: var(--gray__Dark);
+    font-weight: bold;
+}
+
+/***** End notices section *****/
+
+/***** my_orders section *****/
+section.my__orders .title {
+    color: var(--gray__Dark);
+}
+
+section.my__orders .title span {
+    font-size: var(--regular__fontsize);
+}
+
+section.my__orders .text {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 27px;
+}
+
+/* table */
+section.my__orders table tr,
+th,
+td {
+    text-align: center;
+}
+
+/* End of Table */
+/***** End my_orders section *****/
+
+/***** favorite section *****/
+section.favorite .title {
+    color: var(--gray__Dark);
+}
+
+section.favorite .title span {
+    font-size: var(--regular__fontsize);
+}
+
+section.favorite .text {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 27px;
+}
+
+
+/* table */
+section.favorite table span.color {
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+section.favorite table tr:first-child th {
+    font-size: 14px;
+    color: var(--gray__Light);
+    font-weight: normal;
+}
+
+section.favorite table tr td p {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--black);
+}
+
+
+section.favorite table tr {
+    height: 5rem;
+    outline: 1px solid var(--gray__ExtraLight);
+    border-radius: 25px;
+}
+
+section.favorite table button {
+    font-size: 14px;
+}
+
+section.favorite .buy_product {
+    border: 1px solid transparent;
+    border-radius: 25px 25px 25px 0;
+    /* border-radius: 25px 40px 25px 40px; */
+    color: var(--green__Light);
+
+    box-shadow: 0px 21px 20px var(--green__Light);
+    background-color: var(--green__Dark);
+}
+
+section.favorite .buy_product:hover {
+    border-radius: 25px 0px 25px 25px;
+
+    border-color: var(--green__Dark);
+    color: var(--green__Dark);
+
+    box-shadow: none;
+    background: var(--white);
+}
+
+section.favorite .delete_product {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    color: var(--red__Light);
+    font-size: var(--regular__fontsize);
+    padding: .5rem !important;
+
+    box-shadow: 0px 21px 20px var(--red__Light);
+    background: var(--red__Dark);
+}
+
+section.favorite .delete_product:hover {
+    box-shadow: none;
+    border-color: var(--red__Dark);
+    border-radius: 50% 50% 50% 0;
+    color: var(--red__Dark);
+    background: var(--white);
+}
+
+section.favorite .alert_user_btn {
+    border: 1px solid transparent;
+    border-radius: 25px 25px 25px 0;
+    /* border-radius: 25px 40px 25px 40px; */
+    color: var(--gray__Dark);
+
+    box-shadow: 0px 21px 20px var(--gray__ExtraLight);
+    background-color: var(--gray__ExtraLight);
+}
+
+section.favorite .alert_user_btn:hover {
+    border-radius: 25px 0px 25px 25px;
+
+    border-color:  var(--gray__Dark);
+    color:  var(--gray__Dark);
+
+    box-shadow: none;
+    background: var(--white);
+}
+
+
+section.favorite .section_footer .text {
+    font-size: 14px;
+    color: var(--gray__Light);
+}
+
+section.favorite .section_footer .text span{
+    font-size: var(--regular__fontsize);
+}
+
+section.favorite .section_footer .slide-wrapper .slide{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: var(--regular__fontsize);
+
+    cursor: pointer;
+    background: var(--gray__ExtraLight);
+}
+
+section.favorite .section_footer .slide-wrapper .slide.active {
+    color: var(--white);
+    background: var(--blue__Dark);
+}
+
+/* End of table */
+/***** End favorite section *****/
