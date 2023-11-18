@@ -1,0 +1,146 @@
+:root {
+    --backgroudbody: #fbfbfb;
+    --boxshadow: 0px 21px 49px 0px rgba(216, 216, 216, 0.61);
+    --bodyfont: 'dana';
+    --haedfont: kalame;
+    --small__fontsize: 14px;
+    --meduim__fontsize: 16px;
+    --regular__fontsize: 20px;
+    --big__fontsize: 24px;
+    --white: #ffffff;
+    --black: #101010;
+    --gray__Dark: #484848;
+    --gray__Light: #818185;
+    --gray__ExtraLight: #d7dce3;
+    --blue__Dark: #4d67f5;
+    --blue__Light: #c3cbfc;
+    --cyan__Dark: #16b8cb;
+    --cayn__Light: #caeff3;
+    --green__Dark: #24c880;
+    --green__Light: #c7f2e2;
+    --orange__Dark: #5f3b0c;
+    --orange__Light: #ff8521;
+    --red__Dark: #f6003a;
+    --red__Light: #fee1e8;
+}
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: var(--bodyfont);
+}
+
+body {
+    max-width: 1400px;
+    background-color: var(--gray__Light);
+}
+
+/***** GLOBAL STYLES *****/
+.__container {
+    border-radius: 25px;
+    box-shadow: var(--boxshadow);
+    background-color: var(--backgroudbody);
+}
+
+.__container__padding {
+    padding: .85rem .94rem !important;
+}
+
+.__container__border {
+    border: 1px solid var(--gray__ExtraLight);
+    border-radius: 25px;
+}
+
+.__flex__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.__flex__between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.__flex__around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.__transition {
+    transition: all .3s linear;
+}
+
+
+* {
+    /* border: 1px solid red; */
+}
+
+/***** End GLOBAL STYLES *****/
+
+
+/***** header of dashboard *****/
+.title p {
+    font-size: var(--small__fontsize);
+    color: var(--gray__Light);
+}
+
+.title h1 {
+    font-size: var(--big__fontsize);
+    color: var(--gray__Dark);
+    font-weight: bold;
+}
+
+.user_name .icon {
+    width: 65px;
+    height: 65px;
+    background-color: var(--white);
+}
+
+.user_name .icon span {
+    font-size: var(--big__fontsize);
+    color: var(--gray__Light);
+}
+
+.user_name .text p:first-child {
+    font-size: var(--small__fontsize);
+    color: var(--gray__Light);
+}
+
+.user_name .text p:last-child {
+    font-size: var(--meduim__fontsize);
+    font-weight: bold;
+    color: var(--gray__Dark);
+}
+
+.user_notification .notification_text p:first-child {
+    font-size: var(--samll__fontsize);
+    color: var(--gray__Dark);
+    font-weight: bold;
+}
+
+.user_notification .notification_icons {
+    font-size: 28px;
+    color: var(--gray__Light);
+    cursor: pointer;
+}
+
+.user_notification .notification_icons span:hover {
+    font-size: 28px;
+    color: var(--blue__Dark);
+}
+
+.user_notification .notification_icons span:first-child:hover {
+    font-size: 28px;
+    color: var(--orange__Light);
+}
+
+.user_notification .notification_icons span:last-child:hover {
+    font-size: 28px;
+    color: var(--red__Dark);
+}
+
+/***** End header of dashboard *****/
