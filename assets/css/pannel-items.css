@@ -13,7 +13,7 @@
     --gray__Light: #818185;
     --gray__ExtraLight: #eee;
     --blue__Dark: #4d67f5;
-    --blue__Light: #c3cbfc;
+    --blue__Light: #ccd3fc;
     --cyan__Dark: #16b8cb;
     --cayn__Light: #caeff3;
     --green__Dark: #24c880;
@@ -49,7 +49,7 @@ body {
 
 .__container__border {
     border: 1px solid var(--gray__ExtraLight);
-    border-radius: 25px;
+    border-radius: 25px !important;
 }
 
 .__flex__center {
@@ -213,3 +213,74 @@ aside p:last-child:hover {
 }
 
 /***** End style of aside *****/
+
+/***** Main Ticket Section *****/
+section.tickets .title p {
+    font-size: var(--meduim__fontsize);
+    color: var(--gray__Dark)
+}
+
+section.tickets .title span {
+    color: var(--gray__Dark);
+    font-size: var(--regular__fontsize);
+}
+
+section.tickets .send-tickets {
+    color: var(--blue__Light);
+    font-size: var(--small__fontsize);
+    padding: .4rem 1rem !important;
+
+    border: 1px solid transparent;
+    border-radius: 25px 40px 25px 40px;
+
+    box-shadow: 0px 21px 49px 0px var(--blue__Light);
+    background-color: var(--blue__Dark);
+}
+
+section.tickets .send-tickets span {
+    font-size: var(--regular__fontsize);
+}
+
+section.tickets .send-tickets:hover {
+    color: var(--blue__Dark);
+
+    border-color: var(--blue__Dark);
+    border-radius: 25px;
+
+    box-shadow: none;
+    background-color: transparent;
+}
+
+/* table Start */
+section.tickets table tr {
+    font-size: 14px;
+    border-radius: 25px;
+    outline: 1px solid var(--gray__ExtraLight);
+    transition: all .3s linear;
+}
+
+section.tickets table th {
+    color: var(--gray__Dark);
+    font-weight: normal;
+}
+
+section.tickets table tr td.ticket_name {
+    color: var(--blue__Dark);
+    font-weight: bold;
+}
+
+section.tickets table tr td span {
+    font-size: var(--big__fontsize);
+    color: var(--orange__Light);
+    cursor: pointer;
+}
+
+section.tickets table tr:hover {
+    outline-color: var(--blue__Dark);
+    box-shadow: var(--boxshadow);
+    transform: scale(1.03);
+}
+
+/* table End */
+
+/***** End Main Ticket Section *****/
