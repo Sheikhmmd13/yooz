@@ -173,6 +173,9 @@ inputNumberOfPriceFilter.forEach((input) => {
 
 inputSlider.oninput = () => {
 	let value = inputSlider.value;
+
+	inputSlider.style.setProperty('--width-range', value+"%")
+
 	sliderValue.textContent = !(value * 10 === 1000)
 		? value * 10 + 'هزار'
 		: 1 + 'میلیون';

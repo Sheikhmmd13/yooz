@@ -731,4 +731,85 @@ section.returned__requests button:hover {
     box-shadow: none;
     background: var(--white);
 }
+
 /***** End returned products *****/
+
+/***** make returned request *****/
+.make__reuqests .form-group {
+    padding: 1.2rem .8rem;
+    border: 1px solid var(--gray__Light);
+    border-radius: 15px;
+}
+
+.make__reuqests .form-group:hover {
+    border: 1px solid var(--blue__Dark);
+    color: var(--blue__Dark);
+}
+
+.make__reuqests .form-group p {
+    font-size: 13px;
+}
+
+.make__reuqests .form-group span {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.make__reuqests .options {
+    list-style: none;
+    height: 10rem;
+    padding-left: 20px !important;
+    overflow-y: scroll;
+}
+
+.make__reuqests .options.hidden {
+    display: none;
+}
+
+.make__reuqests .option {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.make__reuqests .option:hover {
+    padding-left: 10px;
+    color: var(--blue__Dark);
+    gap: .35rem !important;
+}
+
+.make__reuqests .show__on_map {
+    border: none;
+    color: var(--gray__Dark);
+    border-radius: 25px;
+    background-color: var(--gray__ExtraLight);
+}
+
+
+.make__reuqests .form-group input {
+    border: none;
+    border-radius: 25px;
+    font-size: 13px;
+    padding: .4rem .8rem;
+    background-color: transparent;
+}
+
+.make__reuqests .form-group input:focus-visible {
+    outline: none;
+}
+
+.make__reuqests textarea {
+    border: 1px solid var(--gray__Light);
+    border-radius: 25px;
+    font-size: 14px;
+    color: var(--gray__Light);
+    background-color: transparent;
+}
+
+.make__reuqests textarea:focus-visible {
+    outline: none;
+    color: var(--blue__Dark);
+    border: 1px solid var(--blue__Dark);
+}
+/***** End make returned request *****/
