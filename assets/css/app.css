@@ -3,7 +3,7 @@
 
 :root {
     --backgroudbody: #fbfbfb;
-    --colorone: #6b53ff;
+    --colorone: #4d67f5;
     --boxshadow: 0px 21px 49px 0px rgba(216, 216, 216, 0.61);
     --bodyfont: yekanbakh;
     --haedfont: kalame;
@@ -103,7 +103,8 @@ body {
     line-height: 1.5;
     font-family: yekanbakh;
     font-size: 14px;
-    background: var(--backgroudbody);
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
 }
 
 p,
@@ -138,10 +139,20 @@ h6 {
     overflow-wrap: break-word;
 }
 
+.rotate {
+    transform: rotate(180deg);
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    height: 0;
+}
+
 
 .top-header {
     background: #fff;
-    box-shadow: 0 10px 15px -15px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 8px 8px 0px rgba(33, 33, 62, 0.02);
     position: relative;
 }
 
@@ -317,27 +328,52 @@ h6 {
 
 .Products_Container .next {
     width: 150px;
-    position: relative;
+    height: 100%;
+    padding-right: 4rem;
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
     background-color: #4d67f5;
 }
 
-.Products_Container .next img {
+.Products_Container .next svg {
     position: absolute;
     top: 50%;
-    right: 20px;
-    transform: translateY(-50%) scale(1.3);
+    right: 10px;
+    transform: translateY(-50%) scale(1.1);
+    transition: all .1s linear;
+    cursor: pointer;
+}
+
+.Products_Container .next svg:hover {
+    right: 8px;
+    transform: translateY(-50%) scale(1.15);
+
 }
 
 .Products_Container .prev {
     width: 150px;
-    position: relative;
-}
-
-.Products_Container .prev img {
+    height: 100%;
+    padding-right: 4rem;
     position: absolute;
     top: 50%;
-    left: 20px;
-    transform: translateY(-50%) scale(1.3);
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.Products_Container .prev svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%) scale(1.1);
+    transition: all .1s linear;
+    cursor: pointer;
+}
+
+.Products_Container .prev svg:hover {
+    transform: translateY(-50%) scale(1.15);
+    left: 8px;
 }
 
 .Products {
@@ -463,8 +499,9 @@ main .title .controlls .filter select {
     background: none;
     border: none;
     outline: none;
+    font-weight: normal;
     padding: .3rem .3rem;
-    font-family: var(--haedfont);
+    /* font-family: var(--haedfont); */
 
 }
 
@@ -485,7 +522,7 @@ main .title .controlls .layout.selected span {
 .cards-container {
     width: 100%;
     height: auto;
-    margin-top: 4rem;
+    margin-top: 30px;
     padding: .5rem .3rem;
 }
 
@@ -503,13 +540,14 @@ main .title .controlls .layout.selected span {
 }
 
 .cards-container .card-title {
-    padding-bottom: 2.5rem;
+    padding-block: 2.5rem;
 }
 
 .cards-container .card-title h2 {
     font-size: 14px;
     color: #252630;
     font-family: var(--haedfont);
+    transition: all .2s linear;
 }
 
 .cards-container .card-title p {
@@ -593,19 +631,64 @@ main .title .controlls .layout.selected span {
 .product-colors .color {
     width: 5px;
     height: 5px;
+    position: relative;
     border-radius: 50%;
+    transition: all .1s linear;
+}
+
+.product-colors .color span {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translatey(-50%) scale(0);
+
+    display: flex;
+    padding: .4rem;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #fff;
+    background: #333;
+    transition: all .2s linear;
+}
+
+.prodcut-colors .color span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: red;
+}
+
+.product-colors .color:hover {
+    width: 7px;
+    height: 7px;
 }
 
 .product-colors .red {
     background-color: red;
 }
 
+.product-colors .red:hover #red {
+    transform: translatey(-50%) scale(1);
+}
+
 .product-colors .black {
     background: black;
 }
 
+.product-colors .black:hover #black {
+    left: -55px;
+    transform: translatey(-50%) scale(1);
+}
+
 .product-colors .blue {
     background: blue;
+}
+
+.product-colors .blue:hover #blue {
+    transform: translatey(-50%) scale(1);
 }
 
 .card-icons {
@@ -623,6 +706,7 @@ main .title .controlls .layout.selected span {
     height: 40px;
     font-size: 12px;
     border-radius: 50%;
+    position: relative;
     background: #f1f1f1;
     transition: all .4s ease;
 }
@@ -631,9 +715,31 @@ main .title .controlls .layout.selected span {
     font-size: 18px;
 }
 
+.card-icon .icon-tooltip {
+    position: absolute;
+    right: -200%;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    border-radius: 15px;
+    padding: .54rem;
+    font-size: 11px;
+    color: #fff;
+    background: #333;
+    transition: all .2s linear;
+}
+
+.card-icon:hover .icon-tooltip {
+    transform: translateY(-50%) scale(1);
+
+}
+
 .card-body:hover {
     outline: 1px solid #6b53ff;
     box-shadow: var(--bs-box-shadow);
+}
+
+.card-body:hover .card-title h2 {
+    color: var(--colorone);
 }
 
 .card-body:hover .discount {
@@ -779,6 +885,40 @@ main .title .controlls .layout.selected span {
     gap: 20px;
 }
 
+aside .bg-defualt hr {
+    position: relative;
+    display: flex;
+}
+
+aside .bg-defualt hr::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+
+/* aside .bg-defualt hr {
+    display: none;
+}
+
+aside .bg-defualt .h2 {
+    color: green;
+    position: relative;
+    padding-block: .74rem;
+}
+
+aside .bg-defualt .h2::after {
+    position: absolute;
+    content: '';
+    left: -50px;
+    right: -50px;
+    bottom: 0;
+    height: 1px;
+    background-color: red;
+} */
+
 .applied-filters {
     width: 100%;
     height: 150px;
@@ -796,6 +936,15 @@ main .title .controlls .layout.selected span {
     gap: 5px;
     padding: .53rem 1rem;
     background-color: #dadada;
+    transition: all .3s linear;
+}
+
+.selected-filter span {
+    font-size: 20px;
+}
+
+.selected-filter.remove {
+    transform: scale(0);
 }
 
 .selected-filter.active {
@@ -826,6 +975,13 @@ main .title .controlls .layout.selected span {
     font-family: var(--haedfont);
 }
 
+/* #digital-product-icon {
+    border-radius: 10px;
+    text-align: start;
+    background-color: #eee;
+    transition: all .3s ease;
+} */
+
 .categories ul li span {
     padding: 8px;
     border-radius: 10px;
@@ -834,18 +990,26 @@ main .title .controlls .layout.selected span {
     transition: all .3s ease;
 }
 
+.categories ul li span#digital-product-icon span {
+    padding: 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* .categories u li #digital-product-icon */
+
 .categories .submenu {
     width: 100%;
     height: 100%;
     height: 0;
     opacity: 0;
     padding-right: 1rem;
-    transition: all .3s ease;
+    transition: all .5s ease;
 }
 
 .categories .open {
     visibility: visible;
-    height: 100%;
+    height: 180px;
     opacity: 1;
 }
 
@@ -946,17 +1110,38 @@ input[type="checkbox"]+label::after {
 .filter-lists ul li .item-selected {
     width: 15px;
     height: 15px;
+    position: relative;
     border: 1px solid #ccc;
     transition: all .3s ease;
 }
 
-.filter-lists ul li .item-selected.select {
-    border: none;
-    background-color: #4d67f5;
+.filter-lists ul li .item-selected::before {
+    position: absolute;
+    content: '\2713';
+    color: var(--colorone);
+    font-size: 16px;
+    font-weight: bold;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all .18s linear;
+}
+
+.filter-lists ul li .item-selected.select::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.filter-lists .item-name:hover p,
+.filter-lists .item-name:hover .brand__color_name {
+    transition: all .2s linear;
+}
+
+.filter-lists .item-name:hover p,
+.filter-lists .item-name:hover .brand__color_name {
+    color: var(--colorone);
 }
 
 .filter-lists button {
-    /* width: 50%; */
     padding: .65rem 2rem;
     border: none;
     color: #5b6cfe;

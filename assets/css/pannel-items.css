@@ -26,7 +26,7 @@
 
 * {
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 0;
     box-sizing: border-box;
     font-family: var(--bodyfont);
 }
@@ -74,9 +74,8 @@ body {
     transition: all .3s linear;
 }
 
-
-* {
-    /* border: 1px solid red; */
+.__blur__filter {
+    backdrop-filter: blur(10px);
 }
 
 /***** End GLOBAL STYLES *****/
@@ -434,8 +433,8 @@ section.favorite .alert_user_btn {
 section.favorite .alert_user_btn:hover {
     border-radius: 25px 0px 25px 25px;
 
-    border-color:  var(--gray__Dark);
-    color:  var(--gray__Dark);
+    border-color: var(--gray__Dark);
+    color: var(--gray__Dark);
 
     box-shadow: none;
     background: var(--white);
@@ -447,11 +446,11 @@ section.favorite .section_footer .text {
     color: var(--gray__Light);
 }
 
-section.favorite .section_footer .text span{
+section.favorite .section_footer .text span {
     font-size: var(--regular__fontsize);
 }
 
-section.favorite .section_footer .slide-wrapper .slide{
+section.favorite .section_footer .slide-wrapper .slide {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -469,3 +468,267 @@ section.favorite .section_footer .slide-wrapper .slide.active {
 
 /* End of table */
 /***** End favorite section *****/
+
+/***** address section *****/
+section.address .title {
+    color: var(--gray__Dark);
+}
+
+section.address .title span {
+    font-size: var(--regular__fontsize);
+}
+
+section.address .add__address_btn {
+    font-size: 14px;
+    color: var(--blue__Light);
+    border: 1px solid transparent;
+    border-radius: 25px 25px 25px 0px;
+    padding: .4rem .8rem !important;
+
+    box-shadow: 0px 21px 20px var(--blue__Light);
+    background-color: var(--blue__Dark);
+}
+
+section.address .add__address_btn:hover {
+    color: var(--blue__Dark);
+
+    border-color: var(--blue__Dark);
+    border-radius: 25px 0px 25px 25px;
+
+    box-shadow: none;
+    background: var(--white);
+}
+
+section.address .text {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 27px;
+}
+
+section.address .address__container p {
+    font-size: 12px;
+    color: var(--gray__Dark);
+    font-weight: bold;
+}
+
+section.address .address__container button {
+    border: 1px solid transparent;
+    border-radius: 25px 25px 25px 5px;
+    padding: .4rem .6rem !important;
+}
+
+section.address .address__container button:hover {
+    border-radius: 25px 5px 25px 25px;
+}
+
+
+section.address .trash {
+    border-color: var(--red__Dark);
+    color: var(--red__Light);
+
+    box-shadow: 0px 12px 42px -0.4rem var(--red__Dark);
+    background: var(--red__Dark);
+}
+
+section.address .trash:hover {
+    color: var(--red__Dark);
+    border-color: var(--red__Dark);
+
+    box-shadow: none;
+    background: transparent;
+}
+
+section.address .edit {
+    border-color: var(--cyan__Dark);
+    color: var(--cayn__Light);
+
+    box-shadow: 0px 12px 42px -0.4rem var(--cyan__Dark);
+    background: var(--cyan__Dark);
+}
+
+section.address .edit:hover {
+    color: var(--cyan__Dark);
+    border-color: var(--cyan__Dark);
+
+    box-shadow: none;
+    background: transparent;
+}
+
+/***** End address section *****/
+
+.no-content {
+    color: var(--gray__Dark);
+    border-radius: 25px;
+    box-shadow: var(--boxshadow);
+    background-color: #ccc;
+}
+
+/***** Editing Address *****/
+
+.address__form_container .form-group {
+    padding: 1.7rem .8rem;
+    border: 1px solid var(--gray__Light);
+    border-radius: 15px;
+}
+
+.address__form_container .form-group:hover {
+    border: 1px solid var(--blue__Dark);
+    color: var(--blue__Dark);
+}
+
+.address__form_container .form-group p {
+    font-size: 13px;
+}
+
+.address__form_container .form-group span {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.address__form_container .options {
+    list-style: none;
+    height: 10rem;
+    padding-left: 20px !important;
+    overflow-y: scroll;
+}
+
+.address__form_container .options.hidden {
+    display: none;
+}
+
+.address__form_container .option {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.address__form_container .option:hover {
+    padding-left: 10px;
+    color: var(--blue__Dark);
+    gap: .35rem !important;
+}
+
+.address__form_container .show__on_map {
+    border: none;
+    color: var(--gray__Dark);
+    border-radius: 25px;
+    background-color: var(--gray__ExtraLight);
+}
+
+
+.address__form_container .form-group input {
+    border: none;
+    border-radius: 25px;
+    font-size: 13px;
+    padding: .4rem .8rem;
+    background-color: transparent;
+}
+
+.address__form_container .form-group input:focus-visible {
+    outline: none;
+}
+
+/***** End Editing Address *****/
+
+/***** verify phoneNum *****/
+section.verfy__phoneNum button {
+    font-size: 14px;
+    color: var(--blue__Light);
+    border: 1px solid transparent;
+    border-radius: 25px 25px 25px 0px;
+    padding: .4rem .8rem !important;
+
+    box-shadow: 0px 21px 20px var(--blue__Light);
+    background-color: var(--blue__Dark);
+}
+
+section.verfy__phoneNum button:hover {
+    color: var(--blue__Dark);
+
+    border-color: var(--blue__Dark);
+    border-radius: 25px 0px 25px 25px;
+
+    box-shadow: none;
+    background: var(--white);
+}
+
+/***** End verify phoneNum *****/
+
+
+/***** returned products *****/
+
+
+section.returned__requests .card {
+    color: var(--gray__Dark);
+    font-size: 12px;
+    padding: 2.8rem 1.8rem;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--white);
+}
+
+section.returned__requests .card img {
+    width: 100px;
+}
+
+section.returned__requests .product__name {
+    font-weight: bold;
+}
+
+section.returned__requests input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    appearance: none;
+    position: relative;
+    border: 1px solid var(--gray__Light);
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 5px;
+    background-color: var(--white);
+    transition: all .3 linear;
+}
+
+section.returned__requests input[type="checkbox"]::before {
+    position: absolute;
+    content: '\2713';
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--white);
+    transform: scale(1) translate(-50%, -50%);
+    transition: all .3s linear;
+}
+
+section.returned__requests input[type="checkbox"]:checked {
+    border: none;
+    background-color: var(--orange__Light);
+}
+
+section.returned__requests input[type="checkbox"]:checked:before {
+    transform: scale(1) translate(-50%, -50%);
+}
+
+
+section.returned__requests button {
+    font-size: 14px;
+    color: var(--blue__Light);
+    border: 1px solid transparent;
+    border-radius: 25px 25px 25px 0px;
+    padding: .8rem 1.6rem !important;
+
+    box-shadow: 0px 21px 20px var(--blue__Light);
+    background-color: var(--blue__Dark);
+}
+
+section.returned__requests button:hover {
+    color: var(--blue__Dark);
+
+    border-color: var(--blue__Dark);
+    border-radius: 25px 0px 25px 25px;
+
+    box-shadow: none;
+    background: var(--white);
+}
+/***** End returned products *****/

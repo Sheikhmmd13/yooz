@@ -1,9 +1,57 @@
 // const Layouts = document.querySelectorAll('.layout');
 const CategoryLinks = document.querySelectorAll('.category');
+const CategoriesContainer = document.querySelector('.categories');
+const CategoriesContainer__h2 = CategoriesContainer.querySelector('.h2');
+
+const PriceFilter = document.querySelector('.price-filter')
+const PriceFilter__h2 = PriceFilter.querySelector('.h2')
+
+
+const PriceFilterRange = document.querySelector('.price-range')
+const PriceFilterRange__h2 = PriceFilterRange.querySelector('.h2')
+
 const ShowingFilters = document.querySelectorAll('.showing-filter');
 const FilterList = document.querySelectorAll('.filter-lists');
 const inputSlider = document.querySelector('input[type=range]');
 const sliderValue = document.querySelector('.sliderValue');
+
+const appliedFilter = document.querySelector('#applied-filters');
+const appliedFilter__h2 = appliedFilter.querySelector('.h2');
+
+const appliedFilter__iconDown = appliedFilter.querySelector('#iconDown');
+// filters
+appliedFilter__h2.addEventListener('click', () => {
+	appliedFilter__iconDown.classList.toggle('rotate');
+	appliedFilter.querySelector('.filters').classList.toggle('hidden')
+});
+
+appliedFilter.querySelectorAll('.selected-filter').forEach(filter => {
+	const icon = filter.querySelector('.remove-filter-icon');
+
+	icon.addEventListener('click', () => {
+		filter.classList.add('remove');
+		setTimeout(() => {
+			filter.remove()
+		}, 300)
+	})
+})
+
+CategoriesContainer__h2.addEventListener('click', () => {
+	CategoriesContainer.querySelector('#iconDown').classList.toggle('rotate');
+	CategoriesContainer.querySelector('.categorie-links').classList.toggle('hidden')
+})
+
+PriceFilter__h2.addEventListener('click', () => {
+	PriceFilter.querySelector('#iconDown').classList.toggle('rotate');
+	PriceFilter.querySelector('.prices__container').classList.toggle('hidden')
+
+})
+
+PriceFilterRange__h2.addEventListener('click', () => {
+	PriceFilterRange.querySelector('#iconDown').classList.toggle('rotate');
+	PriceFilterRange.querySelector('.price-range-container').classList.toggle('hidden');
+
+})
 
 const square = document.querySelector('#square');
 const line = document.querySelector('#line');
@@ -28,7 +76,7 @@ line.addEventListener('click', () => {
 
 CategoryLinks.forEach((link) => {
 	const submenu = link.querySelector('#digital-product-submenu');
-	const icon = link.querySelector('#digital-product-icon');
+	const icon = (link.querySelector('#digital-product-icon').querySelector('.yoz-arrow-up-2'));
 
 	link.addEventListener('click', () => {
 		submenu.classList.toggle('open');
