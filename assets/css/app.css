@@ -103,8 +103,9 @@ body {
     line-height: 1.5;
     font-family: yekanbakh;
     font-size: 14px;
-    background-image: url("../img/background.png");
-    background-repeat: no-repeat;
+    background-color: #f1f1f1;
+    /* background-image: url("../img/background.png"); */
+    /* background-repeat: no-repeat; */
 }
 
 p,
@@ -139,6 +140,7 @@ h6 {
     overflow-wrap: break-word;
 }
 
+/***** global classes *****/
 .rotate {
     transform: rotate(180deg);
 }
@@ -148,6 +150,28 @@ h6 {
     opacity: 0;
     height: 0;
 }
+
+.line {
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    padding: .02rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: #ccc;
+}
+
+.line::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    bottom: 0;
+    top: 0;
+    z-index: 111;
+    background-color: #888;
+}
+
+/***** End global classes *****/
 
 
 .top-header {
@@ -434,15 +458,12 @@ h6 {
 
 main {
     width: 68%;
-    height: 6rem;
-    position: absolute;
-    left: 0;
-    top: 0;
+    height: auto;
 }
 
 main .title {
     width: 100%;
-    height: 100%;
+    height: 6rem;
 
     padding: .3rem 1rem;
 }
@@ -501,8 +522,6 @@ main .title .controlls .filter select {
     outline: none;
     font-weight: normal;
     padding: .3rem .3rem;
-    /* font-family: var(--haedfont); */
-
 }
 
 main .title .controlls .layout span {
@@ -521,14 +540,12 @@ main .title .controlls .layout.selected span {
 
 .cards-container {
     width: 100%;
-    height: auto;
     margin-top: 30px;
     padding: .5rem .3rem;
 }
 
 
 .cards-container .card-body {
-    /* width: 25%; */
     gap: .8rem;
     padding: 2.5rem .1rem;
     outline: 1px solid transparent;
@@ -884,21 +901,9 @@ main .title .controlls .layout.selected span {
 .main aside {
     width: 28%;
     gap: 20px;
+    position: sticky;
+    top: 1rem;
 }
-
-aside .bg-defualt hr {
-    position: relative;
-    display: flex;
-}
-
-aside .bg-defualt hr::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: red;
-}
-
 
 /* aside .bg-defualt hr {
     display: none;
@@ -1538,10 +1543,6 @@ input[type="range"]::-moz-range-track {
 .features .feature p {
     font-size: 14px;
     color: #262731;
-}
-
-.feature:hover {
-    border: 1px solid var(--colorone);
 }
 
 .feature:hover .feature-icon {
