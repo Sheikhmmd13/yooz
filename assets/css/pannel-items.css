@@ -324,13 +324,174 @@ section.my__orders .text {
     line-height: 27px;
 }
 
-/* table */
-section.my__orders table tr,
-th,
-td {
-    text-align: center;
+.order.open {
+    border: 1px solid transparent !important;
+    background-color: #fcfcfc;
 }
 
+.order {
+    border: 1px solid transparent;
+}
+
+.order:hover {
+    border-color: var(--blue__Dark);
+    box-shadow: var(--boxshadow);
+    transform: scale(1.05);
+    background-color: var(--white);
+}
+
+.order.open:hover {
+    border-color: transparent;
+    box-shadow: none;
+    transform: scale(1);
+    background-color: #fcfcfc
+}
+
+.order p {
+    color: var(--gray__Dark);
+    font-size: 13px;
+}
+
+.status {
+    color: var(--orange__Light);
+    display: flex;
+    justify-content: center;
+}
+
+.status p {
+    color: var(--orange__Light);
+}
+
+.status span {
+    font-size: 18px;
+}
+
+.cancel-btn {
+    color: var(--gray__Dark);
+    padding: .4rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    font-size: 13px;
+    background-color: var(--gray__ExtraLight);
+}
+
+.cancel-btn:hover {
+    border-color: var(--gray__Dark);
+    border-radius: 25px 25px 0px 25px;
+    background-color: none;
+}
+
+.pay-btn {
+    color: var(--orange__Dark);
+    padding: .4rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    font-size: 13px;
+    background-color: var(--orange__Light);
+}
+
+.pay-btn:hover {
+    color: var(--orange__Light);
+    border-color: var(--orange__Light);
+    border-radius: 25px 25px 0px 25px;
+    background: none;
+}
+
+.accordion-btn {
+    color: var(--gray__Dark) !important;
+    box-shadow: none !important;
+    background: none !important;
+}
+
+.accordion-btn:hover {
+    border-radius: 25px;
+    background-color: var(--blue__Light) !important;
+}
+
+.accordion-body {
+    background-color: #f6f6f6;
+}
+
+.details__of_order p {
+    font-size: 13px;
+}
+
+.details__of_order header p {
+    color: var(--blue__Dark)
+}
+
+.details__of_order header button {
+    border: 1px solid transparent;
+    font-size: 13px;
+    border-radius: 25px 25px 25px 5px;
+    padding: .5rem 1.3rem;
+    box-shadow: 0px 12px 42px -.5rem var(--blue__Dark);
+    color: var(--white);
+    background: var(--blue__Dark);
+}
+
+.details__of_order .order-info p {
+    font-size: 14px;
+}
+
+.details__of_order .order-info span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.details__of_order header button:hover {
+    color: var(--blue__Dark);
+    border-color: var(--blue__Dark);
+    border-radius: 25px 5px 25px 25px;
+    background: none;
+    box-shadow: none;
+}
+
+.details__of_order .order-row span.color {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.details__of_order .order-row p {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.details__of_order .section_footer .text {
+    font-size: 14px;
+    color: var(--gray__Light);
+}
+
+.details__of_order .section_footer .text span {
+    font-size: var(--regular__fontsize);
+}
+
+.details__of_order .actions button {
+    background: none;
+    border: none;
+    font-size: 13px;
+}
+
+.details__of_order .actions .buy_again {
+    color: var(--blue__Dark);
+    border-radius: 25px;
+}
+
+.details__of_order .actions .buy_again:hover {
+    background-color: var(--blue__Light);
+}
+
+.details__of_order .actions .send-comments {
+    color: var(--green__Dark);
+}
+
+.details__of_order .actions .send-comments:hover {
+    background: var(--green__Light);
+    border-radius: 25px;
+}
 /* End of Table */
 /***** End my_orders section *****/
 
@@ -812,4 +973,5 @@ section.returned__requests button:hover {
     color: var(--blue__Dark);
     border: 1px solid var(--blue__Dark);
 }
+
 /***** End make returned request *****/

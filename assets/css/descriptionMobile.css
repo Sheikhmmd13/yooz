@@ -6,6 +6,10 @@
     --haedfont: kalame;
 }
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 * {
     margin: 0 !important;
     padding: 0 !important;
@@ -56,6 +60,9 @@ h6 {
     overflow-wrap: break-word;
 }
 
+.title-p {
+    font-size: 13px;
+}
 
 .top-header {
     background: #fff;
@@ -299,7 +306,10 @@ h6 {
 
 .short-view-to-product {
     border-radius: 25px;
+    padding-block: 2.4rem !important;
+    padding-inline: 3rem !important;
     box-shadow: var(--boxshadow);
+    transform: scale(.9);
     background-color: var(--backgroudbody);
 }
 
@@ -342,7 +352,7 @@ h6 {
     background: #4d67f5;
 }
 
-.product-iphone-colors .icons .icon {
+.icon {
     width: 45px;
     height: 45px;
     font-size: 20px;
@@ -356,13 +366,13 @@ h6 {
     background: #eee;
 }
 
-.product-iphone-colors .icons .icon.star {
+.icon.star {
     height: 55px;
     border-radius: 30px;
     color: #536dfe;
 }
 
-.product-iphone-colors .icons .icon.star p {
+.icon.star p {
     font-size: 14px;
 }
 
@@ -514,7 +524,8 @@ td.td-red {
 }
 
 .user-opinion .icon {
-    max-width: 25%;
+    width: 18% !important;
+    text-align: start;
     color: #7e7e7e;
     border-radius: 25px;
     background: #eee;

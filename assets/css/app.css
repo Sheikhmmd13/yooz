@@ -364,14 +364,14 @@ h6 {
 .Products_Container .next svg {
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 18%;
     transform: translateY(-50%) scale(1.1);
     transition: all .1s linear;
     cursor: pointer;
 }
 
 .Products_Container .next svg:hover {
-    right: 8px;
+    right: 16%;
     transform: translateY(-50%) scale(1.15);
 
 }
@@ -389,7 +389,7 @@ h6 {
 .Products_Container .prev svg {
     position: absolute;
     top: 50%;
-    left: 10px;
+    left: 10%;
     transform: translateY(-50%) scale(1.1);
     transition: all .1s linear;
     cursor: pointer;
@@ -397,7 +397,7 @@ h6 {
 
 .Products_Container .prev svg:hover {
     transform: translateY(-50%) scale(1.15);
-    left: 8px;
+    left: 8%;
 }
 
 .Products {
@@ -755,7 +755,7 @@ main .title .controlls .layout.selected span {
     box-shadow: var(--bs-box-shadow);
 }
 
-.card-body:hover .card-title h2 {
+.card-body .card-title h2:hover {
     color: var(--colorone);
 }
 
@@ -1207,7 +1207,7 @@ input[type="checkbox"]+label::after {
     padding: .2rem 1rem;
 
     position: absolute;
-    top: -5px;
+    top: -15px;
     transform: translateX(-50%) scale(0);
     transform-origin: bottom;
 
@@ -1251,6 +1251,11 @@ input[type="checkbox"]+label::after {
 
 input[type="range"]::-moz-range-track {
     background: #959595;
+    height: 2px;
+}
+
+input[type="range"]::-moz-range-progress {
+    background-color: var(--colorone);
     height: 2px;
 }
 
