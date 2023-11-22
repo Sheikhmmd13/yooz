@@ -5247,7 +5247,7 @@ fieldset:disabled .btn {
 
 .accordion-button:not(.collapsed)::after {
   background-image: var(--bs-accordion-btn-active-icon);
-  transform: var(--bs-accordion-btn-icon-transform)
+  transform: var(--bs-accordion-btn-icon-transform) rotate(180deg);
 }
 
 .accordion-button::after {
@@ -5259,6 +5259,8 @@ fieldset:disabled .btn {
   background-image: var(--bs-accordion-btn-icon);
   background-repeat: no-repeat;
   background-size: var(--bs-accordion-btn-icon-width);
+  font-weight: bold;
+  transform: rotate(90deg);
   transition: var(--bs-accordion-btn-icon-transition)
 }
 

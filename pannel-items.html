@@ -17,25 +17,25 @@
                     <p>پدیده ساز</p>
                     <h1>داشبورد</h1>
                 </div>
-                <div class="__container __flex__around __container__padding">
-                    <div class="user_name __flex__center gap-3 __container__padding">
+                <div class="__container __flex__center __container__padding">
+                    <div class="w-25 user_name __flex__center gap-3 __container__padding">
                         <div class="icon __container__border __flex__center">
                             <span class="yoz-user"></span>
                         </div>
-                        <div class="text">
+                        <div class="text pe-2">
                             <p>خوش آمدید</p>
                             <p>علی سیلیمانی</p>
                         </div>
                     </div>
-                    <div class="user_notification __container__padding __flex__around gap-5 border-end">
-                        <div class="notification_text">
+                    <div class="w-75 user_notification __container__padding __flex__between gap-5 position-relative ">
+                        <div class="notification_text pe-3">
                             <p>اطلاعیه</p>
                             <p>پروفایل کاربری شما هنوز کامل نشده، لطفا در اولین فرصت نسبت به تکمیل آن اقدام نماید.</p>
                         </div>
                         <div class="notification_icons __flex__center">
-                            <span class="yoz-notification border-start p-4 __transition"></span>
-                            <span class="yoz-message-notif border-start p-4 __transition"></span>
-                            <span class="yoz-logout-1 p-4 __transition"></span>
+                            <span class="yoz-notification p-4 __transition position-relative"></span>
+                            <span class="yoz-message-notif p-4 __transition"></span>
+                            <span class="yoz-logout-1 p-4 __transition position-relative"></span>
                         </div>
                     </div>
                 </div>
@@ -43,39 +43,42 @@
             <!-- ========== End Haeder ========== -->
             <div class="main__aside__container d-flex justify-content-between align-items-start gap-3">
                 <!-- ========== Start aside ========== -->
-                <aside class="__container p-5" style="width: 20%;">
-                    <p class="pb-2">مشتری</p>
-                    <hr>
-                    <ul class="py-4">
-                        <li class="__flex__between my-2 py-2 __transition">
+                <aside class="__container p-4" style="width: 20%;">
+                    <div class="w-100 __flex__between px-3">
+                        <p class="pb-3">مشتری</p>
+                        <p class="pb-3" style="color: #ccc; font-weight: normal;">فروشنده شوید</p>
+                    </div>
+                    <div class="__line mx-auto"></div>
+                    <ul class="w-100 p-0">
+                        <li class="__flex__between w-100 my-3 py-2 __transition">
                             <p class="__flex__center gap-3 __transition">
                                 <span class="yoz-direct-normal link-icon __transition"></span>
                                 داشبورد
                             </p>
                             <span class="yoz-arrow-left-2 left-arrow p-1 __transition"></span>
                         </li>
-                        <li class="__flex__between my-2 py-2 __transition">
+                        <li class="__flex__between my-3 py-2 __transition">
                             <p class="__flex__center gap-3 __transition">
                                 <span class="yoz-direct-normal link-icon __transition"></span>
                                 داشبورد
                             </p>
                             <span class="yoz-arrow-left-2 left-arrow p-1 __transition"></span>
                         </li>
-                        <li class="__flex__between my-2 py-2 __transition">
+                        <li class="__flex__between my-3 py-2 __transition">
                             <p class="__flex__center gap-3 __transition">
                                 <span class="yoz-direct-normal link-icon __transition"></span>
                                 داشبورد
                             </p>
                             <span class="yoz-arrow-left-2 left-arrow p-1 __transition"></span>
                         </li>
-                        <li class="__flex__between my-2 py-2 __transition">
+                        <li class="__flex__between my-3 py-2 __transition">
                             <p class="__flex__center gap-3 __transition">
                                 <span class="yoz-direct-normal link-icon __transition"></span>
                                 داشبورد
                             </p>
                             <span class="yoz-arrow-left-2 left-arrow p-1 __transition"></span>
                         </li>
-                        <li class="__flex__between my-2 py-2 __transition">
+                        <li class="__flex__between my-3 py-2 __transition">
                             <p class="__flex__center gap-3 __transition">
                                 <span class="yoz-direct-normal link-icon __transition"></span>
                                 داشبورد
@@ -83,14 +86,14 @@
                             <span class="yoz-arrow-left-2 left-arrow p-1 __transition"></span>
                         </li>
                     </ul>
-                    <p class="__flex__center gap-2 p-2  __transition">
+                    <p class="__flex__center gap-2 mt-5 p-2  __transition logout">
                         <span class="yoz-logout-1"></span>
                         خروج از حساب کاربری
                     </p>
                 </aside>
                 <!-- ========== End aside ========== -->
                 <!-- ========== Start main ========== -->
-                <main class=" p-5" style="width: 80%;">
+                <main style="width: 80%;">
                     <!-- tickets Start -->
                     <section class="__container p-5 tickets w-100">
                         <!-- tickets header Start -->
@@ -104,7 +107,7 @@
                                 ارسال تیکت جدید
                             </button>
                         </div>
-                        <hr>
+                        <div class="__line"></div>
                         <!-- tickets header End -->
                         <!-- tickets body Start -->
                         <table class="w-100 my-4">
@@ -175,7 +178,7 @@
                             <span class="yoz-notification"></span>
                             اطلاع رسانی ها
                         </p>
-                        <hr class="py-1">
+                        <div class="__line"></div>
                         <div class="text">
                             <p class="py-2">لطفا پروفایل کاربری خو را کامل کنید</p>
                             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
@@ -188,7 +191,7 @@
                             <span class=" yoz-clipboard-text"></span>
                             سفارش های من
                         </p>
-                        <hr class="pb-4">
+                        <div class="__line"></div>
                         <p class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
                         <div class="container">
                             <div class="row p-3 my-2 d-flex align-items-center justify-content-between title">
@@ -198,20 +201,21 @@
                                 <p class="w-auto">مبلغ کل</p>
                                 <p class="w-25">جزئیات</p>
                             </div>
-                            <div class="row accordion" id="accordionExample">
+                            <div class="row accordion" id="accordionExample1">
                                 <div class="accordion-header row p-3 my-2 d-flex align-items-center justify-content-between border rounded-4 order __transition" id="headingOne">
                                     <p class="w-auto">PS2501183</p>
                                     <p class="w-auto">23 شهریور 1402</p>
-                                    <div class="w-auto status">
-                                        <span class=" yoz-timer"></span>
-                                        <p>در انتظار پرداخت</p>
+                                    <div class="w-auto status paid">
+                                        <span class=" yoz-tick-circle"></span>
+                                        <p>پرداخت شده</p>
                                     </div>
                                     <p class="w-auto">23/000/000</p>
-                                    <div class="w-25 d-flex justify-content-between align-items-center gap-3">
-                                        <button class="cancel-btn __transition">لغو</button>
-                                        <button class="pay-btn __transition">پرداخت</button>
+                                    <div class="w-25 __flex__between gap-3">
+                                        <!-- <button class="cancel-btn __transition">لغو</button>
+                                        <button class="pay-btn __transition">پرداخت</button> -->
+                                        <p class="fw-bold">کد پیگیری: 1234912347</p>
                                         <button
-                                            class="accordion-button collapsed accordion-btn"
+                                            class="accordion-button collapsed accordion-btn w-auto"
                                             type="button"
                                             data-bs-toggle="collapse"
                                             data-bs-target="#collapseOne"
@@ -224,10 +228,10 @@
                                     id="collapseOne"
                                     class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionExample"
+                                    data-bs-parent="#accordionExample1"
                                 >
                                     <div class="accordion-body details__of_order">
-                                        <header class="__flex__between p-3">
+                                        <header class="__flex__between p-2">
                                             <p>کد سفارش: P2250S1183</p>
                                             <button class="factor-btn __transition">مشاهده فاکتور</button>
                                         </header>
@@ -276,7 +280,7 @@
                                                 <p style="width: 18%;" class="text-center p-0">جزئیات</p>
                                             </div>
                                             <!-- first row -->
-                                            <div class="row my-2 p-3 d-flex align-items-center order-row bg-white rounded-3">
+                                            <div class="row my-2 p-1 d-flex align-items-center order-row bg-white rounded-3">
                                                 <div class="text-end" style="width: 30%;">
                                                     <div class="__flex__center justify-content-start gap-3">
                                                         <img src="./assets/img/apple-watchpng.png" alt="">
@@ -301,7 +305,7 @@
                                                 </div>
                                             </div>
                                             <!-- second row -->
-                                            <div class="row my-2 p-3 d-flex align-items-center order-row bg-white rounded-3">
+                                            <div class="row my-2 p-1 d-flex align-items-center order-row bg-white rounded-3">
                                                 <div class="text-end" style="width: 30%;">
                                                     <div class="__flex__center justify-content-start gap-3">
                                                         <img src="./assets/img/apple-watchpng.png" alt="">
@@ -326,7 +330,7 @@
                                                 </div>
                                             </div>
                                             <!-- third row -->
-                                            <div class="row my-2 p-3 d-flex align-items-center order-row bg-white rounded-3">
+                                            <div class="row my-2 p-1 d-flex align-items-center order-row bg-white rounded-3">
                                                 <div class="text-end" style="width: 30%;">
                                                     <div class="__flex__center justify-content-start gap-3">
                                                         <img src="./assets/img/apple-watchpng.png" alt="">
@@ -351,7 +355,7 @@
                                                 </div>
                                             </div>
                                             <!-- fourth row -->
-                                            <div class="row my-2 p-3 d-flex align-items-center order-row bg-white rounded-3">
+                                            <div class="row my-2 p-1 d-flex align-items-center order-row bg-white rounded-3">
                                                 <div class="text-end" style="width: 30%;">
                                                     <div class="__flex__center justify-content-start gap-3">
                                                         <img src="./assets/img/apple-watchpng.png" alt="">
@@ -376,7 +380,1071 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="status__of_order p-5 mt-5 d-flex justify-content-around">
+                                            <!-- waiting__for_pay status -->
+                                            <div class="waiting__for_pay status end">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="512.000000pt"
+                                                        viewBox="0 0 512.000000 512.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none">
+                                                            <path d="M2351 4470 c-320 -27 -551 -85 -776 -196 -166 -81 -292 -172 -425 -304 -131 -132 -221 -258 -304 -425 -75 -152 -115 -270 -149 -450 -79 -408 -69 -826 30 -1205 110 -424 391 -789 778 -1008 567 -321 1582 -315 2133 13 358 213 619 542 737 928 78 257 117 626 96 912 -42 561 -193 930 -511 1245 -225 222 -514 374 -836 439 -236 48 -556 69 -773 51z m268 -980 c63 -32 71 -61 71 -265 0 -208 -8 -236 -74 -266 -52 -24 -61 -23 -112 1 -67 33 -74 58 -74 265 0 202 8 233 69 265 46 25 73 25 120 0z m-576 -480 c165 -96 184 -111 198 -162 13 -51 -15 -119 -60 -142 -61 -32 -95 -22 -256 70 -176 101 -182 106 -196 155 -14 46 -7 78 28 119 60 72 102 65 286 -40z m1307 55 c59 -56 63 -128 12 -182 -15 -16 -93 -66 -173 -111 -156 -88 -191 -97 -250 -66 -45 23 -73 91 -60 142 6 21 21 48 33 59 23 21 266 164 310 183 38 16 97 4 128 -25z m-1171 -649 c77 -40 88 -153 22 -209 -15 -13 -94 -61 -175 -106 -131 -75 -151 -83 -186 -78 -101 13 -152 126 -92 206 10 13 87 64 172 113 165 94 200 104 259 74z m1021 -74 c85 -49 163 -100 173 -114 62 -83 -3 -208 -108 -208 -31 0 -309 152 -353 192 -59 56 -44 164 27 203 58 31 96 21 261 -73z m-581 -180 c63 -34 71 -63 71 -271 0 -207 -7 -233 -74 -265 -43 -20 -69 -20 -112 0 -67 32 -74 58 -74 265 0 159 2 189 18 218 20 38 73 71 112 71 14 0 41 -8 59 -18z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>در انتظار پرداخت</p>
+                                            </div>
+                                            <div class="spacer_container">
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                            </div>
+                                            <!-- waiting__for_checking status -->
+                                            <div class="waiting__for_checking status end">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="492.000000pt"
+                                                        viewBox="0 0 512.000000 492.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,492.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                                            <path d="M2214 4459 c-734 -53 -1382 -562 -1613 -1266 -64 -193 -83 -309 -88 -533 -6 -215 6 -334 52 -513 130 -511 491 -954 972 -1195 274 -138 563 -200 881 -189 190 6 309 25 469 73 300 90 545 237 769 459 192 192 324 388 418 623 281 702 117 1488 -421 2015 -108 105 -171 157 -290 235 -260 171 -562 270 -888 292 -77 5 -142 9 -145 8 -3 0 -55 -4 -116 -9z"/>
+                                                            <path d="M4019 1216 c-103 -27 -199 -111 -247 -214 -24 -50 -27 -69 -27 -162 0 -94 3 -111 28 -161 35 -72 114 -151 186 -186 51 -25 66 -28 166 -28 104 0 113 2 170 31 74 39 148 116 183 192 24 50 27 69 27 157 -1 88 -4 107 -28 155 -86 177 -274 266 -458 216z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>در حال بررسی</p>
+                                            </div>
+                                            <div class="spacer_container">
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                            </div>
+                                            <!-- waiting__for_Order status -->
+                                            <div class="waiting__for_runOrder status run">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="512.000000pt"
+                                                        viewBox="0 0 512.000000 512.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                                            <path d="M2390 4885 c-127 -20 -274 -76 -475 -179 -174 -90 -560 -310 -807 -460 -338 -205 -493 -354 -607 -582 -113 -228 -137 -458 -128 -1244 7 -609 24 -740 121 -946 133 -280 279 -406 876 -754 530 -309 745 -416 938 -467 84 -22 117 -26 252 -26 135 0 168 4 252 26 191 50 382 145 878 432 449 260 593 358 726 490 95 94 150 173 210 299 96 205 114 337 121 936 9 791 -15 1029 -132 1261 -114 227 -267 372 -628 590 -243 148 -678 395 -825 468 -303 152 -519 195 -772 156z m1328 -1581 c42 -31 74 -101 69 -149 -3 -25 -72 -176 -186 -407 -170 -346 -184 -371 -243 -431 -35 -35 -85 -76 -112 -92 -175 -102 -384 -111 -563 -23 -100 49 -205 157 -262 271 -66 133 -129 177 -253 177 -66 0 -147 -37 -183 -84 -13 -17 -100 -187 -193 -377 -190 -388 -191 -390 -291 -397 -46 -3 -62 0 -90 20 -58 39 -76 72 -76 136 1 53 13 81 183 424 171 345 186 371 244 431 35 35 85 76 112 92 175 102 385 111 564 23 96 -47 206 -159 255 -260 47 -98 79 -135 142 -164 94 -44 227 -23 291 47 11 11 100 183 199 382 170 342 182 363 220 385 49 28 131 26 173 -4z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>در حال اجرا</p>
+                                            </div>
+                                            <div class="spacer_container">
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                            </div>
+                                            <!--sending__package status -->
+                                            <div class="sending__package status">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="512.000000pt"
+                                                        viewBox="0 0 512.000000 512.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                                            <path d="M2439 4786 c-219 -46 -389 -189 -472 -396 l-26 -65 -273 -5 c-251 -5 -276 -7 -308 -25 -38 -22 -80 -93 -80 -135 0 -42 42 -113 80 -135 32 -18 57 -20 308 -25 l273 -5 26 -65 c14 -36 42 -90 62 -120 20 -30 36 -58 36 -62 0 -4 -34 -25 -75 -46 -127 -63 -220 -132 -330 -242 -156 -156 -248 -305 -314 -510 -59 -180 -61 -214 -61 -860 0 -537 1 -590 18 -650 50 -174 180 -333 338 -409 47 -22 93 -41 102 -41 15 0 17 14 17 118 0 284 119 515 345 671 139 96 284 141 457 141 260 -1 488 -116 644 -325 105 -140 154 -294 154 -487 0 -141 -3 -138 121 -76 109 53 228 169 281 273 72 139 71 130 75 720 5 653 0 731 -68 941 -61 189 -156 341 -309 495 -109 109 -213 185 -337 245 -40 20 -73 37 -73 39 0 1 17 29 39 61 21 33 50 88 64 124 l26 65 274 5 274 5 40 27 c101 67 90 219 -20 268 -38 18 -67 20 -305 20 l-264 0 -6 23 c-3 12 -25 61 -49 109 -124 247 -416 390 -684 334z m238 -328 c119 -44 203 -168 203 -298 0 -176 -144 -320 -320 -320 -176 0 -320 144 -320 320 0 225 224 378 437 298z m217 -1287 c55 -11 121 -28 147 -36 167 -56 163 -277 -6 -315 -25 -6 -59 -2 -112 11 -242 59 -484 59 -726 0 -81 -20 -126 -17 -172 13 -54 35 -80 106 -64 172 22 87 89 124 289 158 52 8 106 18 120 20 14 3 115 3 225 1 152 -3 224 -8 299 -24z m-147 -622 c95 -14 144 -38 172 -82 31 -51 36 -91 17 -142 -33 -85 -106 -122 -205 -103 -72 15 -270 15 -342 0 -76 -15 -123 -1 -171 49 -51 54 -60 111 -26 177 30 58 71 83 163 98 92 16 295 17 392 3z"/>
+                                                            <path d="M2485 1590 c-180 -32 -315 -147 -376 -322 -19 -54 -23 -90 -27 -258 -3 -120 0 -224 7 -270 50 -327 382 -505 679 -365 140 66 239 203 262 360 13 92 13 372 0 455 -13 78 -64 189 -114 246 -100 115 -281 179 -431 154z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>ارسال شده</p>
+                                            </div>
+                                            <div class="spacer_container">
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                            </div>
+                                            <!-- given__to_user status -->
+                                            <div class="given__to_user status">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="512.000000pt"
+                                                        viewBox="0 0 512.000000 512.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                                            <path d="M2394 4979 c-90 -11 -127 -22 -374 -111 -417 -150 -890 -354 -1220 -525 -188 -97 -233 -127 -308 -197 -156 -147 -258 -361 -282 -588 -16 -160 -24 -1232 -12 -1658 10 -348 13 -382 37 -475 49 -193 167 -382 308 -494 145 -115 824 -436 1277 -604 404 -149 433 -159 525 -178 85 -17 256 -15 349 5 76 17 214 62 228 75 4 3 -22 42 -57 86 -114 143 -217 352 -256 525 -30 128 -37 395 -14 531 90 543 512 976 1065 1095 120 26 391 26 510 1 226 -49 438 -149 598 -284 l52 -45 0 574 c-1 703 -9 889 -44 1011 -27 91 -83 210 -134 285 -42 63 -158 178 -223 223 -60 40 -384 208 -493 254 l-66 28 -108 -33 c-434 -135 -1318 -469 -1827 -692 -243 -106 -246 -108 -306 -167 -63 -63 -102 -138 -118 -226 -7 -36 -14 -281 -17 -620 -6 -493 -8 -562 -22 -573 -40 -31 -57 -17 -188 153 -86 112 -133 165 -146 165 -11 0 -61 -25 -112 -55 -50 -30 -99 -55 -107 -55 -9 0 -24 9 -34 20 -17 19 -18 43 -11 428 8 537 19 727 47 809 31 95 105 184 199 240 54 33 461 220 689 318 381 163 1140 450 1344 509 77 22 111 36 105 41 -3 3 -118 46 -257 95 -316 114 -420 133 -597 109z"/>
+                                                            <path d="M3775 2150 c-137 -21 -311 -89 -424 -165 -89 -59 -209 -180 -266 -264 -62 -94 -121 -221 -146 -316 -30 -114 -37 -332 -14 -446 40 -200 131 -372 270 -515 348 -356 875 -408 1295 -129 194 129 342 345 412 604 32 118 30 342 -5 473 -98 369 -369 641 -732 733 -113 29 -290 40 -390 25z m640 -541 c110 -31 165 -169 105 -265 -36 -58 -658 -701 -692 -715 -43 -18 -115 -17 -153 3 -39 21 -386 382 -409 425 -41 80 1 195 86 239 36 19 121 18 161 -2 18 -8 79 -64 137 -125 l105 -109 144 152 c303 321 369 386 409 396 50 14 61 14 107 1z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>تحویل داده شده</p>
+                                            </div>
+                                        </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row accordion" id="accordionExample2">
+                                <div class="accordion-header row p-3 my-2 d-flex align-items-center justify-content-between border rounded-4 order __transition" id="headingOne">
+                                    <p class="w-auto">PS2501183</p>
+                                    <p class="w-auto">23 شهریور 1402</p>
+                                    <div class="w-auto status waiting__for_pay">
+                                        <span class=" yoz-timer"></span>
+                                        <p>در انتظار پرداخت</p>
+                                    </div>
+                                    <p class="w-auto">23/000/000</p>
+                                    <div class="w-25 d-flex justify-content-between align-items-center gap-3">
+                                        <button class="cancel-btn __transition">لغو</button>
+                                        <button class="pay-btn __transition">پرداخت</button>
+                                        <button
+                                            class="accordion-button collapsed accordion-btn"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne2"
+                                            aria-expanded="false"
+                                            aria-controls="collapseOne2"
+                                        ></button>
+                                    </div>
+                                </div>
+                                <div
+                                    id="collapseOne2"
+                                    class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample2"
+                                >
+                                    <div class="accordion-body details__of_order">
+                                        <header class="__flex__between p-2">
+                                            <p>کد سفارش: P2250S1183</p>
+                                            <button class="factor-btn __transition">مشاهده فاکتور</button>
+                                        </header>
+                                        <hr class="my-3">
+                                        <div class="order-info pb-3 container w-75">
+                                            <div class="row my-5">
+                                                <div class="col-6">
+                                                    <p>تحویل گیرنده</p>
+                                                    <span>علی سیلیمانی</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>تعداد محصول</p>
+                                                    <span>1 مرسوله</span>
+                                                </div>
+                                            </div>
+                                            <div class="row my-5">
+                                                <div class="col-6">
+                                                    <p>شماره تماس تحویل گیرنده</p>
+                                                    <span>0990123456</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>زمان ارسال</p>
+                                                    <span>26 شهریور 1402</span>
+                                                </div>
+                                            </div>
+                                            <div class="row my-5">
+                                                <div class="col-6">
+                                                    <p>آدرس تحویل گیرنده</p>
+                                                    <span>تهران، ولی عصر، خیابان شفق، بعد از بانک ملی</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>مبلغ کل</p>
+                                                    <span>1/258/000 تومان</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- container of rows -->
+                                        <div class="container">
+                                            <!-- title of each row -->
+                                            <div class="row p-3 my-2 d-flex align-items-center justify-content-between title rounded-3">
+                                                <p style="width: 30%;">نام محصول</p>
+                                                <p style="width: 13%;" class="text-center p-0">تعداد</p>
+                                                <p style="width: 13%;" class="text-center p-0">قیمت واحد</p>
+                                                <p style="width: 13%;" class="text-center p-0">تخفیف</p>
+                                                <p style="width: 13%;" class="text-center p-0">قیمت نهایی</p>
+                                                <p style="width: 18%;" class="text-center p-0">جزئیات</p>
+                                            </div>
+                                            <!-- first row -->
+                                            <div class="row my-2 p-1 d-flex align-items-center order-row bg-white rounded-3">
+                                                <div class="text-end" style="width: 30%;">
+                                                    <div class="__flex__center justify-content-start gap-3">
+                                                        <img src="./assets/img/apple-watchpng.png" alt="">
+                                                        <div class="colors d-flex flex-column gap-1">
+                                                            <p>ساعت هوشمند اپل</p>
+                                                            <div class="__flex__center justify-content-start gap-2">
+                                                                <span class="color" style="background-color: #4d67f5;"></span>
+                                                                <p>آبی</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p style="width: 13%;" class="text-center p-0">1</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/000 تومان</p>
+                                                <p style="width: 13%;" class="text-center p-0">0</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/00 تومان</p>
+                                                <div style="width: 18%;" class="text-center">
+                                                    <div class="d-flex flex-column justify-content-center align-items-center actions">
+                                                        <button class="buy_again py-2 px-3 __transition">خرید دوباره</button>
+                                                        <button class="send-comments py-2 px-3 __transition">ثبت دیدگاه</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- second row -->
+                                            <div class="row my-2 p-1 d-flex align-items-center order-row bg-white rounded-3">
+                                                <div class="text-end" style="width: 30%;">
+                                                    <div class="__flex__center justify-content-start gap-3">
+                                                        <img src="./assets/img/apple-watchpng.png" alt="">
+                                                        <div class="colors d-flex flex-column gap-1">
+                                                            <p>ساعت هوشمند اپل</p>
+                                                            <div class="__flex__center justify-content-start gap-2">
+                                                                <span class="color" style="background-color: #4d67f5;"></span>
+                                                                <p>آبی</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p style="width: 13%;" class="text-center p-0">1</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/000 تومان</p>
+                                                <p style="width: 13%;" class="text-center p-0">0</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/00 تومان</p>
+                                                <div style="width: 18%;" class="text-center">
+                                                    <div class="d-flex flex-column justify-content-center align-items-center actions">
+                                                        <button class="buy_again py-2 px-3 __transition">خرید دوباره</button>
+                                                        <button class="send-comments py-2 px-3 __transition">ثبت دیدگاه</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- third row -->
+                                            <div class="row my-2 p-1 d-flex align-items-center order-row bg-white rounded-3">
+                                                <div class="text-end" style="width: 30%;">
+                                                    <div class="__flex__center justify-content-start gap-3">
+                                                        <img src="./assets/img/apple-watchpng.png" alt="">
+                                                        <div class="colors d-flex flex-column gap-1">
+                                                            <p>ساعت هوشمند اپل</p>
+                                                            <div class="__flex__center justify-content-start gap-2">
+                                                                <span class="color" style="background-color: #4d67f5;"></span>
+                                                                <p>آبی</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p style="width: 13%;" class="text-center p-0">1</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/000 تومان</p>
+                                                <p style="width: 13%;" class="text-center p-0">0</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/00 تومان</p>
+                                                <div style="width: 18%;" class="text-center">
+                                                    <div class="d-flex flex-column justify-content-center align-items-center actions">
+                                                        <button class="buy_again py-2 px-3 __transition">خرید دوباره</button>
+                                                        <button class="send-comments py-2 px-3 __transition">ثبت دیدگاه</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- fourth row -->
+                                            <div class="row my-2 p-1 d-flex align-items-center order-row bg-white rounded-3">
+                                                <div class="text-end" style="width: 30%;">
+                                                    <div class="__flex__center justify-content-start gap-3">
+                                                        <img src="./assets/img/apple-watchpng.png" alt="">
+                                                        <div class="colors d-flex flex-column gap-1">
+                                                            <p>ساعت هوشمند اپل</p>
+                                                            <div class="__flex__center justify-content-start gap-2">
+                                                                <span class="color" style="background-color: #4d67f5;"></span>
+                                                                <p>آبی</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p style="width: 13%;" class="text-center p-0">1</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/000 تومان</p>
+                                                <p style="width: 13%;" class="text-center p-0">0</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/00 تومان</p>
+                                                <div style="width: 18%;" class="text-center">
+                                                    <div class="d-flex flex-column justify-content-center align-items-center actions">
+                                                        <button class="buy_again py-2 px-3 __transition">خرید دوباره</button>
+                                                        <button class="send-comments py-2 px-3 __transition">ثبت دیدگاه</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="status__of_order p-5 mt-5 d-flex justify-content-around">
+                                            <!-- waiting__for_pay status -->
+                                            <div class="waiting__for_pay status end">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="512.000000pt"
+                                                        viewBox="0 0 512.000000 512.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none">
+                                                            <path d="M2351 4470 c-320 -27 -551 -85 -776 -196 -166 -81 -292 -172 -425 -304 -131 -132 -221 -258 -304 -425 -75 -152 -115 -270 -149 -450 -79 -408 -69 -826 30 -1205 110 -424 391 -789 778 -1008 567 -321 1582 -315 2133 13 358 213 619 542 737 928 78 257 117 626 96 912 -42 561 -193 930 -511 1245 -225 222 -514 374 -836 439 -236 48 -556 69 -773 51z m268 -980 c63 -32 71 -61 71 -265 0 -208 -8 -236 -74 -266 -52 -24 -61 -23 -112 1 -67 33 -74 58 -74 265 0 202 8 233 69 265 46 25 73 25 120 0z m-576 -480 c165 -96 184 -111 198 -162 13 -51 -15 -119 -60 -142 -61 -32 -95 -22 -256 70 -176 101 -182 106 -196 155 -14 46 -7 78 28 119 60 72 102 65 286 -40z m1307 55 c59 -56 63 -128 12 -182 -15 -16 -93 -66 -173 -111 -156 -88 -191 -97 -250 -66 -45 23 -73 91 -60 142 6 21 21 48 33 59 23 21 266 164 310 183 38 16 97 4 128 -25z m-1171 -649 c77 -40 88 -153 22 -209 -15 -13 -94 -61 -175 -106 -131 -75 -151 -83 -186 -78 -101 13 -152 126 -92 206 10 13 87 64 172 113 165 94 200 104 259 74z m1021 -74 c85 -49 163 -100 173 -114 62 -83 -3 -208 -108 -208 -31 0 -309 152 -353 192 -59 56 -44 164 27 203 58 31 96 21 261 -73z m-581 -180 c63 -34 71 -63 71 -271 0 -207 -7 -233 -74 -265 -43 -20 -69 -20 -112 0 -67 32 -74 58 -74 265 0 159 2 189 18 218 20 38 73 71 112 71 14 0 41 -8 59 -18z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>در انتظار پرداخت</p>
+                                            </div>
+                                            <div class="spacer_container">
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                            </div>
+                                            <!-- waiting__for_checking status -->
+                                            <div class="waiting__for_checking status end">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="492.000000pt"
+                                                        viewBox="0 0 512.000000 492.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,492.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                                            <path d="M2214 4459 c-734 -53 -1382 -562 -1613 -1266 -64 -193 -83 -309 -88 -533 -6 -215 6 -334 52 -513 130 -511 491 -954 972 -1195 274 -138 563 -200 881 -189 190 6 309 25 469 73 300 90 545 237 769 459 192 192 324 388 418 623 281 702 117 1488 -421 2015 -108 105 -171 157 -290 235 -260 171 -562 270 -888 292 -77 5 -142 9 -145 8 -3 0 -55 -4 -116 -9z"/>
+                                                            <path d="M4019 1216 c-103 -27 -199 -111 -247 -214 -24 -50 -27 -69 -27 -162 0 -94 3 -111 28 -161 35 -72 114 -151 186 -186 51 -25 66 -28 166 -28 104 0 113 2 170 31 74 39 148 116 183 192 24 50 27 69 27 157 -1 88 -4 107 -28 155 -86 177 -274 266 -458 216z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>در حال بررسی</p>
+                                            </div>
+                                            <div class="spacer_container">
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                            </div>
+                                            <!-- waiting__for_Order status -->
+                                            <div class="waiting__for_runOrder status run">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="512.000000pt"
+                                                        viewBox="0 0 512.000000 512.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                                            <path d="M2390 4885 c-127 -20 -274 -76 -475 -179 -174 -90 -560 -310 -807 -460 -338 -205 -493 -354 -607 -582 -113 -228 -137 -458 -128 -1244 7 -609 24 -740 121 -946 133 -280 279 -406 876 -754 530 -309 745 -416 938 -467 84 -22 117 -26 252 -26 135 0 168 4 252 26 191 50 382 145 878 432 449 260 593 358 726 490 95 94 150 173 210 299 96 205 114 337 121 936 9 791 -15 1029 -132 1261 -114 227 -267 372 -628 590 -243 148 -678 395 -825 468 -303 152 -519 195 -772 156z m1328 -1581 c42 -31 74 -101 69 -149 -3 -25 -72 -176 -186 -407 -170 -346 -184 -371 -243 -431 -35 -35 -85 -76 -112 -92 -175 -102 -384 -111 -563 -23 -100 49 -205 157 -262 271 -66 133 -129 177 -253 177 -66 0 -147 -37 -183 -84 -13 -17 -100 -187 -193 -377 -190 -388 -191 -390 -291 -397 -46 -3 -62 0 -90 20 -58 39 -76 72 -76 136 1 53 13 81 183 424 171 345 186 371 244 431 35 35 85 76 112 92 175 102 385 111 564 23 96 -47 206 -159 255 -260 47 -98 79 -135 142 -164 94 -44 227 -23 291 47 11 11 100 183 199 382 170 342 182 363 220 385 49 28 131 26 173 -4z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>در حال اجرا</p>
+                                            </div>
+                                            <div class="spacer_container">
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                            </div>
+                                            <!--sending__package status -->
+                                            <div class="sending__package status">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="512.000000pt"
+                                                        viewBox="0 0 512.000000 512.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                                            <path d="M2439 4786 c-219 -46 -389 -189 -472 -396 l-26 -65 -273 -5 c-251 -5 -276 -7 -308 -25 -38 -22 -80 -93 -80 -135 0 -42 42 -113 80 -135 32 -18 57 -20 308 -25 l273 -5 26 -65 c14 -36 42 -90 62 -120 20 -30 36 -58 36 -62 0 -4 -34 -25 -75 -46 -127 -63 -220 -132 -330 -242 -156 -156 -248 -305 -314 -510 -59 -180 -61 -214 -61 -860 0 -537 1 -590 18 -650 50 -174 180 -333 338 -409 47 -22 93 -41 102 -41 15 0 17 14 17 118 0 284 119 515 345 671 139 96 284 141 457 141 260 -1 488 -116 644 -325 105 -140 154 -294 154 -487 0 -141 -3 -138 121 -76 109 53 228 169 281 273 72 139 71 130 75 720 5 653 0 731 -68 941 -61 189 -156 341 -309 495 -109 109 -213 185 -337 245 -40 20 -73 37 -73 39 0 1 17 29 39 61 21 33 50 88 64 124 l26 65 274 5 274 5 40 27 c101 67 90 219 -20 268 -38 18 -67 20 -305 20 l-264 0 -6 23 c-3 12 -25 61 -49 109 -124 247 -416 390 -684 334z m238 -328 c119 -44 203 -168 203 -298 0 -176 -144 -320 -320 -320 -176 0 -320 144 -320 320 0 225 224 378 437 298z m217 -1287 c55 -11 121 -28 147 -36 167 -56 163 -277 -6 -315 -25 -6 -59 -2 -112 11 -242 59 -484 59 -726 0 -81 -20 -126 -17 -172 13 -54 35 -80 106 -64 172 22 87 89 124 289 158 52 8 106 18 120 20 14 3 115 3 225 1 152 -3 224 -8 299 -24z m-147 -622 c95 -14 144 -38 172 -82 31 -51 36 -91 17 -142 -33 -85 -106 -122 -205 -103 -72 15 -270 15 -342 0 -76 -15 -123 -1 -171 49 -51 54 -60 111 -26 177 30 58 71 83 163 98 92 16 295 17 392 3z"/>
+                                                            <path d="M2485 1590 c-180 -32 -315 -147 -376 -322 -19 -54 -23 -90 -27 -258 -3 -120 0 -224 7 -270 50 -327 382 -505 679 -365 140 66 239 203 262 360 13 92 13 372 0 455 -13 78 -64 189 -114 246 -100 115 -281 179 -431 154z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>ارسال شده</p>
+                                            </div>
+                                            <div class="spacer_container">
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                            </div>
+                                            <!-- given__to_user status -->
+                                            <div class="given__to_user status">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="512.000000pt"
+                                                        viewBox="0 0 512.000000 512.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                                            <path d="M2394 4979 c-90 -11 -127 -22 -374 -111 -417 -150 -890 -354 -1220 -525 -188 -97 -233 -127 -308 -197 -156 -147 -258 -361 -282 -588 -16 -160 -24 -1232 -12 -1658 10 -348 13 -382 37 -475 49 -193 167 -382 308 -494 145 -115 824 -436 1277 -604 404 -149 433 -159 525 -178 85 -17 256 -15 349 5 76 17 214 62 228 75 4 3 -22 42 -57 86 -114 143 -217 352 -256 525 -30 128 -37 395 -14 531 90 543 512 976 1065 1095 120 26 391 26 510 1 226 -49 438 -149 598 -284 l52 -45 0 574 c-1 703 -9 889 -44 1011 -27 91 -83 210 -134 285 -42 63 -158 178 -223 223 -60 40 -384 208 -493 254 l-66 28 -108 -33 c-434 -135 -1318 -469 -1827 -692 -243 -106 -246 -108 -306 -167 -63 -63 -102 -138 -118 -226 -7 -36 -14 -281 -17 -620 -6 -493 -8 -562 -22 -573 -40 -31 -57 -17 -188 153 -86 112 -133 165 -146 165 -11 0 -61 -25 -112 -55 -50 -30 -99 -55 -107 -55 -9 0 -24 9 -34 20 -17 19 -18 43 -11 428 8 537 19 727 47 809 31 95 105 184 199 240 54 33 461 220 689 318 381 163 1140 450 1344 509 77 22 111 36 105 41 -3 3 -118 46 -257 95 -316 114 -420 133 -597 109z"/>
+                                                            <path d="M3775 2150 c-137 -21 -311 -89 -424 -165 -89 -59 -209 -180 -266 -264 -62 -94 -121 -221 -146 -316 -30 -114 -37 -332 -14 -446 40 -200 131 -372 270 -515 348 -356 875 -408 1295 -129 194 129 342 345 412 604 32 118 30 342 -5 473 -98 369 -369 641 -732 733 -113 29 -290 40 -390 25z m640 -541 c110 -31 165 -169 105 -265 -36 -58 -658 -701 -692 -715 -43 -18 -115 -17 -153 3 -39 21 -386 382 -409 425 -41 80 1 195 86 239 36 19 121 18 161 -2 18 -8 79 -64 137 -125 l105 -109 144 152 c303 321 369 386 409 396 50 14 61 14 107 1z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>تحویل داده شده</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row accordion" id="accordionExample3">
+                                <div class="accordion-header row p-3 my-2 d-flex align-items-center justify-content-between border rounded-4 order __transition" id="headingOne">
+                                    <p class="w-auto">PS2501183</p>
+                                    <p class="w-auto">23 شهریور 1402</p>
+                                    <div class="w-auto status waiting__for_pay">
+                                        <span class=" yoz-timer"></span>
+                                        <p>در انتظار پرداخت</p>
+                                    </div>
+                                    <p class="w-auto">23/000/000</p>
+                                    <div class="w-25 d-flex justify-content-between align-items-center gap-3">
+                                        <button class="cancel-btn __transition">لغو</button>
+                                        <button class="pay-btn __transition">پرداخت</button>
+                                        <button
+                                            class="accordion-button collapsed accordion-btn"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne3"
+                                            aria-expanded="false"
+                                            aria-controls="collapseOne3"
+                                        ></button>
+                                    </div>
+                                </div>
+                                <div
+                                    id="collapseOne3"
+                                    class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample3"
+                                >
+                                    <div class="accordion-body details__of_order">
+                                        <header class="__flex__between p-2">
+                                            <p>کد سفارش: P2250S1183</p>
+                                            <button class="factor-btn __transition">مشاهده فاکتور</button>
+                                        </header>
+                                        <hr class="my-3">
+                                        <div class="order-info pb-3 container w-75">
+                                            <div class="row my-5">
+                                                <div class="col-6">
+                                                    <p>تحویل گیرنده</p>
+                                                    <span>علی سیلیمانی</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>تعداد محصول</p>
+                                                    <span>1 مرسوله</span>
+                                                </div>
+                                            </div>
+                                            <div class="row my-5">
+                                                <div class="col-6">
+                                                    <p>شماره تماس تحویل گیرنده</p>
+                                                    <span>0990123456</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>زمان ارسال</p>
+                                                    <span>26 شهریور 1402</span>
+                                                </div>
+                                            </div>
+                                            <div class="row my-5">
+                                                <div class="col-6">
+                                                    <p>آدرس تحویل گیرنده</p>
+                                                    <span>تهران، ولی عصر، خیابان شفق، بعد از بانک ملی</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>مبلغ کل</p>
+                                                    <span>1/258/000 تومان</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- container of rows -->
+                                        <div class="container">
+                                            <!-- title of each row -->
+                                            <div class="row p-3 my-2 d-flex align-items-center justify-content-between title rounded-3">
+                                                <p style="width: 30%;">نام محصول</p>
+                                                <p style="width: 13%;" class="text-center p-0">تعداد</p>
+                                                <p style="width: 13%;" class="text-center p-0">قیمت واحد</p>
+                                                <p style="width: 13%;" class="text-center p-0">تخفیف</p>
+                                                <p style="width: 13%;" class="text-center p-0">قیمت نهایی</p>
+                                                <p style="width: 18%;" class="text-center p-0">جزئیات</p>
+                                            </div>
+                                            <!-- first row -->
+                                            <div class="row my-2 p-1 d-flex align-items-center order-row bg-white rounded-3">
+                                                <div class="text-end" style="width: 30%;">
+                                                    <div class="__flex__center justify-content-start gap-3">
+                                                        <img src="./assets/img/apple-watchpng.png" alt="">
+                                                        <div class="colors d-flex flex-column gap-1">
+                                                            <p>ساعت هوشمند اپل</p>
+                                                            <div class="__flex__center justify-content-start gap-2">
+                                                                <span class="color" style="background-color: #4d67f5;"></span>
+                                                                <p>آبی</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p style="width: 13%;" class="text-center p-0">1</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/000 تومان</p>
+                                                <p style="width: 13%;" class="text-center p-0">0</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/00 تومان</p>
+                                                <div style="width: 18%;" class="text-center">
+                                                    <div class="d-flex flex-column justify-content-center align-items-center actions">
+                                                        <button class="buy_again py-2 px-3 __transition">خرید دوباره</button>
+                                                        <button class="send-comments py-2 px-3 __transition">ثبت دیدگاه</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- second row -->
+                                            <div class="row my-2 p-1 d-flex align-items-center order-row bg-white rounded-3">
+                                                <div class="text-end" style="width: 30%;">
+                                                    <div class="__flex__center justify-content-start gap-3">
+                                                        <img src="./assets/img/apple-watchpng.png" alt="">
+                                                        <div class="colors d-flex flex-column gap-1">
+                                                            <p>ساعت هوشمند اپل</p>
+                                                            <div class="__flex__center justify-content-start gap-2">
+                                                                <span class="color" style="background-color: #4d67f5;"></span>
+                                                                <p>آبی</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p style="width: 13%;" class="text-center p-0">1</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/000 تومان</p>
+                                                <p style="width: 13%;" class="text-center p-0">0</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/00 تومان</p>
+                                                <div style="width: 18%;" class="text-center">
+                                                    <div class="d-flex flex-column justify-content-center align-items-center actions">
+                                                        <button class="buy_again py-2 px-3 __transition">خرید دوباره</button>
+                                                        <button class="send-comments py-2 px-3 __transition">ثبت دیدگاه</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- third row -->
+                                            <div class="row my-2 p-1 d-flex align-items-center order-row bg-white rounded-3">
+                                                <div class="text-end" style="width: 30%;">
+                                                    <div class="__flex__center justify-content-start gap-3">
+                                                        <img src="./assets/img/apple-watchpng.png" alt="">
+                                                        <div class="colors d-flex flex-column gap-1">
+                                                            <p>ساعت هوشمند اپل</p>
+                                                            <div class="__flex__center justify-content-start gap-2">
+                                                                <span class="color" style="background-color: #4d67f5;"></span>
+                                                                <p>آبی</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p style="width: 13%;" class="text-center p-0">1</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/000 تومان</p>
+                                                <p style="width: 13%;" class="text-center p-0">0</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/00 تومان</p>
+                                                <div style="width: 18%;" class="text-center">
+                                                    <div class="d-flex flex-column justify-content-center align-items-center actions">
+                                                        <button class="buy_again py-2 px-3 __transition">خرید دوباره</button>
+                                                        <button class="send-comments py-2 px-3 __transition">ثبت دیدگاه</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- fourth row -->
+                                            <div class="row my-2 p-1 d-flex align-items-center order-row bg-white rounded-3">
+                                                <div class="text-end" style="width: 30%;">
+                                                    <div class="__flex__center justify-content-start gap-3">
+                                                        <img src="./assets/img/apple-watchpng.png" alt="">
+                                                        <div class="colors d-flex flex-column gap-1">
+                                                            <p>ساعت هوشمند اپل</p>
+                                                            <div class="__flex__center justify-content-start gap-2">
+                                                                <span class="color" style="background-color: #4d67f5;"></span>
+                                                                <p>آبی</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p style="width: 13%;" class="text-center p-0">1</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/000 تومان</p>
+                                                <p style="width: 13%;" class="text-center p-0">0</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/00 تومان</p>
+                                                <div style="width: 18%;" class="text-center">
+                                                    <div class="d-flex flex-column justify-content-center align-items-center actions">
+                                                        <button class="buy_again py-2 px-3 __transition">خرید دوباره</button>
+                                                        <button class="send-comments py-2 px-3 __transition">ثبت دیدگاه</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="status__of_order p-5 mt-5 d-flex justify-content-around">
+                                            <!-- waiting__for_pay status -->
+                                            <div class="waiting__for_pay status end">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="512.000000pt"
+                                                        viewBox="0 0 512.000000 512.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none">
+                                                            <path d="M2351 4470 c-320 -27 -551 -85 -776 -196 -166 -81 -292 -172 -425 -304 -131 -132 -221 -258 -304 -425 -75 -152 -115 -270 -149 -450 -79 -408 -69 -826 30 -1205 110 -424 391 -789 778 -1008 567 -321 1582 -315 2133 13 358 213 619 542 737 928 78 257 117 626 96 912 -42 561 -193 930 -511 1245 -225 222 -514 374 -836 439 -236 48 -556 69 -773 51z m268 -980 c63 -32 71 -61 71 -265 0 -208 -8 -236 -74 -266 -52 -24 -61 -23 -112 1 -67 33 -74 58 -74 265 0 202 8 233 69 265 46 25 73 25 120 0z m-576 -480 c165 -96 184 -111 198 -162 13 -51 -15 -119 -60 -142 -61 -32 -95 -22 -256 70 -176 101 -182 106 -196 155 -14 46 -7 78 28 119 60 72 102 65 286 -40z m1307 55 c59 -56 63 -128 12 -182 -15 -16 -93 -66 -173 -111 -156 -88 -191 -97 -250 -66 -45 23 -73 91 -60 142 6 21 21 48 33 59 23 21 266 164 310 183 38 16 97 4 128 -25z m-1171 -649 c77 -40 88 -153 22 -209 -15 -13 -94 -61 -175 -106 -131 -75 -151 -83 -186 -78 -101 13 -152 126 -92 206 10 13 87 64 172 113 165 94 200 104 259 74z m1021 -74 c85 -49 163 -100 173 -114 62 -83 -3 -208 -108 -208 -31 0 -309 152 -353 192 -59 56 -44 164 27 203 58 31 96 21 261 -73z m-581 -180 c63 -34 71 -63 71 -271 0 -207 -7 -233 -74 -265 -43 -20 -69 -20 -112 0 -67 32 -74 58 -74 265 0 159 2 189 18 218 20 38 73 71 112 71 14 0 41 -8 59 -18z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>در انتظار پرداخت</p>
+                                            </div>
+                                            <div class="spacer_container">
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                            </div>
+                                            <!-- waiting__for_checking status -->
+                                            <div class="waiting__for_checking status end">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="492.000000pt"
+                                                        viewBox="0 0 512.000000 492.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,492.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                                            <path d="M2214 4459 c-734 -53 -1382 -562 -1613 -1266 -64 -193 -83 -309 -88 -533 -6 -215 6 -334 52 -513 130 -511 491 -954 972 -1195 274 -138 563 -200 881 -189 190 6 309 25 469 73 300 90 545 237 769 459 192 192 324 388 418 623 281 702 117 1488 -421 2015 -108 105 -171 157 -290 235 -260 171 -562 270 -888 292 -77 5 -142 9 -145 8 -3 0 -55 -4 -116 -9z"/>
+                                                            <path d="M4019 1216 c-103 -27 -199 -111 -247 -214 -24 -50 -27 -69 -27 -162 0 -94 3 -111 28 -161 35 -72 114 -151 186 -186 51 -25 66 -28 166 -28 104 0 113 2 170 31 74 39 148 116 183 192 24 50 27 69 27 157 -1 88 -4 107 -28 155 -86 177 -274 266 -458 216z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>در حال بررسی</p>
+                                            </div>
+                                            <div class="spacer_container">
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                            </div>
+                                            <!-- waiting__for_Order status -->
+                                            <div class="waiting__for_runOrder status run">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="512.000000pt"
+                                                        viewBox="0 0 512.000000 512.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                                            <path d="M2390 4885 c-127 -20 -274 -76 -475 -179 -174 -90 -560 -310 -807 -460 -338 -205 -493 -354 -607 -582 -113 -228 -137 -458 -128 -1244 7 -609 24 -740 121 -946 133 -280 279 -406 876 -754 530 -309 745 -416 938 -467 84 -22 117 -26 252 -26 135 0 168 4 252 26 191 50 382 145 878 432 449 260 593 358 726 490 95 94 150 173 210 299 96 205 114 337 121 936 9 791 -15 1029 -132 1261 -114 227 -267 372 -628 590 -243 148 -678 395 -825 468 -303 152 -519 195 -772 156z m1328 -1581 c42 -31 74 -101 69 -149 -3 -25 -72 -176 -186 -407 -170 -346 -184 -371 -243 -431 -35 -35 -85 -76 -112 -92 -175 -102 -384 -111 -563 -23 -100 49 -205 157 -262 271 -66 133 -129 177 -253 177 -66 0 -147 -37 -183 -84 -13 -17 -100 -187 -193 -377 -190 -388 -191 -390 -291 -397 -46 -3 -62 0 -90 20 -58 39 -76 72 -76 136 1 53 13 81 183 424 171 345 186 371 244 431 35 35 85 76 112 92 175 102 385 111 564 23 96 -47 206 -159 255 -260 47 -98 79 -135 142 -164 94 -44 227 -23 291 47 11 11 100 183 199 382 170 342 182 363 220 385 49 28 131 26 173 -4z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>در حال اجرا</p>
+                                            </div>
+                                            <div class="spacer_container">
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                            </div>
+                                            <!--sending__package status -->
+                                            <div class="sending__package status">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="512.000000pt"
+                                                        viewBox="0 0 512.000000 512.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                                            <path d="M2439 4786 c-219 -46 -389 -189 -472 -396 l-26 -65 -273 -5 c-251 -5 -276 -7 -308 -25 -38 -22 -80 -93 -80 -135 0 -42 42 -113 80 -135 32 -18 57 -20 308 -25 l273 -5 26 -65 c14 -36 42 -90 62 -120 20 -30 36 -58 36 -62 0 -4 -34 -25 -75 -46 -127 -63 -220 -132 -330 -242 -156 -156 -248 -305 -314 -510 -59 -180 -61 -214 -61 -860 0 -537 1 -590 18 -650 50 -174 180 -333 338 -409 47 -22 93 -41 102 -41 15 0 17 14 17 118 0 284 119 515 345 671 139 96 284 141 457 141 260 -1 488 -116 644 -325 105 -140 154 -294 154 -487 0 -141 -3 -138 121 -76 109 53 228 169 281 273 72 139 71 130 75 720 5 653 0 731 -68 941 -61 189 -156 341 -309 495 -109 109 -213 185 -337 245 -40 20 -73 37 -73 39 0 1 17 29 39 61 21 33 50 88 64 124 l26 65 274 5 274 5 40 27 c101 67 90 219 -20 268 -38 18 -67 20 -305 20 l-264 0 -6 23 c-3 12 -25 61 -49 109 -124 247 -416 390 -684 334z m238 -328 c119 -44 203 -168 203 -298 0 -176 -144 -320 -320 -320 -176 0 -320 144 -320 320 0 225 224 378 437 298z m217 -1287 c55 -11 121 -28 147 -36 167 -56 163 -277 -6 -315 -25 -6 -59 -2 -112 11 -242 59 -484 59 -726 0 -81 -20 -126 -17 -172 13 -54 35 -80 106 -64 172 22 87 89 124 289 158 52 8 106 18 120 20 14 3 115 3 225 1 152 -3 224 -8 299 -24z m-147 -622 c95 -14 144 -38 172 -82 31 -51 36 -91 17 -142 -33 -85 -106 -122 -205 -103 -72 15 -270 15 -342 0 -76 -15 -123 -1 -171 49 -51 54 -60 111 -26 177 30 58 71 83 163 98 92 16 295 17 392 3z"/>
+                                                            <path d="M2485 1590 c-180 -32 -315 -147 -376 -322 -19 -54 -23 -90 -27 -258 -3 -120 0 -224 7 -270 50 -327 382 -505 679 -365 140 66 239 203 262 360 13 92 13 372 0 455 -13 78 -64 189 -114 246 -100 115 -281 179 -431 154z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>ارسال شده</p>
+                                            </div>
+                                            <div class="spacer_container">
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                            </div>
+                                            <!-- given__to_user status -->
+                                            <div class="given__to_user status">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="512.000000pt"
+                                                        viewBox="0 0 512.000000 512.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                                            <path d="M2394 4979 c-90 -11 -127 -22 -374 -111 -417 -150 -890 -354 -1220 -525 -188 -97 -233 -127 -308 -197 -156 -147 -258 -361 -282 -588 -16 -160 -24 -1232 -12 -1658 10 -348 13 -382 37 -475 49 -193 167 -382 308 -494 145 -115 824 -436 1277 -604 404 -149 433 -159 525 -178 85 -17 256 -15 349 5 76 17 214 62 228 75 4 3 -22 42 -57 86 -114 143 -217 352 -256 525 -30 128 -37 395 -14 531 90 543 512 976 1065 1095 120 26 391 26 510 1 226 -49 438 -149 598 -284 l52 -45 0 574 c-1 703 -9 889 -44 1011 -27 91 -83 210 -134 285 -42 63 -158 178 -223 223 -60 40 -384 208 -493 254 l-66 28 -108 -33 c-434 -135 -1318 -469 -1827 -692 -243 -106 -246 -108 -306 -167 -63 -63 -102 -138 -118 -226 -7 -36 -14 -281 -17 -620 -6 -493 -8 -562 -22 -573 -40 -31 -57 -17 -188 153 -86 112 -133 165 -146 165 -11 0 -61 -25 -112 -55 -50 -30 -99 -55 -107 -55 -9 0 -24 9 -34 20 -17 19 -18 43 -11 428 8 537 19 727 47 809 31 95 105 184 199 240 54 33 461 220 689 318 381 163 1140 450 1344 509 77 22 111 36 105 41 -3 3 -118 46 -257 95 -316 114 -420 133 -597 109z"/>
+                                                            <path d="M3775 2150 c-137 -21 -311 -89 -424 -165 -89 -59 -209 -180 -266 -264 -62 -94 -121 -221 -146 -316 -30 -114 -37 -332 -14 -446 40 -200 131 -372 270 -515 348 -356 875 -408 1295 -129 194 129 342 345 412 604 32 118 30 342 -5 473 -98 369 -369 641 -732 733 -113 29 -290 40 -390 25z m640 -541 c110 -31 165 -169 105 -265 -36 -58 -658 -701 -692 -715 -43 -18 -115 -17 -153 3 -39 21 -386 382 -409 425 -41 80 1 195 86 239 36 19 121 18 161 -2 18 -8 79 -64 137 -125 l105 -109 144 152 c303 321 369 386 409 396 50 14 61 14 107 1z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>تحویل داده شده</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row accordion" id="accordionExample4">
+                                <div class="accordion-header row p-3 my-2 d-flex align-items-center justify-content-between border rounded-4 order __transition" id="headingOne">
+                                    <p class="w-auto">PS2501183</p>
+                                    <p class="w-auto">23 شهریور 1402</p>
+                                    <div class="w-auto status waiting__for_pay">
+                                        <span class=" yoz-timer "></span>
+                                        <p>در انتظار پرداخت</p>
+                                    </div>
+                                    <p class="w-auto">23/000/000</p>
+                                    <div class="w-25 d-flex justify-content-between align-items-center gap-3">
+                                        <button class="cancel-btn __transition">لغو</button>
+                                        <button class="pay-btn __transition">پرداخت</button>
+                                        <button
+                                            class="accordion-button collapsed accordion-btn"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne4"
+                                            aria-expanded="false"
+                                            aria-controls="collapseOne4"
+                                        ></button>
+                                    </div>
+                                </div>
+                                <div
+                                    id="collapseOne4"
+                                    class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample4"
+                                >
+                                    <div class="accordion-body details__of_order">
+                                        <header class="__flex__between p-2">
+                                            <p>کد سفارش: P2250S1183</p>
+                                            <button class="factor-btn __transition">مشاهده فاکتور</button>
+                                        </header>
+                                        <hr class="my-3">
+                                        <div class="order-info pb-3 container w-75">
+                                            <div class="row my-5">
+                                                <div class="col-6">
+                                                    <p>تحویل گیرنده</p>
+                                                    <span>علی سیلیمانی</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>تعداد محصول</p>
+                                                    <span>1 مرسوله</span>
+                                                </div>
+                                            </div>
+                                            <div class="row my-5">
+                                                <div class="col-6">
+                                                    <p>شماره تماس تحویل گیرنده</p>
+                                                    <span>0990123456</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>زمان ارسال</p>
+                                                    <span>26 شهریور 1402</span>
+                                                </div>
+                                            </div>
+                                            <div class="row my-5">
+                                                <div class="col-6">
+                                                    <p>آدرس تحویل گیرنده</p>
+                                                    <span>تهران، ولی عصر، خیابان شفق، بعد از بانک ملی</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>مبلغ کل</p>
+                                                    <span>1/258/000 تومان</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- container of rows -->
+                                        <div class="container">
+                                            <!-- title of each row -->
+                                            <div class="row p-3 my-2 d-flex align-items-center justify-content-between title rounded-3">
+                                                <p style="width: 30%;">نام محصول</p>
+                                                <p style="width: 13%;" class="text-center p-0">تعداد</p>
+                                                <p style="width: 13%;" class="text-center p-0">قیمت واحد</p>
+                                                <p style="width: 13%;" class="text-center p-0">تخفیف</p>
+                                                <p style="width: 13%;" class="text-center p-0">قیمت نهایی</p>
+                                                <p style="width: 18%;" class="text-center p-0">جزئیات</p>
+                                            </div>
+                                            <!-- first row -->
+                                            <div class="row my-2 p-1 d-flex align-items-center order-row bg-white rounded-3">
+                                                <div class="text-end" style="width: 30%;">
+                                                    <div class="__flex__center justify-content-start gap-3">
+                                                        <img src="./assets/img/apple-watchpng.png" alt="">
+                                                        <div class="colors d-flex flex-column gap-1">
+                                                            <p>ساعت هوشمند اپل</p>
+                                                            <div class="__flex__center justify-content-start gap-2">
+                                                                <span class="color" style="background-color: #4d67f5;"></span>
+                                                                <p>آبی</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p style="width: 13%;" class="text-center p-0">1</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/000 تومان</p>
+                                                <p style="width: 13%;" class="text-center p-0">0</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/00 تومان</p>
+                                                <div style="width: 18%;" class="text-center">
+                                                    <div class="d-flex flex-column justify-content-center align-items-center actions">
+                                                        <button class="buy_again py-2 px-3 __transition">خرید دوباره</button>
+                                                        <button class="send-comments py-2 px-3 __transition">ثبت دیدگاه</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- second row -->
+                                            <div class="row my-2 p-1 d-flex align-items-center order-row bg-white rounded-3">
+                                                <div class="text-end" style="width: 30%;">
+                                                    <div class="__flex__center justify-content-start gap-3">
+                                                        <img src="./assets/img/apple-watchpng.png" alt="">
+                                                        <div class="colors d-flex flex-column gap-1">
+                                                            <p>ساعت هوشمند اپل</p>
+                                                            <div class="__flex__center justify-content-start gap-2">
+                                                                <span class="color" style="background-color: #4d67f5;"></span>
+                                                                <p>آبی</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p style="width: 13%;" class="text-center p-0">1</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/000 تومان</p>
+                                                <p style="width: 13%;" class="text-center p-0">0</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/00 تومان</p>
+                                                <div style="width: 18%;" class="text-center">
+                                                    <div class="d-flex flex-column justify-content-center align-items-center actions">
+                                                        <button class="buy_again py-2 px-3 __transition">خرید دوباره</button>
+                                                        <button class="send-comments py-2 px-3 __transition">ثبت دیدگاه</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- third row -->
+                                            <div class="row my-2 p-1 d-flex align-items-center order-row bg-white rounded-3">
+                                                <div class="text-end" style="width: 30%;">
+                                                    <div class="__flex__center justify-content-start gap-3">
+                                                        <img src="./assets/img/apple-watchpng.png" alt="">
+                                                        <div class="colors d-flex flex-column gap-1">
+                                                            <p>ساعت هوشمند اپل</p>
+                                                            <div class="__flex__center justify-content-start gap-2">
+                                                                <span class="color" style="background-color: #4d67f5;"></span>
+                                                                <p>آبی</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p style="width: 13%;" class="text-center p-0">1</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/000 تومان</p>
+                                                <p style="width: 13%;" class="text-center p-0">0</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/00 تومان</p>
+                                                <div style="width: 18%;" class="text-center">
+                                                    <div class="d-flex flex-column justify-content-center align-items-center actions">
+                                                        <button class="buy_again py-2 px-3 __transition">خرید دوباره</button>
+                                                        <button class="send-comments py-2 px-3 __transition">ثبت دیدگاه</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- fourth row -->
+                                            <div class="row my-2 p-1 d-flex align-items-center order-row bg-white rounded-3">
+                                                <div class="text-end" style="width: 30%;">
+                                                    <div class="__flex__center justify-content-start gap-3">
+                                                        <img src="./assets/img/apple-watchpng.png" alt="">
+                                                        <div class="colors d-flex flex-column gap-1">
+                                                            <p>ساعت هوشمند اپل</p>
+                                                            <div class="__flex__center justify-content-start gap-2">
+                                                                <span class="color" style="background-color: #4d67f5;"></span>
+                                                                <p>آبی</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p style="width: 13%;" class="text-center p-0">1</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/000 تومان</p>
+                                                <p style="width: 13%;" class="text-center p-0">0</p>
+                                                <p style="width: 13%;" class="text-center p-0">2/630/00 تومان</p>
+                                                <div style="width: 18%;" class="text-center">
+                                                    <div class="d-flex flex-column justify-content-center align-items-center actions">
+                                                        <button class="buy_again py-2 px-3 __transition">خرید دوباره</button>
+                                                        <button class="send-comments py-2 px-3 __transition">ثبت دیدگاه</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="status__of_order p-5 mt-5 d-flex justify-content-around">
+                                            <!-- waiting__for_pay status -->
+                                            <div class="waiting__for_pay status end">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="512.000000pt"
+                                                        viewBox="0 0 512.000000 512.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none">
+                                                            <path d="M2351 4470 c-320 -27 -551 -85 -776 -196 -166 -81 -292 -172 -425 -304 -131 -132 -221 -258 -304 -425 -75 -152 -115 -270 -149 -450 -79 -408 -69 -826 30 -1205 110 -424 391 -789 778 -1008 567 -321 1582 -315 2133 13 358 213 619 542 737 928 78 257 117 626 96 912 -42 561 -193 930 -511 1245 -225 222 -514 374 -836 439 -236 48 -556 69 -773 51z m268 -980 c63 -32 71 -61 71 -265 0 -208 -8 -236 -74 -266 -52 -24 -61 -23 -112 1 -67 33 -74 58 -74 265 0 202 8 233 69 265 46 25 73 25 120 0z m-576 -480 c165 -96 184 -111 198 -162 13 -51 -15 -119 -60 -142 -61 -32 -95 -22 -256 70 -176 101 -182 106 -196 155 -14 46 -7 78 28 119 60 72 102 65 286 -40z m1307 55 c59 -56 63 -128 12 -182 -15 -16 -93 -66 -173 -111 -156 -88 -191 -97 -250 -66 -45 23 -73 91 -60 142 6 21 21 48 33 59 23 21 266 164 310 183 38 16 97 4 128 -25z m-1171 -649 c77 -40 88 -153 22 -209 -15 -13 -94 -61 -175 -106 -131 -75 -151 -83 -186 -78 -101 13 -152 126 -92 206 10 13 87 64 172 113 165 94 200 104 259 74z m1021 -74 c85 -49 163 -100 173 -114 62 -83 -3 -208 -108 -208 -31 0 -309 152 -353 192 -59 56 -44 164 27 203 58 31 96 21 261 -73z m-581 -180 c63 -34 71 -63 71 -271 0 -207 -7 -233 -74 -265 -43 -20 -69 -20 -112 0 -67 32 -74 58 -74 265 0 159 2 189 18 218 20 38 73 71 112 71 14 0 41 -8 59 -18z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>در انتظار پرداخت</p>
+                                            </div>
+                                            <div class="spacer_container">
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                            </div>
+                                            <!-- waiting__for_checking status -->
+                                            <div class="waiting__for_checking status end">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="492.000000pt"
+                                                        viewBox="0 0 512.000000 492.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,492.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                                            <path d="M2214 4459 c-734 -53 -1382 -562 -1613 -1266 -64 -193 -83 -309 -88 -533 -6 -215 6 -334 52 -513 130 -511 491 -954 972 -1195 274 -138 563 -200 881 -189 190 6 309 25 469 73 300 90 545 237 769 459 192 192 324 388 418 623 281 702 117 1488 -421 2015 -108 105 -171 157 -290 235 -260 171 -562 270 -888 292 -77 5 -142 9 -145 8 -3 0 -55 -4 -116 -9z"/>
+                                                            <path d="M4019 1216 c-103 -27 -199 -111 -247 -214 -24 -50 -27 -69 -27 -162 0 -94 3 -111 28 -161 35 -72 114 -151 186 -186 51 -25 66 -28 166 -28 104 0 113 2 170 31 74 39 148 116 183 192 24 50 27 69 27 157 -1 88 -4 107 -28 155 -86 177 -274 266 -458 216z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>در حال بررسی</p>
+                                            </div>
+                                            <div class="spacer_container">
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                            </div>
+                                            <!-- waiting__for_Order status -->
+                                            <div class="waiting__for_runOrder status run">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="512.000000pt"
+                                                        viewBox="0 0 512.000000 512.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                                            <path d="M2390 4885 c-127 -20 -274 -76 -475 -179 -174 -90 -560 -310 -807 -460 -338 -205 -493 -354 -607 -582 -113 -228 -137 -458 -128 -1244 7 -609 24 -740 121 -946 133 -280 279 -406 876 -754 530 -309 745 -416 938 -467 84 -22 117 -26 252 -26 135 0 168 4 252 26 191 50 382 145 878 432 449 260 593 358 726 490 95 94 150 173 210 299 96 205 114 337 121 936 9 791 -15 1029 -132 1261 -114 227 -267 372 -628 590 -243 148 -678 395 -825 468 -303 152 -519 195 -772 156z m1328 -1581 c42 -31 74 -101 69 -149 -3 -25 -72 -176 -186 -407 -170 -346 -184 -371 -243 -431 -35 -35 -85 -76 -112 -92 -175 -102 -384 -111 -563 -23 -100 49 -205 157 -262 271 -66 133 -129 177 -253 177 -66 0 -147 -37 -183 -84 -13 -17 -100 -187 -193 -377 -190 -388 -191 -390 -291 -397 -46 -3 -62 0 -90 20 -58 39 -76 72 -76 136 1 53 13 81 183 424 171 345 186 371 244 431 35 35 85 76 112 92 175 102 385 111 564 23 96 -47 206 -159 255 -260 47 -98 79 -135 142 -164 94 -44 227 -23 291 47 11 11 100 183 199 382 170 342 182 363 220 385 49 28 131 26 173 -4z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>در حال اجرا</p>
+                                            </div>
+                                            <div class="spacer_container">
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                            </div>
+                                            <!--sending__package status -->
+                                            <div class="sending__package status">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="512.000000pt"
+                                                        viewBox="0 0 512.000000 512.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                                            <path d="M2439 4786 c-219 -46 -389 -189 -472 -396 l-26 -65 -273 -5 c-251 -5 -276 -7 -308 -25 -38 -22 -80 -93 -80 -135 0 -42 42 -113 80 -135 32 -18 57 -20 308 -25 l273 -5 26 -65 c14 -36 42 -90 62 -120 20 -30 36 -58 36 -62 0 -4 -34 -25 -75 -46 -127 -63 -220 -132 -330 -242 -156 -156 -248 -305 -314 -510 -59 -180 -61 -214 -61 -860 0 -537 1 -590 18 -650 50 -174 180 -333 338 -409 47 -22 93 -41 102 -41 15 0 17 14 17 118 0 284 119 515 345 671 139 96 284 141 457 141 260 -1 488 -116 644 -325 105 -140 154 -294 154 -487 0 -141 -3 -138 121 -76 109 53 228 169 281 273 72 139 71 130 75 720 5 653 0 731 -68 941 -61 189 -156 341 -309 495 -109 109 -213 185 -337 245 -40 20 -73 37 -73 39 0 1 17 29 39 61 21 33 50 88 64 124 l26 65 274 5 274 5 40 27 c101 67 90 219 -20 268 -38 18 -67 20 -305 20 l-264 0 -6 23 c-3 12 -25 61 -49 109 -124 247 -416 390 -684 334z m238 -328 c119 -44 203 -168 203 -298 0 -176 -144 -320 -320 -320 -176 0 -320 144 -320 320 0 225 224 378 437 298z m217 -1287 c55 -11 121 -28 147 -36 167 -56 163 -277 -6 -315 -25 -6 -59 -2 -112 11 -242 59 -484 59 -726 0 -81 -20 -126 -17 -172 13 -54 35 -80 106 -64 172 22 87 89 124 289 158 52 8 106 18 120 20 14 3 115 3 225 1 152 -3 224 -8 299 -24z m-147 -622 c95 -14 144 -38 172 -82 31 -51 36 -91 17 -142 -33 -85 -106 -122 -205 -103 -72 15 -270 15 -342 0 -76 -15 -123 -1 -171 49 -51 54 -60 111 -26 177 30 58 71 83 163 98 92 16 295 17 392 3z"/>
+                                                            <path d="M2485 1590 c-180 -32 -315 -147 -376 -322 -19 -54 -23 -90 -27 -258 -3 -120 0 -224 7 -270 50 -327 382 -505 679 -365 140 66 239 203 262 360 13 92 13 372 0 455 -13 78 -64 189 -114 246 -100 115 -281 179 -431 154z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>ارسال شده</p>
+                                            </div>
+                                            <div class="spacer_container">
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                                <span class="spacer"></span>
+                                            </div>
+                                            <!-- given__to_user status -->
+                                            <div class="given__to_user status">
+                                                <div class="svg">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        version="1.0"
+                                                        width="512.000000pt"
+                                                        height="512.000000pt"
+                                                        viewBox="0 0 512.000000 512.000000"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                                            <path d="M2394 4979 c-90 -11 -127 -22 -374 -111 -417 -150 -890 -354 -1220 -525 -188 -97 -233 -127 -308 -197 -156 -147 -258 -361 -282 -588 -16 -160 -24 -1232 -12 -1658 10 -348 13 -382 37 -475 49 -193 167 -382 308 -494 145 -115 824 -436 1277 -604 404 -149 433 -159 525 -178 85 -17 256 -15 349 5 76 17 214 62 228 75 4 3 -22 42 -57 86 -114 143 -217 352 -256 525 -30 128 -37 395 -14 531 90 543 512 976 1065 1095 120 26 391 26 510 1 226 -49 438 -149 598 -284 l52 -45 0 574 c-1 703 -9 889 -44 1011 -27 91 -83 210 -134 285 -42 63 -158 178 -223 223 -60 40 -384 208 -493 254 l-66 28 -108 -33 c-434 -135 -1318 -469 -1827 -692 -243 -106 -246 -108 -306 -167 -63 -63 -102 -138 -118 -226 -7 -36 -14 -281 -17 -620 -6 -493 -8 -562 -22 -573 -40 -31 -57 -17 -188 153 -86 112 -133 165 -146 165 -11 0 -61 -25 -112 -55 -50 -30 -99 -55 -107 -55 -9 0 -24 9 -34 20 -17 19 -18 43 -11 428 8 537 19 727 47 809 31 95 105 184 199 240 54 33 461 220 689 318 381 163 1140 450 1344 509 77 22 111 36 105 41 -3 3 -118 46 -257 95 -316 114 -420 133 -597 109z"/>
+                                                            <path d="M3775 2150 c-137 -21 -311 -89 -424 -165 -89 -59 -209 -180 -266 -264 -62 -94 -121 -221 -146 -316 -30 -114 -37 -332 -14 -446 40 -200 131 -372 270 -515 348 -356 875 -408 1295 -129 194 129 342 345 412 604 32 118 30 342 -5 473 -98 369 -369 641 -732 733 -113 29 -290 40 -390 25z m640 -541 c110 -31 165 -169 105 -265 -36 -58 -658 -701 -692 -715 -43 -18 -115 -17 -153 3 -39 21 -386 382 -409 425 -41 80 1 195 86 239 36 19 121 18 161 -2 18 -8 79 -64 137 -125 l105 -109 144 152 c303 321 369 386 409 396 50 14 61 14 107 1z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p>تحویل داده شده</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section_footer d-flex justify-content-start mt-5">
+                            <div class="slide-wrapper">
+                                <div class="slide active">
+                                    <p class="w-100 h-100 __flex__center">1</p>
+                                </div>
+                                <div class="slide">
+                                    <p class="w-100 h-100 __flex__center">2</p>
+                                </div>
+                                <div class="slide">
+                                    <p class="w-100 h-100 __flex__center">3</p>
                                 </div>
                             </div>
                         </div>
@@ -388,7 +1456,7 @@
                             <span class=" yoz-clipboard-text"></span>
                             علاقمندی ها
                         </p>
-                        <hr class="pb-4">
+                        <div class="__line"></div>
                         <p class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
                         <!-- table -->
                         <table class="w-100 my-5">
@@ -522,7 +1590,7 @@
                         </tr>
                     </table>
                     <!-- End table -->
-                    <div class="section_footer __flex__between">
+                    <div class="section_footer __flex__between px-5">
                         <div class="slide-wrapper">
                             <div class="slide active">
                                 <p class="w-100 h-100 __flex__center">1</p>
@@ -547,7 +1615,7 @@
                         <span class=" yoz-clipboard-text"></span>
                         علاقمندی ها
                     </p>
-                    <hr class="pb-4">
+                    <div class="__line"></div>
                     <div class="position-relative">
                         <div class="position-absolute w-100 h-100 z-3 __blur__filter rounded-4 __flex__center">
                             <p class="no-content __container__padding">متنی برای نمایش وجود ندارد:)</p>
@@ -616,18 +1684,7 @@
                             </tr>
                         </table>
                         <!-- End table -->
-                        <div class="section_footer __flex__between">
-                            <div class="slide-wrapper">
-                                <div class="slide">
-                                    <p class="w-100 h-100 __flex__center">1</p>
-                                </div>
-                                <div class="slide">
-                                    <p class="w-100 h-100 __flex__center">2</p>
-                                </div>
-                                <div class="slide">
-                                    <p class="w-100 h-100 __flex__center">3</p>
-                                </div>
-                            </div>
+                        <div class="section_footer __flex__center">
                             <div class="text __flex__center gap-1">
                                 <span class="yoz-trash"></span>
                                 پاک کردن لیست
@@ -645,7 +1702,7 @@
                         </div>
                         <button class="add__address_btn __transition">ثبت آدرس جدید</button>
                     </div>
-                    <hr class="pb-4">
+                    <div class="__line"></div>
                     <p class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
                     <!-- address -->
                     <div class="address__container __container__border __container__padding __flex__between flex-row-reverse my-3">
@@ -662,7 +1719,7 @@
                             ></iframe>
                         </div>
                         <div class="description">
-                            <p class="py-2">
+                            <p class="py-2 ps-5">
                                 تهران، بین کیلومتر 9 و 10 جاده مخصوص کرج، شهرک استقلال، خیابان نخ زرین بلوار تعاون، نبش کوچه رضا، پلاک 12، ساختمان تیپاکس
                             </p>
                             <div class="btns w-100 d-flex gap-3 py-4">
@@ -691,7 +1748,7 @@
                             ></iframe>
                         </div>
                         <div class="description">
-                            <p class="py-2">
+                            <p class="py-2 ps-5">
                                 تهران، بین کیلومتر 9 و 10 جاده مخصوص کرج، شهرک استقلال، خیابان نخ زرین بلوار تعاون، نبش کوچه رضا، پلاک 12، ساختمان تیپاکس
                             </p>
                             <div class="btns w-100 d-flex gap-3 py-4">
@@ -715,10 +1772,10 @@
                         <span class=" yoz-clipboard-text"></span>
                         ویرایش آدرس
                     </p>
-                    <hr class="pb-4">
+                    <div class="__line"></div>
                     <div class="address__form_container __flex__between align-items-start gap-3">
                         <div class="w-50">
-                            <form action="#" class="w-100">
+                            <form action="#" class="w-75 mx-auto">
                                 <!-- select State-->
                                 <div class="form-group selecting__dropdown my-2 __transition">
                                     <div class="select-btn __flex__between">
@@ -849,6 +1906,10 @@
                                     <input type="tel" class="w-75 text-start" placeholder="037-2565-6898">
                                 </div>
                             </form>
+                            <div class="btns __flex__center gap-2">
+                                <button class="connect_to_bank __transition">اتصال مجدد به درگاه پرداخت</button>
+                                <button class="cancel_back __transition">انصراف و بازگشت</button>
+                            </div>
                         </div>
                         <div class="w-50 __flex__center flex-column gap-3">
                             <iframe
@@ -861,7 +1922,10 @@
                                 referrerpolicy="no-referrer-when-downgrade"
                                 class="rounded-5"
                             ></iframe>
-                            <button class="align-self-end show__on_map py-2 px-3">نمایش روی نقشه</button>
+                            <button class="align-self-end show__on_map ms-4 py-2 px-3 __flex__center gap-2">
+                                <span class="yoz-edit"></span>
+                                <p>ویرایش آدرس روی نقشه</p>
+                            </button>
                         </div>
                     </div>
                 </section>
@@ -872,15 +1936,18 @@
                     <button class="__transition">تایید شماره همراه</button>
                 </section>
                 <!-- End verify phonenum -->
+                <!-- needed Element -->
+                <section class="needed_Element __container p-5 my-3"></section>
+                <!-- End needed Element -->
                 <!-- returned requests -->
-                <section class="returned__requests __container my-3 p-5">
+                <section class="returned__requests __container p-5">
                     <div class="__flex__between  mb-5">
                         <div class="title __flex__center gap-2">
                             <span class=" yoz-clipboard-text"></span>
                             درخواست های مرجوعی
                         </div>
                     </div>
-                    <hr class="pb-4">
+                    <div class="__line"></div>
                     <div class="cards-container __flex__center justify-content-start gap-3">
                         <div class="card d-flex flex-column gap-3">
                             <img src="./assets//img/watch-for-returned.png" alt="">
@@ -922,15 +1989,18 @@
                 </section>
                 <!-- End returned requests -->
                 <!-- Make returned requests -->
-                <section class="make__reuqests __container p-5">
+                <section class="make__reuqests __container my-3 p-5">
                     <p class="title d-flex align-items-center gap-2 mb-5">
                         <span class="yoz-clipboard-text"></span>
                         ویرایش آدرس
                     </p>
-                    <hr class="pb-4">
-                    <div class="make-reuqest-form my-4 row">
-                        <div class="product-img h-100 col-2">
-                            <img src="./assets/img/watch-for-returned.png" class="w-100" alt="">
+                    <div class="__line"></div>
+                    <div class="make-reuqest-form mb-2 mt-5 row">
+                        <div class="returned__product  h-100 col-2 __container p-4">
+                            <div class="product-img">
+                                <img src="./assets/img/watch-for-returned.png" class="w-100" alt="">
+                            </div>
+                            <p style="font-size: 13px;" class="pb-1 pt-3 fw-bold">هندزفری بلوتوثی انکر</p>
                         </div>
                         <form action="#" class="col-10 row __flex__center align-items-start gap-4">
                             <div class="inputs-group col-5 h-100">
@@ -1045,15 +2115,16 @@
                             ></textarea>
                         </form>
                     </div>
+                    <button class="continue__returned_request __transition">ادامه فرآیند مرجوعی</button>
                 </section>
                 <!-- End Make returned requests -->
                 <!-- favorite section -->
-                <section class="favorite __container my-3 p-5">
+                <section class="favorite __container p-5">
                     <p class="title d-flex align-items-center gap-2 mb-5">
                         <span class="yoz-clipboard-text"></span>
                         تاریخچه مرجوعی
                     </p>
-                    <hr class="pb-4">
+                    <div class="__line"></div>
                     <div class="position-relative">
                         <div class="position-absolute w-100 h-100 z-3 __blur__filter rounded-4 __flex__center">
                             <p class="no-content __container__padding">متنی برای نمایش وجود ندارد:)</p>
@@ -1122,18 +2193,7 @@
                             </tr>
                         </table>
                         <!-- End table -->
-                        <div class="section_footer __flex__between">
-                            <div class="slide-wrapper">
-                                <div class="slide">
-                                    <p class="w-100 h-100 __flex__center">1</p>
-                                </div>
-                                <div class="slide">
-                                    <p class="w-100 h-100 __flex__center">2</p>
-                                </div>
-                                <div class="slide">
-                                    <p class="w-100 h-100 __flex__center">3</p>
-                                </div>
-                            </div>
+                        <div class="section_footer __flex__center">
                             <div class="text __flex__center gap-1">
                                 <span class="yoz-trash"></span>
                                 پاک کردن لیست

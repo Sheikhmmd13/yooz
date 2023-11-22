@@ -24,6 +24,7 @@
     --red__Light: #fee1e8;
 }
 
+
 * {
     margin: 0 !important;
     padding: 0;
@@ -78,6 +79,23 @@ body {
     backdrop-filter: blur(10px);
 }
 
+.__line {
+    width: 100%;
+    height: 1px;
+    position: relative;
+    margin-bottom: 1.6rem !important;
+    background-color: #ccc;
+}
+
+.__line::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 15%;
+    background-color: var(--gray__Light);
+}
+
 /***** End GLOBAL STYLES *****/
 
 
@@ -94,8 +112,8 @@ body {
 }
 
 .user_name .icon {
-    width: 65px;
-    height: 65px;
+    width: 80px;
+    height: 80px;
     background-color: var(--white);
 }
 
@@ -113,6 +131,17 @@ body {
     font-size: var(--meduim__fontsize);
     font-weight: bold;
     color: var(--gray__Dark);
+}
+
+.user_notification::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 50%;
+    top: 50%;
+    background-color: #ccc;
+    transform: translateY(-50%);
 }
 
 .user_notification .notification_text p {
@@ -140,10 +169,34 @@ body {
     color: var(--orange__Light);
 }
 
+.user_notification .notification_icons span:first-child::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 1px;
+    height: 50%;
+    top: 50%;
+    background-color: #ccc;
+    transform: translateY(-50%);
+}
+
+
 .user_notification .notification_icons span:last-child:hover {
     font-size: 28px;
     color: var(--red__Dark);
 }
+
+.user_notification .notification_icons span:last-child::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 50%;
+    top: 50%;
+    background-color: #ccc;
+    transform: translateY(-50%);
+}
+
 
 /***** End header of dashboard *****/
 
@@ -154,12 +207,22 @@ aside p {
     font-weight: bold;
 }
 
+aside .__line {
+    width: 95%;
+}
+
+aside .__line::before {
+    width: 50%;
+}
+
 aside ul {
     list-style: none;
 }
 
 aside ul li {
-    /* padding: 1rem 0; */
+    padding: .5rem;
+    margin-block: 1.7rem;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -186,6 +249,7 @@ aside ul li span.left-arrow {
 
 aside ul li:hover {
     box-shadow: var(--boxshadow);
+    padding-inline: 1rem;
     background: var(--white);
 }
 
@@ -199,17 +263,17 @@ aside ul li:hover .left-arrow {
     background: var(--blue__Light);
 }
 
-aside p:last-child span {
+aside p.logout span {
     font-size: var(--big__fontsize);
 }
 
-aside p:last-child {
+aside p.logout {
     color: var(--red__Dark);
     font-weight: 600;
     cursor: pointer;
 }
 
-aside p:last-child:hover {
+aside p.logout:hover {
     border-radius: 25px;
     background-color: var(--red__Light);
 }
@@ -283,6 +347,12 @@ section.tickets table tr:hover {
     transform: scale(1.03);
 }
 
+section.tickets table tr:first-child:hover {
+    outline-color: transparent;
+    box-shadow: none;
+    transform: scale(1);
+}
+
 /* table End */
 
 /***** End Main Ticket Section *****/
@@ -352,17 +422,31 @@ section.my__orders .text {
     font-size: 13px;
 }
 
-.status {
+.status.paid {
+    color: var(--green__Dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.status.paid p {
+    color: var(--green__Dark);
+}
+
+.status.waiting__for_pay {
     color: var(--orange__Light);
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
-.status p {
+.status.waiting__for_pay p {
     color: var(--orange__Light);
 }
 
-.status span {
+.status.waiting__for_pay span {
     font-size: 18px;
 }
 
@@ -387,6 +471,7 @@ section.my__orders .text {
     border: 1px solid transparent;
     border-radius: 25px;
     font-size: 13px;
+    box-shadow: 0px 12px 42px -0.4rem var(--orange__Light);
     background-color: var(--orange__Light);
 }
 
@@ -394,6 +479,7 @@ section.my__orders .text {
     color: var(--orange__Light);
     border-color: var(--orange__Light);
     border-radius: 25px 25px 0px 25px;
+    box-shadow: none;
     background: none;
 }
 
@@ -492,6 +578,106 @@ section.my__orders .text {
     background: var(--green__Light);
     border-radius: 25px;
 }
+
+.details__of_order .status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* normal status */
+.details__of_order .status .svg {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--white)
+}
+
+.details__of_order .status .svg svg {
+    width: 60px;
+}
+
+.details__of_order .status .svg svg g {
+    fill: #ccc;
+}
+
+.details__of_order .status p {
+    color: #ccc;
+    font-size: 14.5px;
+}
+
+/* run status */
+
+.details__of_order .status.run .svg svg g {
+    fill: var(--blue__Dark);
+}
+
+.details__of_order .status.run p {
+    color: var(--blue__Dark);
+}
+
+/* ended status */
+.details__of_order .status.end .svg {
+    background: rgb(204, 211, 252) !important;
+    background: linear-gradient(0deg, rgba(204, 211, 252, 1) 0%, rgba(132, 150, 248, 1) 0%, rgba(77, 103, 245, 1) 34%) !important;
+}
+
+.details__of_order .status.end .svg svg g {
+    fill: var(--white) !important;
+}
+
+.details__of_order .status.end p {
+    color: var(--blue__Dark);
+}
+
+.details__of_order .spacer_container {
+    height: 92px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.spacer_container span.spacer {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--gray__Light);
+}
+
+section.my__orders .section_footer .slide-wrapper .slide {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: var(--regular__fontsize);
+
+    cursor: pointer;
+    box-shadow: 0px 5px 13px 0px rgba(65, 65, 65, 0.37);
+    transition: all .3s linear;
+    background-color: rgb(255, 255, 255);
+}
+
+section.my__orders .section_footer .slide-wrapper .slide:hover {
+    color: var(--white);
+    background: var(--blue__Dark);
+    box-shadow: none;
+}
+
+section.my__orders .section_footer .slide-wrapper .slide.active {
+    color: var(--white);
+    background: var(--blue__Dark);
+}
+
 /* End of Table */
 /***** End my_orders section *****/
 
@@ -619,7 +805,15 @@ section.favorite .section_footer .slide-wrapper .slide {
     font-size: var(--regular__fontsize);
 
     cursor: pointer;
-    background: var(--gray__ExtraLight);
+    box-shadow: 0px 5px 13px 0px rgba(65, 65, 65, 0.37);
+    transition: all .3s linear;
+    background: var(--white);
+}
+
+section.favorite .section_footer .slide-wrapper .slide:hover {
+    color: var(--white);
+    background: var(--blue__Dark);
+    box-shadow: none;
 }
 
 section.favorite .section_footer .slide-wrapper .slide.active {
@@ -727,18 +921,22 @@ section.address .edit:hover {
 /***** Editing Address *****/
 
 .address__form_container .form-group {
-    padding: 1.7rem .8rem;
-    border: 1px solid var(--gray__Light);
-    border-radius: 15px;
+    padding: 1rem .8rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
 .address__form_container .form-group:hover {
     border: 1px solid var(--blue__Dark);
+}
+
+.address__form_container .form-group:hover input {
     color: var(--blue__Dark);
 }
 
 .address__form_container .form-group p {
     font-size: 13px;
+    color: #ccc;
 }
 
 .address__form_container .form-group span {
@@ -771,12 +969,25 @@ section.address .edit:hover {
 }
 
 .address__form_container .show__on_map {
-    border: none;
+    border: 1px solid transparent;
     color: var(--gray__Dark);
+    font-size: 13px;
+    font-weight: bold;
     border-radius: 25px;
+    transition: all .3s linear;
     background-color: var(--gray__ExtraLight);
 }
 
+.address__form_container .show__on_map span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.address__form_container .show__on_map:hover {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: none;
+}
 
 .address__form_container .form-group input {
     border: none;
@@ -788,6 +999,40 @@ section.address .edit:hover {
 
 .address__form_container .form-group input:focus-visible {
     outline: none;
+}
+
+.address__form_container .btns .connect_to_bank {
+    border: 1px solid transparent;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    padding: .8rem 1.8rem;
+    color: var(--green__Light);
+    background-color: var(--green__Dark);
+}
+
+.address__form_container .btns .connect_to_bank:hover {
+    color: var(--green__Dark);
+    border-color: var(--green__Dark);
+    border-radius: 5px;
+    background: var(--white);
+}
+
+.address__form_container .btns .cancel_back {
+    border: 1px solid transparent;
+    border-radius: 25px;
+    padding: .8rem 1.8rem;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--gray__Light);
+    background-color: #eee;
+}
+
+.address__form_container .btns .cancel_back:hover {
+    color: var(--gray__Light);
+    border-color: var(--gray__Light);
+    border-radius: 5px;
+    background-color: white;
 }
 
 /***** End Editing Address *****/
@@ -855,10 +1100,11 @@ section.returned__requests input[type="checkbox"]::before {
     content: '\2713';
     top: 50%;
     left: 50%;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: bolder;
     line-height: 25px;
     color: var(--white);
-    transform: scale(1) translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0);
     transition: all .3s linear;
 }
 
@@ -868,7 +1114,7 @@ section.returned__requests input[type="checkbox"]:checked {
 }
 
 section.returned__requests input[type="checkbox"]:checked:before {
-    transform: scale(1) translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
 }
 
 
@@ -972,6 +1218,27 @@ section.returned__requests button:hover {
     outline: none;
     color: var(--blue__Dark);
     border: 1px solid var(--blue__Dark);
+}
+
+.continue__returned_request {
+    font-size: 14px;
+    color: var(--blue__Light);
+    border: 1px solid transparent;
+    border-radius: 25px 25px 25px 0px;
+    padding: .8rem 1.6rem !important;
+
+    box-shadow: 0px 21px 20px var(--blue__Light);
+    background-color: var(--blue__Dark);
+}
+
+.continue__returned_request:hover {
+    color: var(--blue__Dark);
+
+    border-color: var(--blue__Dark);
+    border-radius: 25px 0px 25px 25px;
+
+    box-shadow: none;
+    background: var(--white);
 }
 
 /***** End make returned request *****/
