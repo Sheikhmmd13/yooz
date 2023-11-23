@@ -1242,3 +1242,342 @@ section.returned__requests button:hover {
 }
 
 /***** End make returned request *****/
+
+/***** Needed Element *****/
+.needed_Element .text {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 27px;
+}
+
+.needed_Element .row .btn,
+.needed_Element .row .btn__outline {
+    padding: .99rem 1rem;
+    width: 23%;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all .3s linear;
+}
+
+/* yellow button */
+.btn.warning {
+    color: var(--orange__Dark);
+    background-color: var(--orange__Light);
+}
+
+.btn.warning:hover {
+    color: var(--orange__Dark);
+    background-color: var(--orange__Light);
+}
+
+.btn__outline.warning {
+    color: var(--orange__Light);
+    box-shadow: 2px 7px 42px -.4rem var(--orange__Light);
+    background-color: var(--white);
+}
+
+.btn__outline.warning:hover {
+    color: var(--orange__Light);
+    box-shadow: 2px 7px 42px -.4rem var(--orange__Light);
+    background-color: var(--white);
+}
+
+/* green button */
+.btn.success {
+    color: var(--green__Light);
+    background-color: var(--green__Dark);
+}
+
+.btn.success:hover {
+    color: var(--green__Light);
+    background-color: var(--green__Dark);
+}
+
+.btn__outline.success {
+    color: var(--green__Dark);
+    background-color: var(--white);
+    box-shadow: 4px 7px 42px -.4rem var(--green__Dark);
+}
+
+.btn__outline.success:hover {
+    color: var(--green__Dark);
+    background-color: var(--white);
+    box-shadow: 4px 7px 42px -.4rem var(--green__Dark);
+}
+
+/* blue button */
+.btn.primary {
+    color: var(--blue__Light);
+    background-color: var(--blue__Dark);
+}
+
+.btn.primary:hover {
+    color: var(--blue__Light);
+    background-color: var(--blue__Dark);
+}
+
+.btn__outline.primary {
+    color: var(--blue__Dark);
+    background-color: var(--white);
+    box-shadow: 4px 7px 42px -.4rem var(--blue__Dark);
+}
+
+.btn__outline.primary:hover {
+    color: var(--blue__Light);
+    background-color: var(--blue__Dark);
+}
+
+/* gray button */
+.btn.secondary {
+    color: var(--gray__Dark);
+    background-color: #ccc;
+}
+
+.btn.secondary:hover {
+    color: var(--gray__Dark);
+    background-color: #ccc;
+}
+
+.btn__outline.secondary {
+    color: var(--gray__Dark);
+    box-shadow: 4px 7px 42px -.4rem var(--gray__Dark);
+}
+
+.btn__outline.secondary:hover {
+    color: var(--gray__Dark);
+    background-color: #ccc;
+}
+
+.needed_Element input.form-group {
+    padding: 1rem .8rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 13px;
+    background-color: transparent;
+}
+
+.needed_Element input.form-group.require {
+    padding: 1rem .8rem;
+    border: 1px solid var(--orange__Light);
+    border-radius: 10px;
+    font-size: 13px;
+    background-color: transparent;
+}
+
+.needed_Element input.form-group:focus-visible {
+    outline: none;
+    color: var(--blue__Dark);
+    border-color: var(--blue__Dark);
+}
+
+.needed_Element input.form-group:focus-visible::placeholder {
+    color: var(--blue__Dark)
+}
+
+.needed_Element input.form-group.require:focus-visible {
+    outline: none;
+    color: var(--orange__Light) !important;
+    border-color: var(--orange__Light) !important;
+}
+
+.needed_Element input.form-group.require::placeholder {
+    color: var(--orange__Light)
+}
+
+.needed_Element .form-group {
+    padding: 1rem .8rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.needed_Element .form-group:hover {
+    border: 1px solid var(--blue__Dark);
+}
+
+.needed_Element .form-group:hover input {
+    color: var(--blue__Dark);
+}
+
+.needed_Element .form-group p {
+    font-size: 13px;
+    color: #ccc;
+}
+
+.needed_Element .form-group span {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.needed_Element .options {
+    list-style: none;
+    height: 10rem;
+    padding-left: 20px !important;
+    overflow-y: scroll;
+}
+
+.needed_Element .options.hidden {
+    display: none;
+}
+
+.needed_Element .option {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+}
+
+.needed_Element .option:hover {
+    padding-left: 10px;
+    color: var(--blue__Dark);
+    gap: .35rem !important;
+}
+
+
+.needed_Element input[type="checkbox"] {
+    position: absolute;
+    display: none;
+    left: -5000px;
+    opacity: 0;
+}
+
+
+/* checkbox tick */
+.checkmark {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+
+.checkmark_stem {
+    position: absolute;
+    width: 3px;
+    height: 9px;
+    background-color: #ccc;
+    left: 11px;
+    top: 6px;
+}
+
+.checkmark_kick {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: #ccc;
+    left: 8px;
+    top: 12px;
+}
+
+.needed_Element input[type="checkbox"]:checked+label #tick {
+    background-color: var(--orange__Light);
+    border-color: var(--orange__Light) !important;
+}
+
+.needed_Element input[type="checkbox"]:checked+label .checkmark_stem,
+.needed_Element input[type="checkbox"]:checked+label .checkmark_kick {
+    background-color: #fff !important;
+}
+
+/* radio cricle */
+.big-circle {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.small-circle {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #333;
+}
+
+.needed_Element input[type="checkbox"].checkbox245:checked+label .big-circle {
+    background-color: var(--orange__Light);
+    border-color: var(--orange__Light);
+}
+
+.needed_Element input[type="checkbox"].checkbox245:checked+label .small-circle {
+    background-color: var(--white);
+}
+
+.needed_Element .alert {
+    border: none;
+}
+
+.needed_Element .alert-primary {
+    background-color: var(--blue__Light);
+    color: var(--blue__Dark);
+}
+
+.needed_Element .alert-danger {
+    background-color: var(--red__Light);
+    color: var(--red__Dark);
+}
+
+
+.needed_Element .input-container {
+    border: none;
+    background-color: #eee;
+    padding: .89rem 1.3rem;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.needed_Element .input-container label {
+    font-size: 13px;
+    color: var(--gray__Light);
+}
+
+.needed_Element .input-container input {
+    border: 1px solid transparent;
+    width: 50% !important;
+    padding-block: .5rem;
+    outline: none;
+    background-color: #eee;
+    text-align: end;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--gray__Dark);
+    transition: all .3s linear;
+}
+
+.needed_Element .input-container input:focus-visible {
+    outline: none;
+    padding-inline: .5rem;
+    border: 1px solid #ccc;
+}
+
+.needed_Element .input-container input::placeholder {
+    color: var(--gray__Dark)
+}
+
+
+.needed_Element .edit-profile {
+    border-radius: 25px;
+    font-size: 14px;
+    box-shadow: 5px 7px 42px -.5rem var(--green__Dark);
+    padding-block: .8rem
+}
+.needed_Element .edit-profile:hover {
+    border-color: var(--green__Dark);
+    color: var(--green__Dark);
+    box-shadow: none;
+    background-color: transparent;
+}
+
+/***** End Needed Element *****/
