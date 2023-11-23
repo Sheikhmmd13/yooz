@@ -305,6 +305,8 @@ h6 {
 }
 
 .short-view-to-product {
+    width: 111% !important;
+    margin: 0 !important;
     border-radius: 25px;
     padding-block: 2.4rem !important;
     padding-inline: 3rem !important;
