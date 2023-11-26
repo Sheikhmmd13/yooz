@@ -301,16 +301,72 @@ aside p.logout:hover {
 /***** End style of aside *****/
 
 /***** dashboard *****/
-.dashboard-icon .text span {
-    color: var(--gray__Dark);
+.dashboard-icon {
+    border: 1px solid transparent;
+    transition: all .3s linear;
+}
+
+.dashboard-icon:hover {
+    border-color: var(--blue__Dark);
+    box-shadow: 0px 5px 13px 0px rgba(65, 65, 65, 0.37);
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.dashboard-icon:hover .svg {
+    animation: myAnim .4s ease 0s 1 normal forwards;}
+
+.svg {
+    transition: all 1s linear;
 }
 
 .svg g {
     fill: rgba(77, 103, 245, 1);
 }
 
-
 /***** End  dashboard *****/
+@keyframes myAnim {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.action:hover .svg {
+    animation: myAnim .4s ease 0s 1 normal forwards;}
+
+.svg {
+    transition: all 1s linear;
+}
+
+.action {
+    border: 1px solid transparent;
+    transition: all .3s linear;
+}
+
+.action:hover {
+    border-color: var(--blue__Dark);
+    box-shadow: 0px 5px 13px 0px rgba(65, 65, 65, 0.37);
+}
 
 /***** products *****/
 .newest-btn {
@@ -341,6 +397,15 @@ tr {
     background-color: var(--green__Light);
 }
 
+tr svg {
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+tr svg:hover {
+    transform: scale(1.1);
+}
+
 
 .eye-svg g {
     fill: var(--gray__Light);
@@ -355,7 +420,15 @@ header .see-all {
     color: var(--backgroudbody);
     box-shadow: 5px 7px 42px -.4rem var(--blue__Dark);
     background: var(--blue__Dark);
+    transition: all .3s linear;
 
+}
+
+header .see-all:hover {
+    color: var(--blue__Dark);
+    border-color: var(--blue__Dark);
+    box-shadow: none;
+    background-color: transparent;
 }
 
 .news {
@@ -367,8 +440,28 @@ header .see-all {
     color: var(--green__Dark);
 }
 
+.article-body p.title {
+    cursor: pointer;
+    transition: all .1s linear;
+}
+
+.article-body:hover p.title{
+    color: var(--blue__Dark);
+}
+
 .article-footer span {
     color: var(--green__Dark);
+}
+
+.see-all-article {
+    outline: 1px solid transparent;
+    cursor: pointer;
+}
+
+.see-all-article:hover {
+    border-radius: 25px;
+    outline: 1px solid var(--green__Dark);
+    outline-offset: .5rem;
 }
 
 /***** End articls *****/
