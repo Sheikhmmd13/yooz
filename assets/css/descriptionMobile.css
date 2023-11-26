@@ -25,7 +25,7 @@ body {
     line-height: 1.5;
     font-family: yekanbakh;
     font-size: 14px;
-    background: var(--backgroudbody);
+    background: #f0f1f1;
 }
 
 p,
@@ -259,8 +259,17 @@ h6 {
 
 .showFullInfo {
     border-radius: 25px;
+    border: 1px solid transparent !important;
     color: #c2c2c2;
     background: #f5f6f6;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.showFullInfo:hover {
+    background: none;
+    border: 1px solid #7660fa !important;
+    color: #7660fa;
 }
 
 .product-price .iphone-discount {
@@ -294,6 +303,7 @@ h6 {
 
     color: #f2f2fb;
     font-size: 24px;
+    border: 1px solid transparent !important;
     border-radius: 50% 50% 0px 50%;
 
     display: flex;
@@ -302,17 +312,32 @@ h6 {
 
     box-shadow: var(--boxshadow);
     background-color: #7660fa;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.product-price .add-to-cart:hover {
+    color: #7660fa;
+    background: none;
+    border: 1px solid #7660fa !important;
+    box-shadow: none;
 }
 
 .short-view-to-product {
-    width: 111% !important;
-    margin: 0 !important;
     border-radius: 25px;
     padding-block: 2.4rem !important;
     padding-inline: 3rem !important;
     box-shadow: var(--boxshadow);
-    transform: scale(.9);
     background-color: var(--backgroudbody);
+}
+
+.small-image {
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.small-image:hover {
+    transform: scale(1.15);
 }
 
 .more-small-image {
@@ -340,6 +365,12 @@ h6 {
     height: 5px;
     border-radius: 50%;
     background: blue;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.product-iphone-colors .color:hover {
+    transform: scale(1.1);
 }
 
 .product-iphone-colors .color.red {
@@ -399,17 +430,21 @@ h6 {
 
 .product-review {
     position: relative;
+    height: auto;
+
+    overflow: visible;
 
     border-radius: 25px;
     box-shadow: var(--boxshadow);
     background-color: var(--backgroudbody);
+    transition: all .5s linear;
 }
 
 .product-review .icon {
     width: 18%;
-    color: #7e7e7e;
+    color: rgb(81, 87, 132);
     border-radius: 25px;
-    background: #eee;
+    background-color: rgb(246, 247, 254);
 }
 
 .product-review .icon span {
@@ -442,13 +477,27 @@ h6 {
 
 .product-review::after {
     content: '';
+    display: var(--show, block);
     position: absolute;
-    bottom: 0;
+    bottom: 5%;
     left: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     right: 0;
-    height: 10rem;
+    height: 15rem;
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.9598214285714286) 28%, rgba(255, 255, 255, 0) 100%);
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.hidden__p {
+    opacity: 0;
+    z-index: -110;
+    height: 0;
+
 }
 
 .product-review button {
@@ -464,8 +513,13 @@ h6 {
     font-weight: bold;
     border-radius: 25px;
 
-    background: #ccc;
+    background: #eaeaea;
     z-index: 1111;
+    transition: all .3s linear;
+}
+
+.product-review button:hover {
+    border-radius: 25px 5px 25px 5px !important;
 }
 
 .product-technical-info {
@@ -476,9 +530,9 @@ h6 {
 
 .product-technical-info .icon {
     width: 20%;
-    color: #7e7e7e;
+    color: rgb(81, 87, 132);
     border-radius: 25px;
-    background: #eee;
+    background-color: rgb(246, 247, 254);
 }
 
 .product-technical-info .icon span {
@@ -528,9 +582,9 @@ td.td-red {
 .user-opinion .icon {
     width: 18% !important;
     text-align: start;
-    color: #7e7e7e;
+    color: rgb(81, 87, 132);
     border-radius: 25px;
-    background: #eee;
+    background-color: rgb(246, 247, 254);
 }
 
 .user-opinion .icon span {
@@ -554,6 +608,17 @@ td.td-red {
     font-size: 12px;
 }
 
+.opinion::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 90%;
+    height: 1px;
+    background-color: rgb(211, 211, 211);
+}
+
 .opinion-text p {
     text-overflow: ellipsis;
     overflow: hidden;
@@ -562,14 +627,24 @@ td.td-red {
 }
 
 .product-attribute .strength-points div.point {
-    max-width: 40%;
+    max-width: 35%;
     border-radius: 25px;
     color: #e0f7e3;
     background-color: #4ad060;
+    box-shadow: 0px 0px 24px 0px rgba(171, 176, 196, 0.27);
 }
 
 .strength-points .point span {
     font-size: 25px;
+}
+
+.strength-points::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 1px;
+    height: 90%;
+    background-color: rgb(211, 211, 211);
 }
 
 ol {
@@ -592,10 +667,11 @@ ol li::before {
 }
 
 .point.week {
-    max-width: 40%;
+    max-width: 35%;
     border-radius: 25px;
     color: #fee9f0;
     background-color: #f1004f;
+    box-shadow: 0px 0px 24px 0px rgba(171, 176, 196, 0.27);
 }
 
 .point.week span {
@@ -606,14 +682,35 @@ ol li::before {
     border: none;
     color: #f2f7ff;
     font-size: 13px;
+    border: 1px solid transparent !important;
     border-radius: 25px;
     background-color: #0661f8;
+    transition: all .3s linear;
+}
+
+.opinion-actions button:hover {
+    background-color: transparent;
+    color: #0661f8;
+    border-color: #0661f8 !important;
 }
 
 .like {
-    color: #dce8fe;
+    color: #3c3c3c;
     border-radius: 25px;
+    box-shadow: var(--boxshadow);
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.like.active {
+    color: #dce8fe;
     background: #8fb8fc;
+}
+
+.like:hover {
+    color: #fff;
+    background-color: #4ad060;
 }
 
 .actions span {
@@ -624,6 +721,13 @@ ol li::before {
     color: #3c3c3c;
     box-shadow: var(--boxshadow);
     background-color: #fff;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.dislike:hover {
+    color: #fff;
+    background: #f1004f;
 }
 
 
@@ -697,6 +801,7 @@ ol li::before {
 }
 
 .user-point span {
+    cursor: pointer !important;
     font-size: 15px !important;
 }
 
@@ -720,18 +825,44 @@ ol li::before {
 .add-user-point input {
     color: #7e7e7e !important;
     border: 1px solid #c2c2c2 !important;
+    transition: all .3s linear;
+}
+
+.add-user-point input:focus-visible {
+    border-color: #0661f8 !important;
+    color: #0661f8 !important;
+}
+
+.add-user-point input:focus-visible::placeholder {
+    color: #0661f8;
 }
 
 .add-user-point input#submit {
     color: #fff !important;
-    border: none !important;
+    border: 1px solid transparent !important;
     background: #0661f8;
+    transition: all .3s linear;
 }
+
+.add-user-point input#submit:hover {
+    background-color: transparent;
+    color: #0661f8 !important;
+    border-color: #0661f8 !important;
+}
+
 
 .add-user-point input#exit {
     color: #fff !important;
-    border: none !important;
+    border: 1px solid transparent !important;
     background: #f1004f;
+    transition: all .3s linear;
+
+}
+
+.add-user-point input#exit:hover {
+    background-color: transparent;
+    color: #f1004f !important;
+    border-color: #f1004f !important;
 }
 
 #strength-point {
@@ -787,7 +918,7 @@ ol li::before {
 .rate-to-product input::before {
     content: '';
     position: absolute;
-    width: var(--rangeInputBeforWidth , 50%);
+    width: var(--rangeInputBeforWidth, 50%);
     top: 0;
     bottom: 0;
     border-radius: 25px;
@@ -865,6 +996,14 @@ ol li::before {
     color: #0661f8;
 }
 
+.send-user-view textarea::placeholder {
+    color: #ccc;
+}
+
+.send-user-view textarea:focus-visible::placeholder {
+    color: #0661f8;
+}
+
 .send-user-view button {
     color: #fff;
 
@@ -879,7 +1018,7 @@ ol li::before {
 .send-user-view button:hover {
     outline: 1px solid #0661f8;
 
-    border-radius: 25px;
+    border-radius: 5px 25px 25px 25px;
     color: #0661f8;
     box-shadow: var(--boxshadow);
     background-color: var(--backgroudbody);
@@ -893,14 +1032,21 @@ ol li::before {
 }
 
 .product-guide .guide {
-    background: #eee;
-    color: #8185a5;
-
+    background-color: var(--backgroudbody);
+    color: rgb(81, 87, 132);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    border: 1px solid transparent !important;
     border-radius: 25px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.product-guide .guide:first-child:hover {
+    border-color: #333 !important;
+    border-radius: 25px 25px 5px 25px;
 }
 
 .cards-container .card-body {
@@ -926,6 +1072,11 @@ ol li::before {
     font-size: 14px;
     color: #252630;
     font-family: var(--haedfont);
+    transition: all .2s linear;
+}
+
+.cards-container .card-title h2:hover {
+    color: #7660fa;
 }
 
 .cards-container .card-title p {
@@ -935,9 +1086,9 @@ ol li::before {
 .cards-container .price-container::before {
     content: '';
     width: 2px;
-    height: 50%;
+    height: 80%;
     position: absolute;
-    right: -10px;
+    right: -15px;
     border-radius: 25px;
     background-color: #eee;
 }
@@ -998,7 +1149,7 @@ ol li::before {
     transition: all .4s ease;
 }
 
-.product-colors {
+.other-product-colors {
     position: absolute;
     top: 1.8em;
     right: 1.8em;
@@ -1006,21 +1157,53 @@ ol li::before {
     height: 100px;
 }
 
-.product-colors .color {
+.other-product-colors .color {
     width: 5px;
     height: 5px;
     border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: all .1s linear;
 }
 
-.product-colors .red {
+.other-product-colors .color span {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+
+    display: flex;
+    padding: .4rem !important;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #fff;
+    background: #333;
+    transition: all .2s linear;
+}
+
+.other-product-colors .color:hover {
+    width: 9px;
+    height: 9px;
+}
+
+.other-product-colors .color:hover span {
+    transform: translateY(-50%) scale(1);
+}
+
+.other-product-colors .black:hover span {
+    left: -55px;
+    transform: translateY(-50%) scale(1);
+}
+
+.other-product-colors .red {
     background-color: red;
 }
 
-.product-colors .black {
+.other-product-colors .black {
     background: black;
 }
 
-.product-colors .blue {
+.other-product-colors .blue {
     background: blue;
 }
 
@@ -1039,12 +1222,31 @@ ol li::before {
     height: 40px;
     font-size: 12px;
     border-radius: 50%;
+    position: relative;
     background: #f1f1f1;
     transition: all .4s ease;
 }
 
 .card-icons span {
     font-size: 18px;
+}
+
+.card-icon .icon-tooltip {
+    position: absolute;
+    right: -230%;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    border-radius: 15px;
+    padding: .54rem !important;
+    font-size: 11px;
+    color: #fff;
+    background: #333;
+    transition: all .2s linear;
+}
+
+.card-icon:hover .icon-tooltip {
+    transform: translateY(-50%) scale(1);
+
 }
 
 .card-body:hover {

@@ -8,6 +8,9 @@ const addPoint = document.querySelector(".add-user-point");
 const closeAddPoint = document.querySelector("#exit");
 const submitAddPoint = document.querySelector("#submit");
 const inputsRange = document.querySelectorAll("input[type=range]");
+const product__review_section = document.querySelector('.product-review')
+const showMore_Btn = document.querySelector('#show__more_p');
+const hidden_p = document.querySelectorAll('.hidden__p');
 
 function deleteUserPoint() {
 	const UserPoints = document.querySelectorAll(".user-point");
@@ -86,3 +89,25 @@ inputsRange.forEach((input) => {
 		console.log("remove");
 	});
 });
+
+
+// toggle hidden p
+hidden_p.forEach(p => {
+	var isOpen = false;
+
+	showMore_Btn.addEventListener('click', ()=> {
+		isOpen = !isOpen;
+
+		if(isOpen){
+			p.classList.remove('hidden__p');
+			product__review_section.style.setProperty('--show', 'none')
+			showMore_Btn.querySelector('span').classList.add('rotate') //icon inside of button
+		} else {
+			p.classList.add('hidden__p');
+			product__review_section.style.setProperty('--show', 'block')
+			showMore_Btn.querySelector('span').classList.remove('rotate') //icon inside of button
+		}
+
+
+	})
+})
