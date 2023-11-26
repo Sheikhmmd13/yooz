@@ -338,22 +338,23 @@ aside p.logout:hover {
 
 /***** End  dashboard *****/
 @keyframes myAnim {
-	0% {
-		transform: scale(1);
-	}
-
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
 	50% {
-		transform: scale(1.1);
+		opacity: 1;
+		transform: scale(0.6);
 	}
 
 	100% {
+		opacity: 1;
 		transform: scale(1);
 	}
 }
 
 .action:hover .svg {
-    animation: myAnim .4s ease 0s 1 normal forwards;}
-
+    animation: myAnim .3s ease 0s 1 normal forwards;
 .svg {
     transition: all 1s linear;
 }
