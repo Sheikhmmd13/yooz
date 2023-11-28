@@ -1690,3 +1690,19 @@ body {
 
 
 /*? ------------------------ ?*/
+/* brands list */
+.brands {
+    width: 100%;
+    margin-block: 3.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brands .next-brand,
+.brands .prev-brand {
+    align-self: flex-start;
+}
+
+/*? ------------------------ ?*/
