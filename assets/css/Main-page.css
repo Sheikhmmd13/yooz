@@ -19,7 +19,7 @@
     --purple: #6b53fe;
     --pink: #f00050;
 
-    /* --boxShadow: 0px 21px 49px 0px rgba(216, 216, 216, .6) */
+    --boxShadow: 0px 21px 49px 0px rgba(216, 216, 216, .6)
 }
 
 * {
@@ -34,7 +34,7 @@ body {
 
     overflow-x: hidden;
     font-size: 14px;
-    font-family:yekanbakh;
+    font-family: yekanbakh;
 
     background: #fafbfb;
 
@@ -150,13 +150,13 @@ body {
 
     cursor: pointer;
     transition: all .3s linear;
-    background: #b8c3fc;
+    background: #6a81f8 !important;
 }
 
 .navigation .ctrls .next-btn:hover,
 .navigation .ctrls .prev-btn:hover {
-    border-color: var(--blue_light);
-    background-color: transparent;
+    border-color: #6a81f8;
+    background: none !important;
 }
 
 .shadow {
@@ -356,6 +356,73 @@ body {
     object-fit: cover;
 }
 
+.head-banner .banner .text {
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+
+    color: var(--white);
+}
+
+.head-banner .banner .text .label {
+    width: 60%;
+    padding: .5rem;
+    border-radius: 25px;
+    text-align: center;
+
+    color: var(--black);
+    cursor: pointer;
+    background-color: var(--yellow);
+    transition: all .3s linear;
+}
+
+.head-banner .banner .text .label:hover {
+    outline: 1px solid var(--yellow);
+    background-color: transparent;
+    color: var(--yellow);
+}
+
+.head-banner .banner .text .h1 h1{
+    font-size: 40px;
+}
+
+.head-banner .banner .text button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: var(--white);
+    padding: .7rem;
+    border-radius: 25px 25px 25px 5px;
+
+    background: none;
+    border: 1px solid var(--white);
+    transition: all .3s linear;
+}
+
+.head-banner .banner .text button svg path {
+    transition: all .3s linear;
+
+}
+
+.head-banner .banner .text button:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.head-banner .banner .text button:hover svg path {
+    fill: var(--black);
+}
+
+
 /* end head banner */
 
 /*? ------------------------ ?*/
@@ -452,7 +519,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.3rem;
+    gap: 5px;
 }
 
 .archive header .ctrls .next-btn,
@@ -747,6 +814,9 @@ body {
 
 .archive-product:hover {
     outline-color: var(--purple);
+    box-shadow: 0px 15px 22.15px 2.88px #b3b3b3 !important;
+    /* box-shadow: -0.977px -2.837px 7px 0px rgba(0, 0, 0, 0.14) !important; */
+
 }
 
 .archive-product:hover::before {
@@ -801,15 +871,114 @@ body {
 
 
 .category-icon:hover {
-    box-shadow: 0px 21px 42px -.6rem var(--purple);
+    box-shadow: var(--boxShadow);
     background-color: var(--white);
+}
+
+/*? ------------------------ ?*/
+/* banner */
+.banners {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-products {
+    width: 48%;
+    padding: 5rem;
+
+    display: flex;
+    justify-content: end;
+
+    position: relative;
+    cursor: pointer;
+
+    transform-style: preserve-3d;
+}
+
+.banner-products::before {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 35px;
+    height: 70px;
+    background-color: var(--white);
+    border-top-right-radius: 110px;
+    border-bottom-right-radius: 110px;
+}
+
+.banner-products .left-arrow {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) translateZ(50px);
+
+    background-color: #c222a8;
+    transition: all .3s linear;
+}
+
+.banner-products:last-child .left-arrow {
+    background-color: #f3db08;
+}
+
+.banner-products .img {
+    position: absolute;
+    top: -35%;
+    right: 15%;
+    transform: translateZ(50px);
+
+}
+
+.banner-products .text {
+    width: auto;
+    text-align: start;
+
+    position: absolute;
+    top: 20%;
+
+    color: var(--white);
+    transform: translateZ(50px);
+
+    line-height: 2.5rem;
+}
+
+.banner-products .text p {
+    font-size: 18px;
+}
+
+.banner-products .text h2 {
+    font-size: 25px;
+}
+
+.purple-banner {
+    background-image: url('./../img/purple-banner.png');
+    background-repeat: no-repeat;
+}
+
+.yellow-banner {
+    background-image: url("./../img/yellow\ banner.png");
+    background-repeat: no-repeat;
 }
 
 /*? ------------------------ ?*/
 
 .offer-orders {
     width: 100%;
-    margin-bottom: 3.5rem;
+    margin-top: 10%;
+    margin-bottom: 4rem;
 
     position: relative;
 
@@ -819,8 +988,8 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
-    bottom: 25%;
+    height: 100%;
+    bottom: 10%;
     border-radius: 35px;
 
     padding-inline: 1rem;
@@ -833,6 +1002,7 @@ body {
 }
 
 .background-rose .title {
+    padding-right: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -850,7 +1020,7 @@ body {
 .background-rose .title button {
     border: 1px solid transparent;
     border-radius: 25px;
-    
+
     color: var(--black);
     font-weight: bold;
     font-family: yekanbakh;
@@ -869,6 +1039,8 @@ body {
 .background-rose .navigation {
     height: 80%;
     width: 2rem;
+
+    padding-left: 4%;
 
     display: flex;
     flex-direction: column;
@@ -908,8 +1080,8 @@ body {
     gap: 10px;
 }
 
-.navigation .ctrls .next-btn,
-.navigation .ctrls .prev-btn {
+.background-rose .next-vertical-btn,
+.background-rose .prev-vertical-btn {
     height: 40px;
     width: 20px;
     border-radius: 25px;
@@ -924,21 +1096,21 @@ body {
     background: var(--white);
 }
 
-.navigation .ctrls .next-btn:hover,
-.navigation .ctrls .prev-btn:hover {
+.background-rose .ctrls .next-vertical-btn:hover,
+.background-rose .ctrls .prev-vertical-btn:hover {
     border-color: var(--white);
     background-color: transparent;
 }
 
-.navigation .ctrls .next-btn:hover path,
-.navigation .ctrls .prev-btn:hover path {
+.navigation .ctrls .next-vertical-btn:hover path,
+.navigation .ctrls .prev-vertical-btn:hover path {
     fill: var(--white);
 }
 
 .orders {
-    width: 80%;
+    width: 75%;
 
-    margin-right: 15%;
+    margin-right: 17%;
 
     display: flex;
     justify-content: end;
@@ -950,9 +1122,42 @@ body {
     border-bottom-right-radius: 30px;
 }
 
+.order:first-child::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 75%;
+    background-color: #eee;
+}
+
 .order:last-child {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+}
+
+.order:last-child::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 75%;
+    background-color: #eee;
+}
+
+.order:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 75%;
+    background-color: #eee;
 }
 
 .order {
@@ -1206,3 +1411,282 @@ body {
 .order:hover .cart-icon svg path {
     fill: var(--white)
 }
+
+/*? ------------------------ ?*/
+
+.price-list {
+    width: 100%;
+
+    padding: 2rem 3rem;
+    margin-bottom: 3.5rem;
+    border-radius: 20px;
+
+    box-shadow: 0px 21px 49px 0px rgba(216, 216, 216, .61);
+    background-color: var(--white);
+}
+
+.price-list header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-list header .address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.price-list header .address span {
+    color: var(--yellow)
+}
+
+.price-list header .address p {
+    font-size: 14px;
+    color: #a9a9a9;
+}
+
+.price-list header .address p:first-child {
+    color: var(--blue_dark);
+    font-weight: bold;
+}
+
+.price-list .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.price-list .controls .search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-inline: .7rem;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.price-list .controls .search label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls .search input {
+    width: 75%;
+    height: 100%;
+    padding-block: .7rem;
+    border: none;
+    color: #a9a9a9;
+    font-size: 13px;
+    background-color: transparent;
+}
+
+.controls .search input:focus-visible::placeholder {
+    color: #a9a9a9;
+}
+
+.controls .search input:focus-visible {
+    outline: none;
+}
+
+.controls .print {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: .7rem;
+    border-radius: 10px;
+
+    background: #4700c8;
+}
+
+.controls .exel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: .7rem;
+    border-radius: 10px;
+
+    background: #00c862;
+}
+
+.price-list ul {
+    width: 100%;
+    list-style: none;
+
+    margin-block: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-list ul .row:nth-child(odd) {
+    background: #f5f6f6;
+}
+
+.price-list ul .row {
+    width: 100%;
+    padding: 1rem;
+
+    font-weight: normal;
+    font-size: 13px;
+    color: #4b4b4b;
+    text-align: center;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.price-list ul .row.title {
+    padding-block: 2rem;
+
+    color: var(--black);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.price-list ul .row li {
+    width: 8.3%;
+}
+
+.price-list ul .row li:last-child div.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.price-list ul .row li:last-child .eye {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    background-color: #b9c1c1;
+}
+
+.price-list ul .row li:last-child .edit {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    background-color: var(--blue_dark);
+}
+
+.price-list ul .row li:first-child {
+    width: 50%;
+    padding-right: 1rem;
+    text-align: start;
+}
+
+.price-list .red-column {
+    color: var(--red);
+    font-weight: bold;
+}
+
+.price-list .price-change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.price-list .paganition {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px
+}
+
+.price-list .paganition .slide {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+    border-radius: 50%;
+
+    color: #000;
+    cursor: pointer;
+    transition: all .3s linear;
+    background-color: var(--white);
+    box-shadow: 0px 5px 13px 0px rgba(65, 65, 65, 0.15);
+}
+
+.price-list .paganition .slide-buttons {
+    width: 52px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+    border-radius: 43%;
+
+    color: #000;
+    cursor: pointer;
+    transition: all .3s linear;
+    background-color: var(--white);
+    box-shadow: 0px 5px 13px 0px rgba(65, 65, 65, 0.15);
+}
+
+.price-list .paganition .slide-buttons:first-child {
+    padding-left: 12px;
+}
+
+.price-list .paganition .slide-buttons:last-child {
+    padding-right: 12px;
+}
+
+.price-list .paganition .slide-buttons:hover {
+    background: var(--purple);
+    box-shadow: none;
+}
+
+.price-list .paganition .slide-buttons:hover svg path {
+    fill: var(--white)
+}
+
+.price-list .paganition .slide.active {
+    background: var(--purple);
+    color: var(--white);
+    box-shadow: none;
+    cursor: auto;
+}
+
+
+.price-list .paganition .slide:hover {
+    background: var(--purple);
+    color: var(--white);
+    box-shadow: none;
+}
+
+
+/*? ------------------------ ?*/

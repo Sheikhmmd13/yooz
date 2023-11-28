@@ -1,101 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/base.css">
         <title>Document</title>
     </head>
+    <body>
+        <style>
+          @keyframes topToBottom {
+            0%{
+              top: 0%;
+            }
 
-    <body style="height: 100vh; width: 100vw; padding: 0;">
-        <div class="container w-100 h-100 bg-dark d-flex justify-content-center align-items-center">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Accordion Item #2
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Accordion Item #3
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-              </div>
+            50% {
+              top: -10%;
+            }
+
+            100% {
+              top: 0%
+            }
+          }
+
+        body {
+          width: 100vw;
+          height: 100vh;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .container {
+          width: 50%;
+          height: 50%;
+          position: relative;
+          background-color: crimson;
+        }
+
+        .child {
+          width: 50%;
+          height: 50%;
+          border-radius: 45px;
+
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+
+          /* animation-name: topToBottom;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-delay: 0s;
+          animation-iteration-count: infinite;
+          transition: all 1s linear; */
+
+          background-color: yellow;
+        }
+        </style>
+        <div class="container">
+            <div class="child"></div>
         </div>
-        <script src="./assets/js/main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-        <script>
-            var options = {
-                series: [{
-                    name: 'Website Blog',
-                    type: 'column',
-                    data: [2324, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
-                }, {
-                    name: 'Social Media',
-                    type: 'line',
-                    data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
-                }],
-                chart: {
-                    height: 350,
-                    type: 'line',
-                },
-                stroke: {
-                    width: [0, 4]
-                },
-                title: {
-                    text: 'Traffic Sources'
-                },
-                dataLabels: {
-                    enabled: false,
-                    enabledOnSeries: [1]
-                },
-                labels: ['28 شهریور 1402', '02 Jan 2001', '03 Jan 2001', '04 Jan 2001', '05 Jan 2001', '06 Jan 2001', '07 Jan 2001', '08 Jan 2001', '09 Jan 2001', '10 Jan 2001', '11 Jan 2001', '12 Jan 2001'],
-                xaxis: {
-                    type: 'datetime'
-                },
-                yaxis: [{
-                    title: {
-                        text: 'Website Blog',
-                    },
-
-                }, {
-                    opposite: true,
-                    title: {
-                        text: 'Social Media'
-                    }
-                }]
-            };
-
-            var chart = new ApexCharts(document.querySelector("#chart"), options);
-            chart.render();
-        </script>
     </body>
-
 </html>
