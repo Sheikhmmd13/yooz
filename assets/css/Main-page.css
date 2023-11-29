@@ -389,7 +389,7 @@ body {
     color: var(--yellow);
 }
 
-.head-banner .banner .text .h1 h1{
+.head-banner .banner .text .h1 h1 {
     font-size: 40px;
 }
 
@@ -1706,3 +1706,46 @@ body {
 }
 
 /*? ------------------------ ?*/
+/* features */
+.features {
+    width: 100%;
+    margin-block: 3.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature {
+    width: 14%;
+
+}
+
+.feature .card {
+    width: 100%;
+
+    padding-block: 3.8rem;
+    border-radius: 5px 80px 80px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    perspective: 400px;
+
+    box-shadow: 0px 21px 49px 0px rgba(216, 216, 216, .61);
+    background-color: var(--white);
+}
+
+.feature .icon {
+    transition: all .45s linear;
+    transform-style: preserve-3d;
+}
+.feature:hover .icon{
+    transform: rotateY(180deg);
+}
