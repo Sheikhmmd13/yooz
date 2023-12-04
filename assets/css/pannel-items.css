@@ -33,7 +33,8 @@
 }
 
 body {
-    max-width: 1400px;
+    max-width: 80vw;
+    margin-inline: auto;
     background-color: var(--gray__Light);
 }
 

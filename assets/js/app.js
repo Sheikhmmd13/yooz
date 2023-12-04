@@ -416,3 +416,14 @@ if (
 		});
 	});
 }
+
+if(
+	document.getElementsByTagName("body")[0].classList.contains("main-page")
+) {
+	const swiper = new Swiper('.firstBanner-swiper', {
+		navigation: {
+			nextEl: '.first-banner-NextEl',
+			prevEl: '.first-banner-PrevEl'
+		}
+	})
+}
