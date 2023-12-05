@@ -3281,7 +3281,7 @@ header.navbar nav .searchBar input:focus-visible {
     width: 80px;
     height: 55px;
     transition: all .3s linear;
-    background-color:var(--red__Dark);
+    background-color: var(--red__Dark);
     z-index: 0;
 }
 
@@ -3606,10 +3606,16 @@ header.navbar nav .searchBar input:focus-visible {
 .archive .address p {
     font-size: 13px;
     color: #a9a9a9;
+    transition: all .3s linear;
+}
+
+.archive .address p:hover {
+    cursor: pointer;
+    color: var(--blue__Dark)
 }
 
 .archive .address p.category-name {
-    color: var(--blue_dark);
+    color: var(--blue__Dark);
     font-weight: bold;
 }
 
@@ -3631,15 +3637,24 @@ header.navbar nav .searchBar input:focus-visible {
     justify-content: center;
 
     cursor: pointer;
-    outline: 1px solid transparent;
+    border: 1px solid var(--blue__Dark);
     transition: all .23s linear;
-    background: var(--blue_dark);
+    background: var(--blue__Dark);
+}
+
+.archive header .ctrls .next-btn svg path,
+.archive header .ctrls .prev-btn svg path {
+    transition: fill .2s linear;
 }
 
 .archive header .ctrls .next-btn:hover,
 .archive header .ctrls .prev-btn:hover {
-    outline-color: var(--blue_dark);
-    outline-offset: 5px;
+    background-color: transparent;
+}
+
+.archive header .ctrls .next-btn:hover svg path,
+.archive header .ctrls .prev-btn:hover svg path {
+    fill: var(--blue__Dark);
 }
 
 .archive-products {
@@ -3670,7 +3685,7 @@ header.navbar nav .searchBar input:focus-visible {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 30%;
+    width: 32%;
     height: 55px;
     transition: all .3s linear;
     background-color: var(--purple);
@@ -3893,6 +3908,7 @@ header.navbar nav .searchBar input:focus-visible {
     width: 55px;
     height: 55px;
     border-radius: 50% 50% 5px 50%;
+    margin: 0;
 
     position: relative;
     z-index: 1;
@@ -3973,10 +3989,15 @@ header.navbar nav .searchBar input:focus-visible {
     background-color: var(--white);
 }
 
+.category-icon:hover svg path {
+    fill: var(--blue__Dark);
+}
+
 /*? ------------------------ ?*/
 /* banner */
 .banners {
     width: 100%;
+    margin-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -3988,6 +4009,8 @@ header.navbar nav .searchBar input:focus-visible {
 
     display: flex;
     justify-content: end;
+    border: none;
+    outline: none;
 
     position: relative;
     cursor: pointer;
@@ -4006,6 +4029,7 @@ header.navbar nav .searchBar input:focus-visible {
     width: 35px;
     height: 70px;
     background-color: var(--white);
+    border: none;
     border-top-right-radius: 110px;
     border-bottom-right-radius: 110px;
 }
@@ -4020,9 +4044,9 @@ header.navbar nav .searchBar input:focus-visible {
     align-items: center;
 
     position: absolute;
-    left: 0;
+    left: -18px;
     top: 50%;
-    transform: translateY(-50%) translateZ(50px);
+    transform: translateY(-50%);
 
     background-color: #c222a8;
     transition: all .3s linear;
@@ -4033,6 +4057,9 @@ header.navbar nav .searchBar input:focus-visible {
 }
 
 .banner-products .img {
+    border: none;
+    outline: none;
+
     position: absolute;
     top: -35%;
     right: 15%;
@@ -4128,14 +4155,13 @@ header.navbar nav .searchBar input:focus-visible {
     font-family: yekanbakh;
     padding: .7rem 1rem;
 
-    background-color: var(--yellow);
+    background-color: #f3db08;
     transition: all .3s linear;
 }
 
 .background-rose .title button:hover {
-    border-color: var(--yellow);
+    border-color: #f3db08;
     background-color: transparent;
-    color: var(--yellow);
 }
 
 .background-rose .navigation {
@@ -4217,6 +4243,9 @@ header.navbar nav .searchBar input:focus-visible {
     display: flex;
     justify-content: end;
     align-items: center;
+
+    border: none;
+    outline: none;
 }
 
 .order:first-child {
@@ -4266,7 +4295,8 @@ header.navbar nav .searchBar input:focus-visible {
     width: 25%;
     height: 96%;
 
-    border: none;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
 
     position: relative;
     overflow: hidden;
@@ -4391,7 +4421,7 @@ header.navbar nav .searchBar input:focus-visible {
 .order .discount {
     width: 40px;
     height: 40px;
-    color: #eefcf0;
+
     font-size: 12px;
 
     position: absolute;
@@ -4403,8 +4433,13 @@ header.navbar nav .searchBar input:focus-visible {
     align-items: center;
 
     border-radius: 50%;
-    background: #52d997;
+    background: var(--red__Dark);
     transition: all .4s ease;
+}
+
+.order .discount p {
+    text-align: center;
+    color: var(--white);
 }
 
 .order .product-img {
@@ -4503,11 +4538,14 @@ header.navbar nav .searchBar input:focus-visible {
 }
 
 .order:hover {
-    box-shadow: inset 0px 15px 49px rgba(20, 20, 20, .2);
+    transform: scale(1) !important;
+    border: 1px solid transparent !important;
+    outline: 1px solid transparent !important;
+    box-shadow: inset 0px 15px 49px rgba(20, 20, 20, .2) !important;
 }
 
 .order:hover .cart-icon {
-    background-color: var(--red);
+    background-color: var(--red__Dark);
 }
 
 .order:hover .cart-icon svg path {
@@ -4550,11 +4588,13 @@ header.navbar nav .searchBar input:focus-visible {
 }
 
 .price-list header .address p:first-child {
-    color: var(--blue_dark);
+    color: var(--blue__Dark);
     font-weight: bold;
 }
 
 .price-list .controls {
+    width: 30%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -4562,6 +4602,7 @@ header.navbar nav .searchBar input:focus-visible {
 }
 
 .price-list .controls .search {
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -4569,6 +4610,12 @@ header.navbar nav .searchBar input:focus-visible {
     padding-inline: .7rem;
     border: 1px solid #eee;
     border-radius: 10px;
+
+    box-shadow: 0.5px 0.866px 32px 0px rgba(197, 206, 206, 0.1);
+}
+
+.price-list .controls .search:focus-visible {
+    border-color: var(--blue__Dark);
 }
 
 .price-list .controls .search label {
@@ -4583,7 +4630,7 @@ header.navbar nav .searchBar input:focus-visible {
     padding-block: .7rem;
     border: none;
     color: #a9a9a9;
-    font-size: 13px;
+    font-size: 11px;
     background-color: transparent;
 }
 
@@ -4595,6 +4642,12 @@ header.navbar nav .searchBar input:focus-visible {
     outline: none;
 }
 
+.controls .print svg path,
+.controls .exel svg path {
+    transition: fill .2s linear;
+}
+
+
 .controls .print {
     display: flex;
     justify-content: center;
@@ -4602,8 +4655,19 @@ header.navbar nav .searchBar input:focus-visible {
 
     padding: .7rem;
     border-radius: 10px;
+    border: 1px solid transparent;
 
     background: #4700c8;
+    transition: all .3s linear;
+}
+
+.controls .print:hover {
+    background-color: transparent;
+    border-color: #4700c8;
+}
+
+.controls .print:hover svg path {
+    fill: #4700c8
 }
 
 .controls .exel {
@@ -4613,9 +4677,21 @@ header.navbar nav .searchBar input:focus-visible {
 
     padding: .7rem;
     border-radius: 10px;
+    border: 1px solid transparent;
 
     background: #00c862;
+    transition: all .3s linear;
 }
+
+.controls .exel:hover {
+    background-color: transparent;
+    border-color: #00c862;
+}
+
+.controls .exel:hover svg path {
+    fill: #00c862
+}
+
 
 .price-list main {
     width: 100%;
@@ -4645,7 +4721,7 @@ header.navbar nav .searchBar input:focus-visible {
     font-size: 13px;
     color: #4b4b4b;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 10px;
 
     display: flex;
     align-items: center;
@@ -4674,6 +4750,11 @@ header.navbar nav .searchBar input:focus-visible {
     gap: 15px;
 }
 
+.price-list ul .row li:last-child .eye svg path,
+.price-list ul .row li:last-child .edit svg path {
+    transition: fill .2s linear;
+}
+
 .price-list ul .row li:last-child .eye {
     width: 30px;
     height: 30px;
@@ -4685,6 +4766,15 @@ header.navbar nav .searchBar input:focus-visible {
 
     cursor: pointer;
     background-color: #b9c1c1;
+    transition: all .3s linear;
+}
+
+.price-list ul .row li:last-child .eye:hover {
+    background-color: transparent;
+}
+
+.price-list ul .row li:last-child .eye:hover svg path {
+    fill: #b9c1c1;
 }
 
 .price-list ul .row li:last-child .edit {
@@ -4697,8 +4787,18 @@ header.navbar nav .searchBar input:focus-visible {
     align-items: center;
 
     cursor: pointer;
+    transition: all .3s linear;
     background-color: var(--blue__Dark);
 }
+
+.price-list ul .row li:last-child .edit:hover {
+    background-color: transparent;
+}
+
+.price-list ul .row li:last-child .edit:hover svg path {
+    fill: var(--blue__Dark)
+}
+
 
 .price-list ul .row li:first-child {
     width: 49%;
@@ -4755,7 +4855,7 @@ header.navbar nav .searchBar input:focus-visible {
     justify-content: center;
 
     font-size: 15px;
-    border-radius: 43%;
+    border-radius: 50%;
 
     color: #000;
     cursor: pointer;
@@ -4800,7 +4900,7 @@ header.navbar nav .searchBar input:focus-visible {
 /* brands list */
 .brands {
     width: 100%;
-    margin-block: 3.5rem;
+    margin-block: 5rem !important;
 
     display: flex;
     justify-content: space-between;
@@ -4811,6 +4911,7 @@ header.navbar nav .searchBar input:focus-visible {
 .brands .prev-brand {
     align-self: flex-start;
 }
+
 /*? ------------------------ ?*/
 /* brands list */
 .brands {
@@ -4874,6 +4975,82 @@ header.navbar nav .searchBar input:focus-visible {
 .feature:hover .icon {
     transform: rotateY(180deg);
 }
+
+/***** article *****/
+.articles {
+    width: 100%;
+
+    margin-block: 5rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.article {
+    width: 26%;
+
+    padding: 1rem .8rem;
+    border-radius: 25px;
+
+    perspective: 400px;
+
+
+    background-color: var(--white);
+    transition: all .3s linear;
+}
+
+.article .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 1rem;
+
+    font-weight: bold;
+}
+
+.article .head .likes {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.article .article-img {
+    transition: all .45s linear;
+    transform-style: preserve-3d;
+}
+
+.article .article-img:hover {
+    box-shadow: -57px 3px 20px 8px rgb(0 0 0 / 19%);
+    transform: translateX(-10px) rotateY(5deg);
+}
+
+.article .body {
+    text-align: justify;
+    margin-top: 1.4rem;
+}
+
+.article .body h6 {
+    font-size: 16px;
+    padding-bottom: .8rem;
+    font-weight: bold;
+}
+
+.article .body p {
+    font-size: 12px;
+    line-height: 25px;
+    color: #a9a9a9;
+    font-weight: normal;
+}
+
+.article:hover {
+    background-color: #ffe7aa;
+    box-shadow: 0px 10px 50px #ffe7aa;
+}
+
+/***** End article *****/
 
 /********** End Main Page Css Styls **********/
 
@@ -5138,6 +5315,7 @@ section.tickets .title {
     height: 2rem;
     justify-content: flex-start;
 }
+
 section.tickets .title p {
     font-size: var(--meduim__fontsize);
     color: var(--gray__Dark)
@@ -5186,6 +5364,7 @@ section.tickets table tr {
 section.tickets table tr:first-child {
     background: none !important;
 }
+
 section.tickets table tr:first-child th {
     background: none !important;
 }
@@ -5576,9 +5755,11 @@ section.favorite .text {
 section.favorite table tr:first-child {
     background-color: transparent;
 }
+
 section.favorite table tr:first-child th {
     background-color: transparent;
 }
+
 section.favorite table span.color {
     width: 5px;
     height: 5px;
@@ -5668,8 +5849,7 @@ section.favorite .alert_user_btn:hover {
 section.favorite .section_footer .text {
     font-size: 14px;
     color: var(--gray__Light);
-    align-self: start
-    ;
+    align-self: start;
 }
 
 section.favorite .section_footer .text span {
@@ -5806,10 +5986,6 @@ section.address .edit:hover {
 
 .address__form_container .form-group:hover {
     border: 1px solid var(--blue__Dark);
-}
-
-.address__form_container .form-group:hover input {
-    color: var(--blue__Dark);
 }
 
 .address__form_container .form-group p {
@@ -6103,7 +6279,7 @@ section.make__reuqests .title {
 
 .continue__returned_request {
     font-size: 14px;
-    color:var(--white);
+    color: var(--white);
     border: 1px solid transparent;
     border-radius: 25px;
     padding: .8rem 1.6rem !important;
@@ -6457,6 +6633,7 @@ section.make__reuqests .title {
     box-shadow: 5px 7px 42px -.5rem var(--green__Dark);
     padding-block: .8rem
 }
+
 .needed_Element .edit-profile:hover {
     border-color: var(--green__Dark);
     color: var(--green__Dark);
