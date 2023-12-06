@@ -14679,6 +14679,10 @@ button.swiper-pagination-bullet {
 }
 
 
+@font-face {
+  font-family: 'yoz';
+  src: url('../fonts/yoz.woff');
+}
 
 [class^="yoz-"],
 [class*=" yoz-"] {
