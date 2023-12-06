@@ -3559,6 +3559,12 @@ header.navbar nav .searchBar input:focus-visible {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    outline-offset: 3px;
+    outline-style: solid;
+    outline-color: #a9a9a9;
+    border-radius: 50%;
+    transition: all .3s linear;
 }
 
 .category .category-img svg path {
@@ -3574,8 +3580,12 @@ header.navbar nav .searchBar input:focus-visible {
     font-weight: bold;
 }
 
-.category:hover .category-img path {
-    fill: var(--red__Dark);
+.category .category-img svg {
+    display: none;
+}
+
+.category:hover .category-img {
+    outline-color: var(--red__Dark)
 }
 
 
@@ -5018,11 +5028,11 @@ header.navbar nav .searchBar input:focus-visible {
 }
 
 .article .article-img {
-    transition: all .45s linear;
+    transition: all .25s linear;
     transform-style: preserve-3d;
 }
 
-.article .article-img:hover {
+.article:hover .article-img {
     box-shadow: -57px 3px 20px 8px rgb(0 0 0 / 19%);
     transform: translateX(-10px) rotateY(5deg);
 }
@@ -5339,8 +5349,8 @@ section.tickets .send-tickets {
     background-color: var(--blue__Dark);
 }
 
-section.tickets .send-tickets span {
-    font-size: var(--regular__fontsize);
+section.tickets .send-tickets svg path {
+    transition: all .3s linear;
 }
 
 section.tickets .send-tickets:hover {
@@ -5352,6 +5362,9 @@ section.tickets .send-tickets:hover {
     box-shadow: none;
     background-color: transparent;
 }
+section.tickets .send-tickets:hover svg path {
+    fill: var(--blue__Dark);
+}
 
 /* table Start */
 section.tickets table tr {
@@ -5359,6 +5372,7 @@ section.tickets table tr {
     border-radius: 25px;
     outline: 1px solid var(--gray__ExtraLight);
     transition: all .3s linear;
+    background-color: transparent;
 }
 
 section.tickets table tr:first-child {
@@ -5440,35 +5454,42 @@ section.my__orders .text {
     line-height: 27px;
 }
 
-section.my__orders .row.title p {
-    width: 18.75%;
-    text-align: end;
+section.my__orders .row {
+    margin: 0;
+    width: 100% !important;
 }
 
-.order.open {
+section.my__orders .row.title p {
+    width: 18.75%;
+    text-align: center;
+}
+
+.acc-order.open {
     border: 1px solid transparent !important;
     background-color: #fcfcfc;
 }
 
-.order {
+.acc-order {
     border: 1px solid transparent;
 }
 
-.order:hover {
+
+
+.acc-order:hover {
     border-color: var(--blue__Dark);
     box-shadow: var(--boxshadow);
     transform: scale(1.05);
     background-color: var(--white);
 }
 
-.order.open:hover {
+.acc-order.open:hover {
     border-color: transparent;
     box-shadow: none;
     transform: scale(1);
     background-color: #fcfcfc
 }
 
-.order p {
+.acc-order p {
     color: var(--gray__Dark);
     width: 80%;
     font-size: 13px;
@@ -5567,6 +5588,14 @@ section.my__orders .row.title p {
     box-shadow: 0px 12px 42px -.5rem var(--blue__Dark);
     color: var(--white);
     background: var(--blue__Dark);
+}
+
+
+.details__of_order .order-info {
+    margin: 0;
+    background-color: transparent;
+    width: 100%;
+    text-align: start;
 }
 
 .details__of_order .order-info p {
@@ -5752,7 +5781,7 @@ section.favorite .text {
 
 
 /* table */
-section.favorite table tr:first-child {
+section.favorite table tr {
     background-color: transparent;
 }
 

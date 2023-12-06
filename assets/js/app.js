@@ -412,7 +412,7 @@ if (
 		accordion_body.classList.remove("show");
 
 		accordion_btn.addEventListener("click", () => {
-			accordion.querySelector(".order").classList.toggle("open");
+			accordion.querySelector(".acc-order").classList.toggle("open");
 		});
 	});
 }
