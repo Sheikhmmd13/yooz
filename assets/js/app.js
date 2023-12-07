@@ -3,6 +3,7 @@ if (
 ) {
 	// const Layouts = document.querySelectorAll('.layout');
 	const CategoryLinks = document.querySelectorAll(".category");
+
 	const CategoriesContainer = document.querySelector(".categories");
 
 	const PriceFilter = document.querySelector(".price-filter");

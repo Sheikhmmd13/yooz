@@ -490,7 +490,7 @@ h6 {
 }
 
 main {
-    width: 68%;
+    width: 70%;
     height: auto;
 }
 
@@ -576,6 +576,13 @@ main .title .controlls .layout.selected span {
     margin-top: 30px;
     padding: .5rem .3rem;
 }
+
+.square_layout.cards-container {
+    margin-top: 1rem;
+    width: 100% !important;
+    background-color: transparent !important;
+}
+
 
 
 .cards-container .card-body {
@@ -824,6 +831,10 @@ main .title .controlls .layout.selected span {
 
 }
 
+.line-layout.cards-container {
+    width: 100% !important;
+}
+
 .line-layout .card-body {
     /* padding: .8rem; */
     height: 20rem !important;
@@ -943,7 +954,7 @@ main .title .controlls .layout.selected span {
 
 /***** aside *****/
 .main aside {
-    width: 28%;
+    width: 25%;
     gap: 20px;
     position: sticky;
     top: 1rem;
@@ -1006,6 +1017,14 @@ aside .bg-defualt .h2::after {
     width: 100%;
     padding: 1.2rem 1rem;
     position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.categories .head {
+    background-color: red;
 }
 
 .categories h2 {
@@ -1014,15 +1033,38 @@ aside .bg-defualt .h2::after {
     font-family: var(--haedfont);
 }
 
+.categories ul {
+    width: 95%;
+}
+
 .categories ul li {
-    padding: .5rem 0;
+    padding: 0;
     position: relative;
     overflow: hidden;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    transition: all .3s linear;
+}
+
+.categories ul li:hover {
+    padding: 0;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.categories ul li:hover p {
+    color: var(--black) !important;
 }
 
 .categories ul li p {
     width: 100%;
+    text-align: start;
     font-family: var(--haedfont);
+    transition: all .3s linear;
+
 }
 
 /* #digital-product-icon {
@@ -1033,11 +1075,13 @@ aside .bg-defualt .h2::after {
 } */
 
 .categories ul li span {
+    height: 50%;
     padding: 8px;
     border-radius: 10px;
     text-align: start;
     background-color: #eee;
     transition: all .3s ease;
+    align-self: center;
 }
 
 .categories ul li span#digital-product-icon span {
@@ -1057,9 +1101,9 @@ aside .bg-defualt .h2::after {
     transition: all .5s ease;
 }
 
-.categories .open {
+.categories .submenu.open {
     visibility: visible;
-    height: 180px;
+    height: 220px;
     opacity: 1;
 }
 
@@ -1070,6 +1114,13 @@ aside .bg-defualt .h2::after {
 
 .categories .submenu p {
     font-family: var(--bodyfont);
+}
+.categories .submenu li:hover {
+    box-shadow: none !important;
+}
+
+.categories .submenu li:hover p {
+    color: var(--blue__Dark) !important;
 }
 
 .categories .submenu .subLink {
@@ -1156,6 +1207,16 @@ input[type="checkbox"]+label::after {
     transition: all .3s ease;
 }
 
+.filter-lists ul li {
+    margin: 0;
+}
+
+.filter-lists ul li:hover {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 8px;
+    color: var(--black);
+}
 
 .filter-lists ul li .item-selected {
     width: 15px;
@@ -3524,16 +3585,17 @@ header.navbar nav .searchBar input:focus-visible {
 
 /*? ------------------------ ?*/
 
-.categories {
+.categories-mainpage {
     width: 100%;
 
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.categories .next-button,
-.categories .prev-button {
+.categories-mainpage .next-button,
+.categories-mainpage .prev-button {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -3550,12 +3612,12 @@ header.navbar nav .searchBar input:focus-visible {
     box-shadow: 0px 0px 0px 4px #f0f0f0;
 }
 
-.category {
+.categories-mainpage .category {
     cursor: pointer;
     text-align: center;
 }
 
-.category .category-img {
+.categories-mainpage .category .category-img {
     display: flex;
     justify-content: center;
     align-items: center;
