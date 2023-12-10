@@ -418,13 +418,40 @@ if (
 	});
 }
 
-if(
-	document.getElementsByTagName("body")[0].classList.contains("main-page")
-) {
-	const swiper = new Swiper('.firstBanner-swiper', {
-		navigation: {
-			nextEl: '.first-banner-NextEl',
-			prevEl: '.first-banner-PrevEl'
-		}
+if (document.getElementsByTagName("body")[0].classList.contains("main-page")) {
+	const Stories = document.querySelectorAll(".category");
+	const modal = document.querySelector(".modal");
+	const ModalContent = modal.querySelector(".content");
+	const close_icon = modal.querySelector(".close-icon");
+	const searchFild = document.querySelector('.search');
+	const searchFildInput = searchFild.querySelector('#searchBar');
+	console.log(searchFild)
+
+	Stories.forEach((story) => {
+		story.addEventListener("click", () => {
+			console.log(modal);
+			modal.style.display = "flex";
+			setTimeout(() => {
+				ModalContent.style.transform = "translateY(-50%) scale(1)";
+			}, 10);
+		});
+	});
+
+	close_icon.addEventListener('click', () => {
+		ModalContent.style.transform = "translateY(-50%) scale(0)";
+
+		setTimeout(() => {
+			modal.style.display = "none";
+		}, 300);
+	})
+
+
+	// search bar animation
+	searchFildInput.addEventListener('focus', () => {
+		searchFild.style.borderColor = '#4d67f5'
+	})
+
+	searchFildInput.addEventListener('blur', () => {
+		searchFild.style.borderColor = '#eee'
 	})
 }

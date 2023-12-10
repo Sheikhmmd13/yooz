@@ -355,7 +355,6 @@ aside p.logout:hover {
 
 .action:hover .svg {
     animation: myAnim .3s ease 0s 1 normal forwards;
-.svg {
     transition: all 1s linear;
 }
 
@@ -464,5 +463,5 @@ header .see-all:hover {
     outline: 1px solid var(--green__Dark);
     outline-offset: .5rem;
 }
-}
+
 /***** End articls *****/

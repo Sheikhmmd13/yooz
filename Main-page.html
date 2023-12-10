@@ -7,7 +7,19 @@
         <link rel="stylesheet" href="./assets/css/icons.css">
         <title>صفحه اصلی یوز معتاد</title>
     </head>
-    <body dir="rtl" class="index pannel-items pannel description">
+    <body dir="rtl" class="main-page">
+        <!-- ========== Start modal for instagram ========== -->
+        <div class="modal">
+            <div class="close-icon">
+                <span class="yoz-add"></span>
+            </div>
+            <div class="backdrop"></div>
+            <div class="content">
+                <span style="color: white;">asdfj</span>
+                <!-- close icon -->
+            </div>
+        </div>
+        <!-- ========== End modal for instagram ========== -->
         <!-- navbar -->
         <header class="navbar">
             <div class="top-nav">
@@ -774,12 +786,8 @@
             <!--?-------------------------->
             <!-- banners -->
             <div class="banners">
-                <div
-                    class="purple-banner banner-products"
-                    data-tilt
-                    data-tilt-max="7"
-                    data-tilt-speed="100"
-                >
+                <div class="purple-banner banner-products shiny">
+                    <span class="shiny"></span>
                     <div class="left-arrow">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -799,11 +807,13 @@
                     </div>
                 </div>
                 <div
-                    class="yellow-banner banner-products"
+                    class="yellow-banner banner-products shiny"
                     data-tilt
                     data-tilt-max="7"
                     data-tilt-speed="100"
                 >
+                    <!-- shiny hover -->
+                    <!-- <span class="shiny"></span> -->
                     <div class="left-arrow">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -841,38 +851,25 @@
                             <h2>شگفت انگیز</h2>
                         </div>
                         <button>آرشیو کامل</button>
-                    </div>
-                    <div class="navigation">
-                        <div class="paganition">
-                            <span class="slide"></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
                         <div class="ctrls">
-                            <div class="next-vertical-btn">
+                            <div class="next-btn">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="8px"
-                                    height="9px"
+                                    width="9px"
+                                    height="8px"
                                 >
-                                    <path
-                                        fill-rule="evenodd"
-                                        opacity="0.851"
-                                        fill="rgb(0, 0, 0)"
-                                        d="M4.712,0.288 L7.278,3.138 C7.594,3.490 7.567,4.30 7.214,4.346 C6.864,4.662 6.323,4.634 6.7,4.282 L4.932,3.89 L4.932,8.78 C4.932,8.551 4.550,8.933 4.77,8.933 C3.605,8.933 3.222,8.551 3.222,8.78 L3.222,3.88 L2.148,4.283 C1.832,4.634 1.291,4.663 0.941,4.347 C0.753,4.177 0.657,3.944 0.657,3.711 C0.657,3.506 0.730,3.302 0.877,3.139 L3.441,0.289 C3.603,0.108 3.835,0.5 4.77,0.5 C4.319,0.5 4.551,0.108 4.712,0.288 Z"
-                                    />
+                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M8.710,4.712 L5.860,7.278 C5.509,7.594 4.968,7.566 4.652,7.214 C4.337,6.863 4.365,6.322 4.716,6.7 L5.909,4.932 L0.920,4.932 C0.448,4.932 0.65,4.549 0.65,4.77 C0.65,3.604 0.448,3.222 0.920,3.222 L5.910,3.222 L4.716,2.148 C4.365,1.831 4.336,1.291 4.652,0.940 C4.821,0.753 5.54,0.657 5.288,0.657 C5.492,0.657 5.697,0.729 5.860,0.877 L8.710,3.441 C8.890,3.603 8.993,3.834 8.993,4.76 C8.993,4.319 8.890,4.550 8.710,4.712 Z"></path>
                                 </svg>
                             </div>
-                            <div class="prev-vertical-btn" style="transform: rotate(180deg);">
+                            <div class="prev-btn">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="8px"
-                                    height="9px"
+                                    width="10px"
+                                    height="8px"
                                 >
-                                    <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M4.712,0.288 L7.278,3.138 C7.594,3.489 7.567,4.30 7.214,4.346 C6.864,4.662 6.323,4.633 6.7,4.282 L4.933,3.89 L4.933,8.78 C4.933,8.551 4.550,8.934 4.77,8.934 C3.605,8.934 3.222,8.551 3.222,8.78 L3.222,3.88 L2.148,4.283 C1.832,4.634 1.291,4.662 0.941,4.347 C0.753,4.177 0.657,3.944 0.657,3.711 C0.657,3.506 0.730,3.302 0.877,3.139 L3.441,0.289 C3.603,0.109 3.835,0.6 4.77,0.6 C4.319,0.6 4.551,0.109 4.712,0.288 Z"/>
+                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M1.177,4.712 L4.28,7.278 C4.379,7.594 4.920,7.566 5.236,7.214 C5.551,6.863 5.523,6.322 5.172,6.7 L3.979,4.932 L8.968,4.932 C9.440,4.932 9.823,4.549 9.823,4.77 C9.823,3.604 9.440,3.222 8.968,3.222 L3.977,3.222 L5.172,2.148 C5.523,1.831 5.552,1.291 5.236,0.940 C5.67,0.753 4.834,0.657 4.600,0.657 C4.396,0.657 4.191,0.729 4.28,0.877 L1.178,3.441 C0.998,3.603 0.895,3.834 0.895,4.76 C0.895,4.319 0.998,4.550 1.177,4.712 Z"></path>
                                 </svg>
                             </div>
                         </div>
@@ -1839,6 +1836,15 @@
         </div>
     </div>
     <!-- footer  -->
+    <footer class="main-page">
+        <div class="icons blue-bg"></div>
+        <div class="contact-us blue-bg"></div>
+
+        <div class="background">
+            <img src="./assets/img/footer background.png" alt="">
+        </div>
+    </footer>
+
     <!-- <script src="./assets/js/main.js"></script>
     -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/app.css">
         <link rel="stylesheet" href="./assets/css/base.css">
-        <link rel="stylesheet" href="/assets/css/pannel.css">
         <title>پنل یوز از این معتادا</title>
     </head>
-    <body dir="rtl" class="mx-auto">
+    <body dir="rtl">
         <!-- ========== Start Navbar ========== -->
         <!-- ========== End Navbar ========== -->
-        <div class="body__of__dashboard">
+        <div class="body__of__dashboard" style="width: 80%;">
             <!-- ========== Start Haeder ========== -->
             <header class="w-100 mb-3">
                 <div class="title w-auto text-end p-3">
@@ -302,8 +302,8 @@
                     <!-- ========== End sending actions ========== -->
                     <!-- ========== Start List of products ========== -->
                     <div class="__container bordr p-5 tickets w-100">
-                        <div class="header __flex__between mb-5">
-                            <div class="title __flex__center gap-2">
+                        <div class="header __flex__between mb-2">
+                            <div class="title __flex__center w-auto gap-2">
                                 <span class="yoz-message-notif"></span>
                                 <p>محصول های من</p>
                             </div>
@@ -319,165 +319,189 @@
                             </div>
                         </div>
                         <div class="__line"></div>
-                        <table class="w-100 my-4">
-                            <tr style="outline: none;">
-                                <th class="w-50 text-end">
-                                    <div class="pe-3">
-                                        <p class="__fs_15 __c_gray fw-normal">نام محصول</p>
+                        <ul>
+                            <div class="row title h-100 my-4">
+                                <li class="w-50 text-end">نام محصول</li>
+                                <li class="w-25 text-center">تاریخ انتشار</li>
+                                <li class="w-25 text-start">عملیات</li>
+                            </div>
+                            <div class="row border p-3 my-3 rounded-4">
+                                <li class="w-50 text-end d-flex flex-column">
+                                    <div class="title d-flex align-items-center justify-content-start gap-3 h-100 pb-3">
+                                        <h2 class="m-0 w-auto" style="font-size: 14px;">قالب چند منظوره زومار Zumar</h2>
+                                        <small class="label">منتشر شد</small>
                                     </div>
-                                </th>
-                                <th class="w-25 text-center">
-                                    <p class="__fs_15 __c_gray fw-normal">تاریخ انتشار</p>
-                                </th>
-                                <th class="w-25 text-start">
-                                    <div class="ps-5">
-                                        <p class="__fs_15 __c_gray fw-normal">عملیات</p>
+                                    <p class="text-muted" style="font-size: 13px;">Zumar - Create & Multipurpse WordPress Theme</p>
+                                </li>
+                                <li class="w-25 text-ceter d-flex align-items-center justify-content-center">
+                                    <p>23شهریور 1402</p>
+                                    <span>|</span>
+                                    <p>12:20 عصر</p>
+                                </li>
+                                <li class="w-25 d-flex justify-content-end align-items-center gap-2">
+                                    <div style="width: 35px;" class="svg">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            version="1.0"
+                                            viewBox="0 0 512.000000 512.000000"
+                                            preserveAspectRatio="xMidYMid meet"
+                                        >
+                                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#a9a9a9" stroke="none">
+                                                <path d="M2351 4470 c-320 -27 -551 -85 -776 -196 -166 -81 -292 -172 -425 -304 -131 -132 -221 -258 -304 -425 -75 -152 -115 -270 -149 -450 -79 -408 -69 -826 30 -1205 110 -424 391 -789 778 -1008 567 -321 1582 -315 2133 13 358 213 619 542 737 928 78 257 117 626 96 912 -42 561 -193 930 -511 1245 -225 222 -514 374 -836 439 -236 48 -556 69 -773 51z m800 -986 c87 -26 149 -62 210 -123 149 -149 182 -376 81 -565 -29 -55 -504 -545 -687 -708 -234 -209 -508 -356 -819 -438 -133 -36 -199 -37 -244 -3 -80 60 -88 124 -38 306 71 253 181 478 338 686 102 135 723 757 799 799 107 60 250 78 360 46z"/>
+                                                <path d="M2940 3234 c-47 -20 -150 -123 -150 -149 0 -112 152 -272 278 -292 31 -5 39 -1 93 53 71 70 93 121 87 198 -12 150 -173 248 -308 190z"/>
+                                                <path d="M2408 2723 c-91 -93 -192 -202 -223 -243 -70 -92 -152 -230 -195 -330 -37 -84 -92 -242 -86 -247 7 -8 218 72 309 118 119 59 208 116 307 197 79 64 377 359 370 365 -3 2 -37 25 -77 51 -80 52 -148 122 -196 202 -17 30 -34 54 -37 54 -3 0 -80 -75 -172 -167z"/>
+                                            </g>
+                                        </svg>
                                     </div>
-                                </th>
-                            </tr>
-                            <tr style="height: 1rem; outline: none;"></tr>
-                            <tr class="" style="height: 6rem;">
-                                <td class="w-50">
-                                    <div class="pe-3">
-                                        <div class="title __flex__center justify-content-start gap-2">
-                                            <p class="__fs_15 fw-bold">قالب چندمنظوره زومار Zumer</p>
-                                            <div class="label __fs_13">منتشر شده</div>
-                                        </div>
-                                        <p class="__fs_13 __c_gray pt-2">Zumar - Creative & Multipurpose WordPress Theme</p>
+                                    <div style="width: 35px; margin-left: 10px;" class="eye-svg">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            version="1.0"
+                                            viewBox="0 0 512.000000 512.000000"
+                                            preserveAspectRatio="xMidYMid meet"
+                                        >
+                                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#a9a9a9" stroke="none">
+                                                <path d="M2310 4250 c-591 -82 -1077 -380 -1404 -863 -153 -226 -231 -440 -256 -707 -28 -289 44 -597 204 -864 312 -523 850 -868 1476 -946 109 -13 351 -13 460 0 396 49 762 206 1055 452 289 242 503 565 585 882 104 403 32 808 -207 1171 -296 449 -758 754 -1298 856 -86 17 -159 22 -330 24 -121 2 -249 0 -285 -5z m417 -889 c298 -62 542 -289 627 -584 153 -530 -243 -1057 -794 -1057 -551 0 -947 527 -794 1057 120 418 538 671 961 584z"/>
+                                                <path d="M2455 3100 c-204 -44 -367 -191 -428 -385 -29 -92 -30 -244 -3 -325 67 -201 210 -336 407 -386 92 -24 231 -15 323 20 135 52 247 153 307 281 147 308 -3 662 -328 776 -65 23 -214 33 -278 19z"/>
+                                            </g>
+                                        </svg>
                                     </div>
-                                </td>
-                                <td class="w-25 text-center">
-                                    <p class="__fs_15">23 شهریور 1402 | 12:20 عصر</p>
-                                </td>
-                                <td class="w-25 text-start">
-                                    <div class="ps-4 ms-2 __flex__center justify-content-end gap-2">
-                                        <div style="width: 35px;" class="svg">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                version="1.0"
-                                                viewBox="0 0 512.000000 512.000000"
-                                                preserveAspectRatio="xMidYMid meet"
-                                            >
-                                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-                                                    <path d="M2351 4470 c-320 -27 -551 -85 -776 -196 -166 -81 -292 -172 -425 -304 -131 -132 -221 -258 -304 -425 -75 -152 -115 -270 -149 -450 -79 -408 -69 -826 30 -1205 110 -424 391 -789 778 -1008 567 -321 1582 -315 2133 13 358 213 619 542 737 928 78 257 117 626 96 912 -42 561 -193 930 -511 1245 -225 222 -514 374 -836 439 -236 48 -556 69 -773 51z m800 -986 c87 -26 149 -62 210 -123 149 -149 182 -376 81 -565 -29 -55 -504 -545 -687 -708 -234 -209 -508 -356 -819 -438 -133 -36 -199 -37 -244 -3 -80 60 -88 124 -38 306 71 253 181 478 338 686 102 135 723 757 799 799 107 60 250 78 360 46z"/>
-                                                    <path d="M2940 3234 c-47 -20 -150 -123 -150 -149 0 -112 152 -272 278 -292 31 -5 39 -1 93 53 71 70 93 121 87 198 -12 150 -173 248 -308 190z"/>
-                                                    <path d="M2408 2723 c-91 -93 -192 -202 -223 -243 -70 -92 -152 -230 -195 -330 -37 -84 -92 -242 -86 -247 7 -8 218 72 309 118 119 59 208 116 307 197 79 64 377 359 370 365 -3 2 -37 25 -77 51 -80 52 -148 122 -196 202 -17 30 -34 54 -37 54 -3 0 -80 -75 -172 -167z"/>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div style="width: 35px;" class="eye-svg">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                version="1.0"
-                                                viewBox="0 0 512.000000 512.000000"
-                                                preserveAspectRatio="xMidYMid meet"
-                                            >
-                                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-                                                    <path d="M2310 4250 c-591 -82 -1077 -380 -1404 -863 -153 -226 -231 -440 -256 -707 -28 -289 44 -597 204 -864 312 -523 850 -868 1476 -946 109 -13 351 -13 460 0 396 49 762 206 1055 452 289 242 503 565 585 882 104 403 32 808 -207 1171 -296 449 -758 754 -1298 856 -86 17 -159 22 -330 24 -121 2 -249 0 -285 -5z m417 -889 c298 -62 542 -289 627 -584 153 -530 -243 -1057 -794 -1057 -551 0 -947 527 -794 1057 120 418 538 671 961 584z"/>
-                                                    <path d="M2455 3100 c-204 -44 -367 -191 -428 -385 -29 -92 -30 -244 -3 -325 67 -201 210 -336 407 -386 92 -24 231 -15 323 20 135 52 247 153 307 281 147 308 -3 662 -328 776 -65 23 -214 33 -278 19z"/>
-                                                </g>
-                                            </svg>
-                                        </div>
+                                </li>
+                            </div>
+                            <div class="row border p-3 my-3 rounded-4">
+                                <li class="w-50 text-end d-flex flex-column">
+                                    <div class="title d-flex align-items-center justify-content-start gap-3 h-100 pb-3">
+                                        <h2 class="m-0 w-auto" style="font-size: 14px;">قالب چند منظوره زومار Zumar</h2>
+                                        <small class="label">منتشر شد</small>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr style="height: 1rem; outline: none;"></tr>
-                            <tr class="" style="height: 6rem;">
-                                <td class="w-50">
-                                    <div class="pe-3">
-                                        <div class="title __flex__center justify-content-start gap-2">
-                                            <p class="__fs_15 fw-bold">قالب چندمنظوره زومار Zumer</p>
-                                            <div class="label __fs_13">منتشر شده</div>
-                                        </div>
-                                        <p class="__fs_13 __c_gray pt-2">Zumar - Creative & Multipurpose WordPress Theme</p>
+                                    <p class="text-muted" style="font-size: 13px;">Zumar - Create & Multipurpse WordPress Theme</p>
+                                </li>
+                                <li class="w-25 text-ceter d-flex align-items-center justify-content-center">
+                                    <p>23شهریور 1402</p>
+                                    <span>|</span>
+                                    <p>12:20 عصر</p>
+                                </li>
+                                <li class="w-25 d-flex justify-content-end align-items-center gap-2">
+                                    <div style="width: 35px;" class="svg">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            version="1.0"
+                                            viewBox="0 0 512.000000 512.000000"
+                                            preserveAspectRatio="xMidYMid meet"
+                                        >
+                                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#a9a9a9" stroke="none">
+                                                <path d="M2351 4470 c-320 -27 -551 -85 -776 -196 -166 -81 -292 -172 -425 -304 -131 -132 -221 -258 -304 -425 -75 -152 -115 -270 -149 -450 -79 -408 -69 -826 30 -1205 110 -424 391 -789 778 -1008 567 -321 1582 -315 2133 13 358 213 619 542 737 928 78 257 117 626 96 912 -42 561 -193 930 -511 1245 -225 222 -514 374 -836 439 -236 48 -556 69 -773 51z m800 -986 c87 -26 149 -62 210 -123 149 -149 182 -376 81 -565 -29 -55 -504 -545 -687 -708 -234 -209 -508 -356 -819 -438 -133 -36 -199 -37 -244 -3 -80 60 -88 124 -38 306 71 253 181 478 338 686 102 135 723 757 799 799 107 60 250 78 360 46z"/>
+                                                <path d="M2940 3234 c-47 -20 -150 -123 -150 -149 0 -112 152 -272 278 -292 31 -5 39 -1 93 53 71 70 93 121 87 198 -12 150 -173 248 -308 190z"/>
+                                                <path d="M2408 2723 c-91 -93 -192 -202 -223 -243 -70 -92 -152 -230 -195 -330 -37 -84 -92 -242 -86 -247 7 -8 218 72 309 118 119 59 208 116 307 197 79 64 377 359 370 365 -3 2 -37 25 -77 51 -80 52 -148 122 -196 202 -17 30 -34 54 -37 54 -3 0 -80 -75 -172 -167z"/>
+                                            </g>
+                                        </svg>
                                     </div>
-                                </td>
-                                <td class="w-25 text-center">
-                                    <p class="__fs_15">23 شهریور 1402 | 12:20 عصر</p>
-                                </td>
-                                <td class="w-25 text-start">
-                                    <div class="ps-4 ms-2 __flex__center justify-content-end gap-2">
-                                        <div style="width: 35px;" class="svg">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                version="1.0"
-                                                viewBox="0 0 512.000000 512.000000"
-                                                preserveAspectRatio="xMidYMid meet"
-                                            >
-                                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-                                                    <path d="M2351 4470 c-320 -27 -551 -85 -776 -196 -166 -81 -292 -172 -425 -304 -131 -132 -221 -258 -304 -425 -75 -152 -115 -270 -149 -450 -79 -408 -69 -826 30 -1205 110 -424 391 -789 778 -1008 567 -321 1582 -315 2133 13 358 213 619 542 737 928 78 257 117 626 96 912 -42 561 -193 930 -511 1245 -225 222 -514 374 -836 439 -236 48 -556 69 -773 51z m800 -986 c87 -26 149 -62 210 -123 149 -149 182 -376 81 -565 -29 -55 -504 -545 -687 -708 -234 -209 -508 -356 -819 -438 -133 -36 -199 -37 -244 -3 -80 60 -88 124 -38 306 71 253 181 478 338 686 102 135 723 757 799 799 107 60 250 78 360 46z"/>
-                                                    <path d="M2940 3234 c-47 -20 -150 -123 -150 -149 0 -112 152 -272 278 -292 31 -5 39 -1 93 53 71 70 93 121 87 198 -12 150 -173 248 -308 190z"/>
-                                                    <path d="M2408 2723 c-91 -93 -192 -202 -223 -243 -70 -92 -152 -230 -195 -330 -37 -84 -92 -242 -86 -247 7 -8 218 72 309 118 119 59 208 116 307 197 79 64 377 359 370 365 -3 2 -37 25 -77 51 -80 52 -148 122 -196 202 -17 30 -34 54 -37 54 -3 0 -80 -75 -172 -167z"/>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div style="width: 35px;" class="eye-svg">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                version="1.0"
-                                                viewBox="0 0 512.000000 512.000000"
-                                                preserveAspectRatio="xMidYMid meet"
-                                            >
-                                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-                                                    <path d="M2310 4250 c-591 -82 -1077 -380 -1404 -863 -153 -226 -231 -440 -256 -707 -28 -289 44 -597 204 -864 312 -523 850 -868 1476 -946 109 -13 351 -13 460 0 396 49 762 206 1055 452 289 242 503 565 585 882 104 403 32 808 -207 1171 -296 449 -758 754 -1298 856 -86 17 -159 22 -330 24 -121 2 -249 0 -285 -5z m417 -889 c298 -62 542 -289 627 -584 153 -530 -243 -1057 -794 -1057 -551 0 -947 527 -794 1057 120 418 538 671 961 584z"/>
-                                                    <path d="M2455 3100 c-204 -44 -367 -191 -428 -385 -29 -92 -30 -244 -3 -325 67 -201 210 -336 407 -386 92 -24 231 -15 323 20 135 52 247 153 307 281 147 308 -3 662 -328 776 -65 23 -214 33 -278 19z"/>
-                                                </g>
-                                            </svg>
-                                        </div>
+                                    <div style="width: 35px; margin-left: 10px;" class="eye-svg">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            version="1.0"
+                                            viewBox="0 0 512.000000 512.000000"
+                                            preserveAspectRatio="xMidYMid meet"
+                                        >
+                                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#a9a9a9" stroke="none">
+                                                <path d="M2310 4250 c-591 -82 -1077 -380 -1404 -863 -153 -226 -231 -440 -256 -707 -28 -289 44 -597 204 -864 312 -523 850 -868 1476 -946 109 -13 351 -13 460 0 396 49 762 206 1055 452 289 242 503 565 585 882 104 403 32 808 -207 1171 -296 449 -758 754 -1298 856 -86 17 -159 22 -330 24 -121 2 -249 0 -285 -5z m417 -889 c298 -62 542 -289 627 -584 153 -530 -243 -1057 -794 -1057 -551 0 -947 527 -794 1057 120 418 538 671 961 584z"/>
+                                                <path d="M2455 3100 c-204 -44 -367 -191 -428 -385 -29 -92 -30 -244 -3 -325 67 -201 210 -336 407 -386 92 -24 231 -15 323 20 135 52 247 153 307 281 147 308 -3 662 -328 776 -65 23 -214 33 -278 19z"/>
+                                            </g>
+                                        </svg>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr style="height: 1rem; outline: none;"></tr>
-                            <tr class="" style="height: 6rem;">
-                                <td class="w-50">
-                                    <div class="pe-3">
-                                        <div class="title __flex__center justify-content-start gap-2">
-                                            <p class="__fs_15 fw-bold">قالب چندمنظوره زومار Zumer</p>
-                                            <div class="label __fs_13">منتشر شده</div>
-                                        </div>
-                                        <p class="__fs_13 __c_gray pt-2">Zumar - Creative & Multipurpose WordPress Theme</p>
+                                </li>
+                            </div>
+                            <div class="row border p-3 my-3 rounded-4">
+                                <li class="w-50 text-end d-flex flex-column">
+                                    <div class="title d-flex align-items-center justify-content-start gap-3 h-100 pb-3">
+                                        <h2 class="m-0 w-auto" style="font-size: 14px;">قالب چند منظوره زومار Zumar</h2>
+                                        <small class="label">منتشر شد</small>
                                     </div>
-                                </td>
-                                <td class="w-25 text-center">
-                                    <p class="__fs_15">23 شهریور 1402 | 12:20 عصر</p>
-                                </td>
-                                <td class="w-25 text-start">
-                                    <div class="ps-4 ms-2 __flex__center justify-content-end gap-2">
-                                        <div style="width: 35px;" class="svg">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                version="1.0"
-                                                viewBox="0 0 512.000000 512.000000"
-                                                preserveAspectRatio="xMidYMid meet"
-                                            >
-                                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-                                                    <path d="M2351 4470 c-320 -27 -551 -85 -776 -196 -166 -81 -292 -172 -425 -304 -131 -132 -221 -258 -304 -425 -75 -152 -115 -270 -149 -450 -79 -408 -69 -826 30 -1205 110 -424 391 -789 778 -1008 567 -321 1582 -315 2133 13 358 213 619 542 737 928 78 257 117 626 96 912 -42 561 -193 930 -511 1245 -225 222 -514 374 -836 439 -236 48 -556 69 -773 51z m800 -986 c87 -26 149 -62 210 -123 149 -149 182 -376 81 -565 -29 -55 -504 -545 -687 -708 -234 -209 -508 -356 -819 -438 -133 -36 -199 -37 -244 -3 -80 60 -88 124 -38 306 71 253 181 478 338 686 102 135 723 757 799 799 107 60 250 78 360 46z"/>
-                                                    <path d="M2940 3234 c-47 -20 -150 -123 -150 -149 0 -112 152 -272 278 -292 31 -5 39 -1 93 53 71 70 93 121 87 198 -12 150 -173 248 -308 190z"/>
-                                                    <path d="M2408 2723 c-91 -93 -192 -202 -223 -243 -70 -92 -152 -230 -195 -330 -37 -84 -92 -242 -86 -247 7 -8 218 72 309 118 119 59 208 116 307 197 79 64 377 359 370 365 -3 2 -37 25 -77 51 -80 52 -148 122 -196 202 -17 30 -34 54 -37 54 -3 0 -80 -75 -172 -167z"/>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div style="width: 35px;" class="eye-svg">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                version="1.0"
-                                                viewBox="0 0 512.000000 512.000000"
-                                                preserveAspectRatio="xMidYMid meet"
-                                            >
-                                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-                                                    <path d="M2310 4250 c-591 -82 -1077 -380 -1404 -863 -153 -226 -231 -440 -256 -707 -28 -289 44 -597 204 -864 312 -523 850 -868 1476 -946 109 -13 351 -13 460 0 396 49 762 206 1055 452 289 242 503 565 585 882 104 403 32 808 -207 1171 -296 449 -758 754 -1298 856 -86 17 -159 22 -330 24 -121 2 -249 0 -285 -5z m417 -889 c298 -62 542 -289 627 -584 153 -530 -243 -1057 -794 -1057 -551 0 -947 527 -794 1057 120 418 538 671 961 584z"/>
-                                                    <path d="M2455 3100 c-204 -44 -367 -191 -428 -385 -29 -92 -30 -244 -3 -325 67 -201 210 -336 407 -386 92 -24 231 -15 323 20 135 52 247 153 307 281 147 308 -3 662 -328 776 -65 23 -214 33 -278 19z"/>
-                                                </g>
-                                            </svg>
-                                        </div>
+                                    <p class="text-muted" style="font-size: 13px;">Zumar - Create & Multipurpse WordPress Theme</p>
+                                </li>
+                                <li class="w-25 text-ceter d-flex align-items-center justify-content-center">
+                                    <p>23شهریور 1402</p>
+                                    <span>|</span>
+                                    <p>12:20 عصر</p>
+                                </li>
+                                <li class="w-25 d-flex justify-content-end align-items-center gap-2">
+                                    <div style="width: 35px;" class="svg">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            version="1.0"
+                                            viewBox="0 0 512.000000 512.000000"
+                                            preserveAspectRatio="xMidYMid meet"
+                                        >
+                                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#a9a9a9" stroke="none">
+                                                <path d="M2351 4470 c-320 -27 -551 -85 -776 -196 -166 -81 -292 -172 -425 -304 -131 -132 -221 -258 -304 -425 -75 -152 -115 -270 -149 -450 -79 -408 -69 -826 30 -1205 110 -424 391 -789 778 -1008 567 -321 1582 -315 2133 13 358 213 619 542 737 928 78 257 117 626 96 912 -42 561 -193 930 -511 1245 -225 222 -514 374 -836 439 -236 48 -556 69 -773 51z m800 -986 c87 -26 149 -62 210 -123 149 -149 182 -376 81 -565 -29 -55 -504 -545 -687 -708 -234 -209 -508 -356 -819 -438 -133 -36 -199 -37 -244 -3 -80 60 -88 124 -38 306 71 253 181 478 338 686 102 135 723 757 799 799 107 60 250 78 360 46z"/>
+                                                <path d="M2940 3234 c-47 -20 -150 -123 -150 -149 0 -112 152 -272 278 -292 31 -5 39 -1 93 53 71 70 93 121 87 198 -12 150 -173 248 -308 190z"/>
+                                                <path d="M2408 2723 c-91 -93 -192 -202 -223 -243 -70 -92 -152 -230 -195 -330 -37 -84 -92 -242 -86 -247 7 -8 218 72 309 118 119 59 208 116 307 197 79 64 377 359 370 365 -3 2 -37 25 -77 51 -80 52 -148 122 -196 202 -17 30 -34 54 -37 54 -3 0 -80 -75 -172 -167z"/>
+                                            </g>
+                                        </svg>
                                     </div>
-                                </td>
-                            </tr>
-                        </table>
+                                    <div style="width: 35px; margin-left: 10px;" class="eye-svg">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            version="1.0"
+                                            viewBox="0 0 512.000000 512.000000"
+                                            preserveAspectRatio="xMidYMid meet"
+                                        >
+                                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#a9a9a9" stroke="none">
+                                                <path d="M2310 4250 c-591 -82 -1077 -380 -1404 -863 -153 -226 -231 -440 -256 -707 -28 -289 44 -597 204 -864 312 -523 850 -868 1476 -946 109 -13 351 -13 460 0 396 49 762 206 1055 452 289 242 503 565 585 882 104 403 32 808 -207 1171 -296 449 -758 754 -1298 856 -86 17 -159 22 -330 24 -121 2 -249 0 -285 -5z m417 -889 c298 -62 542 -289 627 -584 153 -530 -243 -1057 -794 -1057 -551 0 -947 527 -794 1057 120 418 538 671 961 584z"/>
+                                                <path d="M2455 3100 c-204 -44 -367 -191 -428 -385 -29 -92 -30 -244 -3 -325 67 -201 210 -336 407 -386 92 -24 231 -15 323 20 135 52 247 153 307 281 147 308 -3 662 -328 776 -65 23 -214 33 -278 19z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="row border p-3 my-3 rounded-4">
+                                <li class="w-50 text-end d-flex flex-column">
+                                    <div class="title d-flex align-items-center justify-content-start gap-3 h-100 pb-3">
+                                        <h2 class="m-0 w-auto" style="font-size: 14px;">قالب چند منظوره زومار Zumar</h2>
+                                        <small class="label">منتشر شد</small>
+                                    </div>
+                                    <p class="text-muted" style="font-size: 13px;">Zumar - Create & Multipurpse WordPress Theme</p>
+                                </li>
+                                <li class="w-25 text-ceter d-flex align-items-center justify-content-center">
+                                    <p>23شهریور 1402</p>
+                                    <span>|</span>
+                                    <p>12:20 عصر</p>
+                                </li>
+                                <li class="w-25 d-flex justify-content-end align-items-center gap-2">
+                                    <div style="width: 35px;" class="svg">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            version="1.0"
+                                            viewBox="0 0 512.000000 512.000000"
+                                            preserveAspectRatio="xMidYMid meet"
+                                        >
+                                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#a9a9a9" stroke="none">
+                                                <path d="M2351 4470 c-320 -27 -551 -85 -776 -196 -166 -81 -292 -172 -425 -304 -131 -132 -221 -258 -304 -425 -75 -152 -115 -270 -149 -450 -79 -408 -69 -826 30 -1205 110 -424 391 -789 778 -1008 567 -321 1582 -315 2133 13 358 213 619 542 737 928 78 257 117 626 96 912 -42 561 -193 930 -511 1245 -225 222 -514 374 -836 439 -236 48 -556 69 -773 51z m800 -986 c87 -26 149 -62 210 -123 149 -149 182 -376 81 -565 -29 -55 -504 -545 -687 -708 -234 -209 -508 -356 -819 -438 -133 -36 -199 -37 -244 -3 -80 60 -88 124 -38 306 71 253 181 478 338 686 102 135 723 757 799 799 107 60 250 78 360 46z"/>
+                                                <path d="M2940 3234 c-47 -20 -150 -123 -150 -149 0 -112 152 -272 278 -292 31 -5 39 -1 93 53 71 70 93 121 87 198 -12 150 -173 248 -308 190z"/>
+                                                <path d="M2408 2723 c-91 -93 -192 -202 -223 -243 -70 -92 -152 -230 -195 -330 -37 -84 -92 -242 -86 -247 7 -8 218 72 309 118 119 59 208 116 307 197 79 64 377 359 370 365 -3 2 -37 25 -77 51 -80 52 -148 122 -196 202 -17 30 -34 54 -37 54 -3 0 -80 -75 -172 -167z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div style="width: 35px; margin-left: 10px;" class="eye-svg">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            version="1.0"
+                                            viewBox="0 0 512.000000 512.000000"
+                                            preserveAspectRatio="xMidYMid meet"
+                                        >
+                                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#a9a9a9" stroke="none">
+                                                <path d="M2310 4250 c-591 -82 -1077 -380 -1404 -863 -153 -226 -231 -440 -256 -707 -28 -289 44 -597 204 -864 312 -523 850 -868 1476 -946 109 -13 351 -13 460 0 396 49 762 206 1055 452 289 242 503 565 585 882 104 403 32 808 -207 1171 -296 449 -758 754 -1298 856 -86 17 -159 22 -330 24 -121 2 -249 0 -285 -5z m417 -889 c298 -62 542 -289 627 -584 153 -530 -243 -1057 -794 -1057 -551 0 -947 527 -794 1057 120 418 538 671 961 584z"/>
+                                                <path d="M2455 3100 c-204 -44 -367 -191 -428 -385 -29 -92 -30 -244 -3 -325 67 -201 210 -336 407 -386 92 -24 231 -15 323 20 135 52 247 153 307 281 147 308 -3 662 -328 776 -65 23 -214 33 -278 19z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
                     </div>
                     <!-- ========== End List of products ========== -->
                     <!-- ========== Start articles ========== -->
-                    <div class="container p-0 my-3 __flex__center gap-3">
+                    <div class=" p-0 my-3 d-flex justify-content-between align-items-center gap-3">
                         <div class="w-50 __container p-5">
                             <header class="__flex__between">
                                 <p>اخبار و مقالات</p>
@@ -504,59 +528,74 @@
                                 <p class="__fs_14 pt-2" style="text-align: justify;">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                             </div>
                         </div>
-                        <div class="container p-0 __flex__between gap-4 flex-column w-50 h-100">
-                            <div class="article __container mb-2 py-4 __flex__center  position-relative overflow-hidden rounded-4 h-50">
-                                <div style="width: 45%;">
-                                    <img
-                                        src="./assets/img/article-img.png"
-                                        class="position-absolute top-0"
-                                        style="width: 50%; height: 100%;right: -10%; left: 50%;"
-                                        alt=""
-                                    >
+                        <div class=" d-flex flex-column justify-content-between align-items-center gap-4 flex-column w-50 h-100">
+                            <div class="h-50 w-100 __container rounded-4 overflow-hidden ps-2 d-flex justify-content-between align-items-center gap-3">
+                                <div class="news-img w-50 h-100">
+                                    <img class="w-100 h-100 object-fit-cover" src="./assets/img/article-imagepng.png" alt="">
                                 </div>
-                                <div class="article-body ps-5" style="width: 55%;">
-                                    <div class="text">
-                                        <p class="mb-1 title">16 سایت هوش مصنوعی رایگان که نیاز کسب و کار شماست!</p>
-                                        <p class="__fs_14 __c_gray" style="text-align: justify;">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
-                                    </div>
-                                    <div class="article-footer mt-3 __flex__between">
-                                        <div class="__flex__center gap-1">
-                                            <span class="yoz-message-2"></span>
-                                            <p class="__fs_13 fw-bold">2 دیدگاه</p>
+                                <div class="news-text w-50 h-100 d-flex flex-column justify-content-around py-2 gap-4">
+                                    <h1 style="font-size: 18px;" class="fw-bold m-0">21 سایت هوش مصنوعی رایگان که نیاز کسب و کار شماست!</h1>
+                                    <p style="font-size: 14px;">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                                    <div class="w-100 h-25 news-footer d-flex justify-content-around align-items-center">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="18px"
+                                                height="19px"
+                                            >
+                                                <path fill-rule="evenodd" fill="#24c880" d="M17.762,16.895 C17.611,17.33 17.409,17.101 17.205,17.82 L14.5,16.787 C12.726,17.629 11.250,18.127 9.719,18.230 C9.520,18.243 9.322,18.250 9.124,18.250 C7.703,18.250 6.301,17.909 5.34,17.251 C3.592,16.502 2.383,15.372 1.539,13.982 C0.695,12.593 0.249,11.0 0.249,9.374 C0.249,7.4 1.173,4.775 2.849,3.99 C4.525,1.422 6.754,0.499 9.124,0.499 C11.495,0.499 13.724,1.422 15.400,3.99 C17.76,4.775 17.999,7.4 17.999,9.374 L17.999,16.358 C17.999,16.562 17.913,16.757 17.762,16.895 ZM16.545,9.374 C16.545,5.283 13.216,1.954 9.124,1.954 C5.33,1.954 1.704,5.283 1.704,9.374 C1.704,12.155 3.237,14.678 5.705,15.960 C8.173,17.241 11.119,17.43 13.393,15.444 C13.534,15.345 13.706,15.299 13.878,15.314 L16.545,15.560 L16.545,9.374 ZM12.616,9.83 L5.633,9.83 C5.151,9.83 4.760,8.692 4.760,8.210 C4.760,7.728 5.151,7.337 5.633,7.337 L12.616,7.337 C13.98,7.337 13.489,7.728 13.489,8.210 C13.489,8.692 13.98,9.83 12.616,9.83 ZM5.633,10.829 L10.288,10.829 C10.771,10.829 11.161,11.220 11.161,11.702 C11.161,12.184 10.771,12.575 10.288,12.575 L5.633,12.575 C5.151,12.575 4.760,12.184 4.760,11.702 C4.760,11.220 5.151,10.829 5.633,10.829 Z"/>
+                                            </svg>
+                                            <p style="font-size: 13px;">2 دیدگاه</p>
                                         </div>
-                                        <div class="__flex__center gap-1 see-all-article __transition">
-                                            <span class="yoz-message-2"></span>
-                                            <p class="__fs_13 fw-bold" style="color: #24c880;">مشاهده</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="article __container mt-1 py-4 __flex__center  position-relative overflow-hidden rounded-4 h-50">
-                                <div style="width: 45%;">
-                                    <img
-                                        src="./assets/img/article-img.png"
-                                        class="position-absolute top-0"
-                                        style="width: 50%; height: 100%;right: -10%; left: 50%;"
-                                        alt=""
-                                    >
-                                </div>
-                                <div class="article-body ps-5" style="width: 55%;">
-                                    <div class="text">
-                                        <p class="mb-1">16 سایت هوش مصنوعی رایگان که نیاز کسب و کار شماست!</p>
-                                        <p class="__fs_14 __c_gray" style="text-align: justify;">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
-                                    </div>
-                                    <div class="article-footer mt-3 __flex__between">
-                                        <div class="__flex__center gap-1">
-                                            <span class="yoz-message-2"></span>
-                                            <p class="__fs_13 fw-bold">2 دیدگاه</p>
-                                        </div>
-                                        <div class="__flex__center gap-1 see-all-article __transition">
-                                            <span class="yoz-message-2"></span>
-                                            <p class="__fs_13 fw-bold" style="color: #24c880;">مشاهده</p>
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="12px"
+                                                height="10px"
+                                            >
+                                                <path fill-rule="evenodd" fill="rgb(79, 214, 165)" d="M11.116,2.83 L1.633,2.83 C1.151,2.83 0.760,1.692 0.760,1.210 C0.760,0.728 1.151,0.337 1.633,0.337 L11.116,0.337 C11.598,0.337 11.989,0.728 11.989,1.210 C11.989,1.692 11.598,2.83 11.116,2.83 ZM1.633,3.829 L8.788,3.829 C9.270,3.829 9.661,4.220 9.661,4.702 C9.661,5.184 9.270,5.575 8.788,5.575 L1.633,5.575 C1.151,5.575 0.760,5.184 0.760,4.702 C0.760,4.220 1.151,3.829 1.633,3.829 ZM1.633,7.704 L10.538,7.704 C11.20,7.704 11.411,8.95 11.411,8.577 C11.411,9.59 11.20,9.450 10.538,9.450 L1.633,9.450 C1.151,9.450 0.760,9.59 0.760,8.577 C0.760,8.95 1.151,7.704 1.633,7.704 Z"/>
+                                            </svg>
+                                            <p style="font-size: 13px; color: #24c880">مشاهده</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="h-50 w-100 __container rounded-4 overflow-hidden ps-2 d-flex justify-content-between align-items-center gap-3">
+                                <div class="news-img w-50 h-100">
+                                    <img class="w-100 h-100 object-fit-cover" src="./assets/img/article-imagepng.png" alt="">
+                                </div>
+                                <div class="news-text w-50 h-100 d-flex flex-column justify-content-around py-2 gap-4">
+                                    <h1 style="font-size: 18px;" class="fw-bold m-0">21 سایت هوش مصنوعی رایگان که نیاز کسب و کار شماست!</h1>
+                                    <p style="font-size: 14px;">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                                    <div class="w-100 h-25 news-footer d-flex justify-content-around align-items-center">
+                                        <div class=" d-flex justify-content-center align-items-center gap-2">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="18px"
+                                                height="19px"
+                                            >
+                                                <path fill-rule="evenodd" fill="#24c880" d="M17.762,16.895 C17.611,17.33 17.409,17.101 17.205,17.82 L14.5,16.787 C12.726,17.629 11.250,18.127 9.719,18.230 C9.520,18.243 9.322,18.250 9.124,18.250 C7.703,18.250 6.301,17.909 5.34,17.251 C3.592,16.502 2.383,15.372 1.539,13.982 C0.695,12.593 0.249,11.0 0.249,9.374 C0.249,7.4 1.173,4.775 2.849,3.99 C4.525,1.422 6.754,0.499 9.124,0.499 C11.495,0.499 13.724,1.422 15.400,3.99 C17.76,4.775 17.999,7.4 17.999,9.374 L17.999,16.358 C17.999,16.562 17.913,16.757 17.762,16.895 ZM16.545,9.374 C16.545,5.283 13.216,1.954 9.124,1.954 C5.33,1.954 1.704,5.283 1.704,9.374 C1.704,12.155 3.237,14.678 5.705,15.960 C8.173,17.241 11.119,17.43 13.393,15.444 C13.534,15.345 13.706,15.299 13.878,15.314 L16.545,15.560 L16.545,9.374 ZM12.616,9.83 L5.633,9.83 C5.151,9.83 4.760,8.692 4.760,8.210 C4.760,7.728 5.151,7.337 5.633,7.337 L12.616,7.337 C13.98,7.337 13.489,7.728 13.489,8.210 C13.489,8.692 13.98,9.83 12.616,9.83 ZM5.633,10.829 L10.288,10.829 C10.771,10.829 11.161,11.220 11.161,11.702 C11.161,12.184 10.771,12.575 10.288,12.575 L5.633,12.575 C5.151,12.575 4.760,12.184 4.760,11.702 C4.760,11.220 5.151,10.829 5.633,10.829 Z"/>
+                                            </svg>
+                                            <p style="font-size: 13px;">2 دیدگاه</p>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="12px"
+                                                height="10px"
+                                            >
+                                                <path fill-rule="evenodd" fill="rgb(79, 214, 165)" d="M11.116,2.83 L1.633,2.83 C1.151,2.83 0.760,1.692 0.760,1.210 C0.760,0.728 1.151,0.337 1.633,0.337 L11.116,0.337 C11.598,0.337 11.989,0.728 11.989,1.210 C11.989,1.692 11.598,2.83 11.116,2.83 ZM1.633,3.829 L8.788,3.829 C9.270,3.829 9.661,4.220 9.661,4.702 C9.661,5.184 9.270,5.575 8.788,5.575 L1.633,5.575 C1.151,5.575 0.760,5.184 0.760,4.702 C0.760,4.220 1.151,3.829 1.633,3.829 ZM1.633,7.704 L10.538,7.704 C11.20,7.704 11.411,8.95 11.411,8.577 C11.411,9.59 11.20,9.450 10.538,9.450 L1.633,9.450 C1.151,9.450 0.760,9.59 0.760,8.577 C0.760,8.95 1.151,7.704 1.633,7.704 Z"/>
+                                            </svg>
+                                            <p style="font-size: 13px; color: #24c880">مشاهده</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="h-50 w-100 bg-danger"></div> -->
                         </div>
                     </div>
                     <!-- ========== End articles ========== -->
@@ -564,6 +603,7 @@
                 <!-- ========== End main ========== -->
             </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
         <script src="./assets/js/pannel.js"></script>
     </body>
 </html>
