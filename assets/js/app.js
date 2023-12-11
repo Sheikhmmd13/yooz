@@ -280,6 +280,23 @@ if (
 	const showMore_Btn = document.querySelector("#show__more_p");
 	const hidden_p = document.querySelectorAll(".hidden__p");
 
+	// inputs
+	// const input = document.querySelectorAll('.input')
+	const FormGroup = document.querySelectorAll('.form-group');
+
+	FormGroup.forEach(group => {
+		console.log(group)
+		const input = group.querySelector('.input');
+
+		input.addEventListener('focus', () => {
+			group.classList.add('blue-border')
+		})
+
+		input.addEventListener('blur', () => {
+			group.classList.remove('blue-border')
+		})
+	})
+
 	function deleteUserPoint() {
 		const UserPoints = document.querySelectorAll(".user-point");
 
@@ -349,7 +366,7 @@ if (
 		input.oninput = () => {
 			input.style.setProperty(
 				"--rangeInputBeforWidth",
-				input.value + "%"
+				input.value*20 + "%"
 			);
 		};
 
