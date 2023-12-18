@@ -18326,3 +18326,51 @@ button.swiper-pagination-bullet {
 .yoz-woman:before {
   content: "\ec86";
 }
+
+@font-face {
+  font-family: yekanbakh;
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/woff2/YekanBakhFaNum-ExtraBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+     url('../fonts/woff/YekanBakhFaNum-ExtraBold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+  font-family: yekanbakh;
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/woff2/DanaFaNum-Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+     url('../fonts/woff/DanaFaNum-Black.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+  font-family: yekanbakh;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/woff2/YekanBakhFaNum-Regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+     url('../fonts/woff/YekanBakhFaNum-Regular.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+  font-family: yekanbakh;
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/woff2/YekanBakhFaNum-Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+     url('../fonts/woff/YekanBakhFaNum-Bold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+	font-family: IRANYekanXFaNum;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/woff/IRANYekanXFaNum-Bold.woff') format('woff'),   
+	url('../fonts/woff2/IRANYekanXFaNum-Bold.woff2') format('woff2');	 
+}
+
+@font-face {
+	font-family: IRANYekanXFaNum;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/woff/IRANYekanXFaNum-Regular.woff') format('woff'),   
+	url('../fonts/woff2/IRANYekanXFaNum-Regular.woff2') format('woff2');	
+}
