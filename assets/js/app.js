@@ -413,7 +413,7 @@ if (
 	});
 }
 
-if (document.getElementsByTagName("body")[0].classList.contains("main-page")) {
+if (document.getElementsByTagName("body")[0].classList.contains("main-page1")) {
 	const Stories = document.querySelectorAll(".category");
 	const modal = document.querySelector(".modal");
 	const ModalContent = modal.querySelector(".content");

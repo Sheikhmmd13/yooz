@@ -224,6 +224,7 @@ body {
     font-family: var(--headfont) !important;
     font-size: 14px;
     background-color: #fafbfb;
+    overflow-x: hidden;
     position: relative;
     /* background-image: url("../img/background.png"); */
     /* background-repeat: no-repeat; */
@@ -262,17 +263,47 @@ h6 {
 }
 
 .bg-svg:nth-child(1) {
-    top: 85%;
+    top: 5250px;
     right: -4%;
 }
 
 .bg-svg:nth-child(2) {
-    top: 18%;
+    top: 850px;
     left: -4%;
 }
 
 .bg-svg:nth-child(3) {
-    top: 58%;
+    top: 3800px;
+    left: -4%;
+}
+
+.archive-page .bg-svg:nth-child(1) {
+    top: 2500px;
+    right: -4%;
+}
+
+.archive-page .bg-svg:nth-child(2) {
+    top: 560px;
+    left: -4%;
+}
+
+.archive-page .bg-svg:nth-child(3) {
+    top: 1600px;
+    left: -4%;
+}
+
+.main-page1 .bg-svg:nth-child(1) {
+    top: 3100px;
+    right: -4%;
+}
+
+.main-page1 .bg-svg:nth-child(2) {
+    top: 950px;
+    left: -4%;
+}
+
+.main-page1 .bg-svg:nth-child(3) {
+    top: 2100px;
     left: -4%;
 }
 
@@ -5604,7 +5635,7 @@ section.tickets .title span {
 }
 
 section.tickets .send-tickets {
-    width: 18%;
+    width: 20%;
     color: var(--white);
     font-size: var(--small__fontsize);
     padding-block: .4rem;
@@ -7264,7 +7295,7 @@ svg {
     transition: all .2s linear;
 }
 
-svg:hover {
+.row svg:hover {
     transform: scale(1.1);
 }
 
