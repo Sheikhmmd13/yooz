@@ -253,6 +253,7 @@ h6 {
 /** background svg pattern */
 .bg-svg {
     position: absolute;
+    z-index: -1;
 }
 
 .bg-svg:hover {
@@ -3013,7 +3014,17 @@ header.navbar .top-nav .actions .register .icon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    transition: all .3s linear;
     background-color: var(--blue__Dark);
+}
+
+header.navbar .top-nav .actions .register .icon:hover {
+    border: 1px solid var(--blue__Dark);
+    background: none;
+}
+
+header.navbar .top-nav .actions .register .icon:hover svg path {
+    fill: var(--blue__Dark)
 }
 
 header.navbar .top-nav .actions .login {
@@ -3101,6 +3112,8 @@ header.navbar nav ul {
     align-items: center;
     justify-content: start;
     gap: 30px;
+
+    margin: 0;
 }
 
 header.navbar nav ul li {
@@ -3184,6 +3197,7 @@ header.navbar nav .searchBar {
     border-radius: 25px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0.5px 0.866px 32px 0px rgba(197, 206, 206, 0.1);
+    transition: all .3s linear;
 }
 
 header.navbar nav .searchBar input {
@@ -5176,7 +5190,7 @@ header.navbar nav .searchBar input:focus-visible {
 
 .article:hover .article-img {
     /* box-shadow: -37px 3px 20px 8px rgb(0 0 0 / 9%); */
-    box-shadow: -37px 3px 20px red;
+    box-shadow: -37px 3px 20px rgba(0, 0, 0, .2);
     transform: translateX(-10px) rotateY(5deg);
 }
 

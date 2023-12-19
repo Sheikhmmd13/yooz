@@ -356,7 +356,7 @@ if (
 						const optionText =
 							li.querySelector(".option-text").innerHTML;
 						selectedCity.innerHTML = optionText;
-						container.classList.remove('show')
+						container.classList.remove("show");
 					});
 				});
 		});
@@ -380,14 +380,12 @@ if (document.getElementsByTagName("body")[0].classList.contains("main-page1")) {
 	const modal = document.querySelector(".modal");
 	const ModalContent = modal.querySelector(".content");
 	const close_icon = modal.querySelector(".close-icon");
-	const searchFild = document.querySelector(".search");
-	const searchFildInput = searchFild.querySelector("#searchBar");
-	console.log(searchFild);
+	const searchFilds = document.querySelectorAll("[data-searchFild]");
 
 	Stories.forEach((story) => {
 		story.addEventListener("click", () => {
-			cursor.style.backgroundColor = '#fcfcfc'
-			cursorOutline.style.borderColor = '#fcfcfc'
+			cursor.style.backgroundColor = "#fcfcfc";
+			cursorOutline.style.borderColor = "#fcfcfc";
 			const storyImg = story.querySelector(".category-img");
 
 			storyImg.style.outlineStyle = "dotted";
@@ -406,8 +404,8 @@ if (document.getElementsByTagName("body")[0].classList.contains("main-page1")) {
 	});
 
 	close_icon.addEventListener("click", () => {
-		cursor.style.backgroundColor = '#333'
-		cursorOutline.style.borderColor = '#333'
+		cursor.style.backgroundColor = "#333";
+		cursorOutline.style.borderColor = "#333";
 		ModalContent.style.transform = "translateY(-50%) scale(0)";
 
 		setTimeout(() => {
@@ -418,11 +416,15 @@ if (document.getElementsByTagName("body")[0].classList.contains("main-page1")) {
 	});
 
 	// search bar animation
-	searchFildInput.addEventListener("focus", () => {
-		searchFild.style.borderColor = "#4d67f5";
-	});
+	searchFilds.forEach((searchFild) => {
+		const searchFildInput = searchFild.querySelector("[data-searchBar]");
 
-	searchFildInput.addEventListener("blur", () => {
-		searchFild.style.borderColor = "#eee";
+		searchFildInput.addEventListener("focus", () => {
+			searchFild.style.borderColor = "#4d67f5";
+		});
+
+		searchFildInput.addEventListener("blur", () => {
+			searchFild.style.borderColor = "#eee";
+		});
 	});
 }
