@@ -3027,7 +3027,6 @@ ol li::before {
 /* navbar */
 header.navbar {
     width: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3039,8 +3038,8 @@ header.navbar {
 }
 
 header.navbar .top-nav {
-    width: 80%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1450px;
     height: 3.5rem;
 
     margin-inline: auto;
@@ -3200,8 +3199,8 @@ header.navbar .top-nav .actions .login .icon small::before {
 }
 
 header.navbar nav {
-    width: 80%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1450px;
     margin-inline: auto;
     padding-block: 2rem;
 
@@ -3217,7 +3216,8 @@ header.navbar nav ul {
     list-style-type: none;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: start;
+    gap: 30px;
 }
 
 header.navbar nav ul li {
@@ -3854,7 +3854,6 @@ header.navbar nav .searchBar input:focus-visible {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--white);
     /* gap: 1rem; */
 }
 
@@ -4151,7 +4150,7 @@ header.navbar nav .searchBar input:focus-visible {
 
 .categories-icon {
     width: 100%;
-    margin-bottom: 3.5rem;
+    margin-bottom: 4rem;
 
     display: flex;
     justify-content: space-between;
@@ -4161,7 +4160,6 @@ header.navbar nav .searchBar input:focus-visible {
 .category-icon {
     padding: 1.5rem;
     border-radius: 25px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4191,7 +4189,7 @@ header.navbar nav .searchBar input:focus-visible {
 /* banner */
 .banners {
     width: 100%;
-    margin-top: 5rem;
+    margin-top:125px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -4268,7 +4266,7 @@ header.navbar nav .searchBar input:focus-visible {
 
     width: 35px;
     height: 70px;
-    background-color: var(--white);
+    background: #fafbfb;
     border: none;
     border-top-right-radius: 110px;
     border-bottom-right-radius: 110px;
@@ -4515,8 +4513,8 @@ header.navbar nav .searchBar input:focus-visible {
     width: 25%;
     height: 96%;
 
-    border: 1px solid transparent;
-    outline: 1px solid transparent;
+    border: none;
+    outline: none;
 
     position: relative;
     overflow: hidden;
@@ -4760,8 +4758,8 @@ header.navbar nav .searchBar input:focus-visible {
 
 .order:hover {
     transform: scale(1) !important;
-    border: 1px solid transparent !important;
-    outline: 1px solid transparent !important;
+    border: none !important;
+    outline: none !important;
     box-shadow: inset 0px 15px 49px rgba(20, 20, 20, .2) !important;
 }
 
@@ -5152,6 +5150,25 @@ header.navbar nav .searchBar input:focus-visible {
 .brands .prev-brand:hover {
     outline: 1px solid #a9a9a9;
     outline-offset: 5px;
+}
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+
+.brand img {
+    transition: all .3s linear;
+}
+
+.brand:hover img {
+    transform: translateY(-15px);
 }
 
 /*? ------------------------ ?*/
@@ -6430,7 +6447,7 @@ section.returned__requests .title {
 section.returned__requests .card {
     color: var(--gray__Dark);
     font-size: 12px;
-    padding:1.8rem;
+    padding: 1.8rem;
     border-radius: 15px;
     border: none;
     background-color: var(--white);
