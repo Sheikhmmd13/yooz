@@ -66,44 +66,6 @@ if (
 		});
 	});
 
-	//* Change layout of Products
-	// const squareContainer = document.querySelector("[data-square]");
-	// const squareIcon = document.querySelector("[data-square-icon]");
-	// const lineContainer = document.querySelector("[data-line]");
-	// const lineIcon = document.querySelector("[data-line-icon]");
-
-	// squareIcon.addEventListener("click", () => {
-	// 	lineContainer.removeAttribute("data-selected");
-	// 	squareContainer.setAttribute("data-selected", "");
-	// });
-
-	// lineIcon.addEventListener("click", () => {
-	// 	console.log("click");
-	// 	squareContainer.removeAttribute("data-selected");
-	// 	lineContainer.setAttribute("data-selected", "");
-	// });
-
-	const square = document.querySelector("[data-square-icon]");
-	const line = document.querySelector("[data-line-icon]");
-	const squareContainer = document.querySelector("[data-square]");
-	const lineContainer = document.querySelector("[data-line]");
-
-	square.addEventListener("click", () => {
-		lineContainer.style.display = "none";
-		squareContainer.style.display = "block";
-
-		line.classList.remove("selected");
-		square.classList.add("selected");
-	});
-
-	line.addEventListener("click", () => {
-		lineContainer.style.display = "block";
-		squareContainer.style.display = "none";
-
-		square.classList.remove("selected");
-		line.classList.add("selected");
-	});
-
 	//* Show more filter
 	const more_less__btns = document.querySelectorAll("[data-more-less-btn]");
 	more_less__btns.forEach((btn) => {
@@ -424,6 +386,8 @@ if (document.getElementsByTagName("body")[0].classList.contains("main-page1")) {
 
 	Stories.forEach((story) => {
 		story.addEventListener("click", () => {
+			cursor.style.backgroundColor = '#fcfcfc'
+			cursorOutline.style.borderColor = '#fcfcfc'
 			const storyImg = story.querySelector(".category-img");
 
 			storyImg.style.outlineStyle = "dotted";
@@ -442,6 +406,8 @@ if (document.getElementsByTagName("body")[0].classList.contains("main-page1")) {
 	});
 
 	close_icon.addEventListener("click", () => {
+		cursor.style.backgroundColor = '#333'
+		cursorOutline.style.borderColor = '#333'
 		ModalContent.style.transform = "translateY(-50%) scale(0)";
 
 		setTimeout(() => {
