@@ -1,24 +1,24 @@
 //* Cursor Code
-const cursor = document.querySelector("[data-cursor-dot]");
-const cursorOutline = document.querySelector("[data-cursor-outline]");
+// const cursor = document.querySelector("[data-cursor-dot]");
+// const cursorOutline = document.querySelector("[data-cursor-outline]");
 
-window.addEventListener("mousemove", (e) => {
-	const posX = e.clientX;
-	const posY = e.clientY;
+// window.addEventListener("mousemove", (e) => {
+// 	const posX = e.clientX;
+// 	const posY = e.clientY;
 
-	//* cursor dot
-	cursor.style.left = `${posX}px`;
-	cursor.style.top = `${posY}px`;
+// 	//* cursor dot
+// 	cursor.style.left = `${posX}px`;
+// 	cursor.style.top = `${posY}px`;
 
-	//* cursor outline
-	cursorOutline.animate(
-		{
-			left: `${posX}px`,
-			top: `${posY}px`,
-		},
-		{ duration: 500, fill: "forwards" }
-	);
-});
+// 	//* cursor outline
+// 	cursorOutline.animate(
+// 		{
+// 			left: `${posX}px`,
+// 			top: `${posY}px`,
+// 		},
+// 		{ duration: 500, fill: "forwards" }
+// 	);
+// });
 
 if (
 	document.getElementsByTagName("body")[0].classList.contains("archive-page")
@@ -335,6 +335,27 @@ if (
 				.classList.remove("rotate"); //icon inside of button
 		}
 		console.log(isOpen);
+	});
+
+	//* for showing popup
+	const popup = document.querySelector("[data-popup]");
+	window.addEventListener("scroll", () => {
+		const details = {
+			viewportHeight: window.innerHeight,
+			scrollHeight: document.documentElement.scrollHeight,
+			scrolled: window.scrollY,
+		};
+		console.log(popup.dataset);
+
+		if (
+			details.scrolled /
+				(details.scrollHeight - details.viewportHeight) >=
+			0.08
+		) {
+			popup.dataset.popup = "show";
+		} else {
+			popup.dataset.popup = "hidden";
+		}
 	});
 }
 
