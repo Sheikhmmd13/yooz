@@ -645,8 +645,6 @@ main {
 main .title {
     width: 100%;
     height: 6rem;
-
-    padding: .3rem 1rem;
 }
 
 main .title .text {
@@ -5659,7 +5657,7 @@ section.tickets .send-tickets {
     border: 1px solid transparent;
     border-radius: 25px;
 
-    box-shadow: 0px 21px 49px 0px var(--blue__Light);
+    box-shadow: 0px 5px 13px 0px rgba(77, 103, 245, .37);
     background-color: var(--blue__Dark);
 }
 
@@ -5964,16 +5962,8 @@ section.my__orders .row.title p {
     border-radius: 25px;
 }
 
-.details__of_order .actions .buy_again:hover {
-    font-size: 13px;
-}
-
 .details__of_order .actions .send-comments {
     color: var(--green__Dark);
-}
-
-.details__of_order .actions .send-comments:hover {
-    font-size: 13px;
 }
 
 .details__of_order .status {
@@ -6140,7 +6130,7 @@ section.favorite .buy_product {
     /* border-radius: 25px 40px 25px 40px; */
     color: var(--white);
 
-    box-shadow: 0px 21px 20px var(--green__Light);
+    box-shadow: 0px 5px 13px 0px rgba(79, 214, 165, 0.37);
     /* background-color: var(--green__Dark); */
     background-color: rgb(79, 214, 165);
 }
@@ -6161,8 +6151,8 @@ section.favorite .delete_product {
     font-size: var(--regular__fontsize);
     padding: .5rem !important;
 
-    box-shadow: 0px 21px 20px var(--red__Light);
-    background: var(--red__Dark);
+    background-color: rgb(246, 0, 58);
+    box-shadow: 0px 5px 13px 0px rgba(246, 0, 58, 0.37);
 }
 
 section.favorite .delete_product:hover {
@@ -6178,8 +6168,8 @@ section.favorite .alert_user_btn {
     /* border-radius: 25px 40px 25px 40px; */
     color: var(--gray__Dark);
 
-    box-shadow: 0px 21px 20px var(--gray__ExtraLight);
-    background-color: var(--gray__ExtraLight);
+    background-color: rgb(215, 220, 227);
+    box-shadow: 0px 5px 13px 0px rgba(193, 200, 209, 0.37);
 }
 
 section.favorite .alert_user_btn:hover {
@@ -6224,7 +6214,7 @@ section.address .add__address_btn {
     border-radius: 25px;
     padding: .4rem .8rem !important;
 
-    box-shadow: 0px 21px 20px var(--blue__Light);
+    box-shadow: 0px 5px 13px 0px rgba(77, 103, 245, .37);
     background-color: var(--blue__Dark);
 }
 
@@ -6264,8 +6254,8 @@ section.address .trash {
     border-color: var(--red__Dark);
     color: var(--white);
 
-    box-shadow: 0px 12px 42px -0.4rem var(--red__Dark);
-    background: var(--red__Dark);
+    background-color: rgb(246, 0, 58);
+    box-shadow: 0px 5px 13px 0px rgba(246, 0, 58, 0.37);
 }
 
 section.address .trash:hover {
@@ -6280,7 +6270,7 @@ section.address .edit {
     border-color: var(--cyan__Dark);
     color: var(--white);
 
-    box-shadow: 0px 12px 42px -0.4rem var(--cyan__Dark);
+    box-shadow: 0px 5px 13px 0px #16b8cb37;
     background: var(--cyan__Dark);
 }
 
@@ -6421,7 +6411,7 @@ section.verfy__phoneNum button {
     border-radius: 25px;
     padding: .4rem .8rem !important;
 
-    box-shadow: 0px 21px 20px var(--blue__Light);
+    box-shadow: 0px 5px 13px 0px rgba(77, 103, 245, .37);
     background-color: var(--blue__Dark);
 }
 
@@ -6504,7 +6494,7 @@ section.returned__requests button {
     border-radius: 25px;
     padding: .8rem 1.6rem !important;
 
-    box-shadow: 0px 21px 20px var(--blue__Light);
+    box-shadow: 0px 5px 13px 0px rgba(77, 103, 245, .37);
     background-color: var(--blue__Dark);
 }
 
@@ -6602,7 +6592,7 @@ section.make__reuqests .title {
     border-radius: 25px;
     padding: .8rem 1.6rem !important;
 
-    box-shadow: 0px 21px 20px var(--blue__Light);
+    box-shadow: 0px 5px 13px 0px rgba(77, 103, 245, .37);
     background-color: var(--blue__Dark);
 }
 
@@ -6652,13 +6642,13 @@ section.make__reuqests .title {
 
 .btn__outline.warning {
     color: var(--orange__Light);
-    box-shadow: 2px 7px 42px -.4rem var(--orange__Light);
+    box-shadow: 0px 5px 13px #ff852137;
     background-color: var(--white);
 }
 
 .btn__outline.warning:hover {
     color: var(--orange__Light);
-    box-shadow: 2px 7px 42px -.4rem var(--orange__Light);
+    box-shadow: 0px 5px 13px #ff852137;
     background-color: var(--white);
 }
 
@@ -6676,13 +6666,15 @@ section.make__reuqests .title {
 .btn__outline.success {
     color: var(--green__Dark);
     background-color: var(--white);
-    box-shadow: 4px 7px 42px -.4rem var(--green__Dark);
+    box-shadow: 0px 5px 13px #14cc6e37;
+
 }
 
 .btn__outline.success:hover {
     color: var(--green__Dark);
     background-color: var(--white);
-    box-shadow: 4px 7px 42px -.4rem var(--green__Dark);
+    box-shadow: 0px 5px 13px #14cc6e37;
+
 }
 
 /* blue button */
@@ -6699,7 +6691,7 @@ section.make__reuqests .title {
 .btn__outline.primary {
     color: var(--blue__Dark);
     background-color: var(--white);
-    box-shadow: 4px 7px 42px -.4rem var(--blue__Dark);
+    box-shadow: 0px 5px 13px 0px rgba(77, 103, 245, .37);
 }
 
 .btn__outline.primary:hover {
@@ -6720,7 +6712,7 @@ section.make__reuqests .title {
 
 .btn__outline.secondary {
     color: var(--gray__Dark);
-    box-shadow: 4px 7px 42px -.4rem var(--gray__Dark);
+    box-shadow: 0px 5px 13px 0px #48484837;
 }
 
 .btn__outline.secondary:hover {
@@ -6949,7 +6941,7 @@ section.make__reuqests .title {
     border-radius: 25px;
     font-size: 14px;
     color: var(--white);
-    box-shadow: 5px 7px 42px -.5rem var(--green__Dark);
+    box-shadow: 0px 5px 13px #14cc6e37;
     padding-block: .8rem
 }
 
