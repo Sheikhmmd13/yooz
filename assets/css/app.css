@@ -5188,8 +5188,7 @@ header.navbar nav .searchBar input:focus-visible {
 
     padding-block: 3.8rem;
     padding-inline: 4.5rem;
-    border-radius: 5px 80px 80px;
-
+    border-radius: 0 0px 40px 40px;
     border: none;
     font-size: 15px;
     font-weight: bold;
@@ -5202,8 +5201,9 @@ header.navbar nav .searchBar input:focus-visible {
 
     perspective: 400px;
 
-    box-shadow: 0px 21px 49px 0px rgba(216, 216, 216, .61);
-    background-color: var(--white);
+
+    box-shadow: 0px 25px 20px -20px rgba(216, 216, 216, .61);
+    background: linear-gradient(0deg, white 0, #FAFBFB 90%);
 }
 
 .feature .icon {
