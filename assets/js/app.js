@@ -20,8 +20,17 @@
 // 	);
 // });
 
+//* for parallex
+const scene = document.querySelector("[data-scene]");
+var parallaxInstance = new Parallax(scene, {
+	relativeInput: true,
+	scale: 1.5,
+});
+
 if (
-	document.getElementsByTagName("body")[0].classList.contains("archive-page")
+	document
+		.getElementsByTagName("body")[0]
+		.classList.contains("archive-page")
 ) {
 	const Layouts = document.querySelectorAll(".layout");
 
@@ -35,14 +44,14 @@ if (
 
 	//* remove applied filter
 	document.querySelectorAll("[data-applied-filter]").forEach((filter) => {
-		filter
-			.querySelector("[data-applied-filter-close]")
-			.addEventListener("click", () => {
-				filter.classList.add("remove");
-				setTimeout(() => {
-					filter.remove();
-				}, 300);
-			});
+		filter.querySelector(
+			"[data-applied-filter-close]"
+		).addEventListener("click", () => {
+			filter.classList.add("remove");
+			setTimeout(() => {
+				filter.remove();
+			}, 300);
+		});
 	});
 
 	//* Rotate Icon Of sideBar Cart
@@ -67,7 +76,9 @@ if (
 	});
 
 	//* Show more filter
-	const more_less__btns = document.querySelectorAll("[data-more-less-btn]");
+	const more_less__btns = document.querySelectorAll(
+		"[data-more-less-btn]"
+	);
 	more_less__btns.forEach((btn) => {
 		var isOpen = true;
 
@@ -93,16 +104,34 @@ if (
 			event.preventDefault();
 			console.log(toggle_btn.offsetLeft);
 			if (!toggleValue) {
-				toggle_btn.style.setProperty("--afterLeft", "1.3em");
-				toggle_btn.style.setProperty("--beforeBG", "#edeffe");
-				toggle_btn.style.setProperty("--afterBg", "#4b64f2");
+				toggle_btn.style.setProperty(
+					"--afterLeft",
+					"1.3em"
+				);
+				toggle_btn.style.setProperty(
+					"--beforeBG",
+					"#edeffe"
+				);
+				toggle_btn.style.setProperty(
+					"--afterBg",
+					"#4b64f2"
+				);
 
 				toggleValue = !toggleValue;
 				console.log("availble Product: " + toggleValue);
 			} else {
-				toggle_btn.style.setProperty("--afterLeft", ".1em");
-				toggle_btn.style.setProperty("--beforeBG", "#efefef");
-				toggle_btn.style.setProperty("--afterBg", "#929292");
+				toggle_btn.style.setProperty(
+					"--afterLeft",
+					".1em"
+				);
+				toggle_btn.style.setProperty(
+					"--beforeBG",
+					"#efefef"
+				);
+				toggle_btn.style.setProperty(
+					"--afterBg",
+					"#929292"
+				);
 
 				toggleValue = !toggleValue;
 				console.log("availble Product: " + toggleValue);
@@ -157,7 +186,9 @@ if (
 		var hours = Math.floor(
 			(distance % (1000 * 60 * 60 * 24)) / (100 * 60 * 60)
 		);
-		var minutes = Math.floor((distance % (100 * 60 * 60)) / (1000 * 60));
+		var minutes = Math.floor(
+			(distance % (100 * 60 * 60)) / (1000 * 60)
+		);
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		document.getElementById("hours").innerHTML =
@@ -202,7 +233,9 @@ if (
 		.getElementsByTagName("body")[0]
 		.classList.contains("discriptionMobile")
 ) {
-	const WeekPointContainer = document.querySelector(".week-points .points");
+	const WeekPointContainer = document.querySelector(
+		".week-points .points"
+	);
 	const StrengthPointContainer = document.querySelector(
 		".strength-points .points"
 	);
@@ -212,7 +245,8 @@ if (
 	const closeAddPoint = document.querySelector("#exit");
 	const submitAddPoint = document.querySelector("#submit");
 	const inputsRange = document.querySelectorAll("input[type=range]");
-	const product__review_section = document.querySelector(".product-review");
+	const product__review_section =
+		document.querySelector(".product-review");
 	const showMore_Btn = document.querySelector("#show__more_p");
 	const hidden_p = document.querySelectorAll(".hidden__p");
 
@@ -237,12 +271,14 @@ if (
 		const UserPoints = document.querySelectorAll(".user-point");
 
 		UserPoints.forEach((userPoint) => {
-			userPoint.querySelector("span").addEventListener("click", () => {
-				userPoint.classList.add("hidden");
-				setTimeout(() => {
-					userPoint.remove();
-				}, 300);
-			});
+			userPoint
+				.querySelector("span")
+				.addEventListener("click", () => {
+					userPoint.classList.add("hidden");
+					setTimeout(() => {
+						userPoint.remove();
+					}, 300);
+				});
 		});
 	}
 
@@ -265,7 +301,8 @@ if (
 	submitAddPoint.addEventListener("click", (event) => {
 		event.preventDefault();
 
-		const isModalOpenInLeftSide = addPoint.classList.contains("open-left");
+		const isModalOpenInLeftSide =
+			addPoint.classList.contains("open-left");
 		const isModalOpenInrRghtSide =
 			addPoint.classList.contains("open-right");
 		const userComment = document.querySelector("#add-user-comment");
@@ -324,15 +361,21 @@ if (
 		isOpen = !isOpen;
 
 		if (isOpen) {
-			product__review_section.style.setProperty("--show", "none");
-			document
-				.querySelector("[data-showMore-icon]")
-				.classList.add("rotate"); //icon inside of button
+			product__review_section.style.setProperty(
+				"--show",
+				"none"
+			);
+			document.querySelector(
+				"[data-showMore-icon]"
+			).classList.add("rotate"); //icon inside of button
 		} else {
-			product__review_section.style.setProperty("--show", "block");
-			document
-				.querySelector("[data-showMore-icon]")
-				.classList.remove("rotate"); //icon inside of button
+			product__review_section.style.setProperty(
+				"--show",
+				"block"
+			);
+			document.querySelector(
+				"[data-showMore-icon]"
+			).classList.remove("rotate"); //icon inside of button
 		}
 		console.log(isOpen);
 	});
@@ -349,7 +392,8 @@ if (
 
 		if (
 			details.scrolled /
-				(details.scrollHeight - details.viewportHeight) >=
+				(details.scrollHeight -
+					details.viewportHeight) >=
 			0.08
 		) {
 			popup.dataset.popup = "show";
@@ -360,9 +404,13 @@ if (
 }
 
 if (
-	document.getElementsByTagName("body")[0].classList.contains("pannel-items")
+	document
+		.getElementsByTagName("body")[0]
+		.classList.contains("pannel-items")
 ) {
-	const SelectingDropDown = document.querySelectorAll(".selecting__dropdown");
+	const SelectingDropDown = document.querySelectorAll(
+		".selecting__dropdown"
+	);
 
 	SelectingDropDown.forEach((formGroup, index) => {
 		const selectedCity = formGroup.querySelector("[city-name]");
@@ -370,16 +418,18 @@ if (
 		const option = options.querySelectorAll(".option");
 
 		option.forEach((li) => {
-			document
-				.querySelectorAll("[data-collapse-cotainer]")
-				.forEach((container) => {
-					li.addEventListener("click", () => {
-						const optionText =
-							li.querySelector(".option-text").innerHTML;
-						selectedCity.innerHTML = optionText;
-						container.classList.remove("show");
-					});
+			document.querySelectorAll(
+				"[data-collapse-cotainer]"
+			).forEach((container) => {
+				li.addEventListener("click", () => {
+					const optionText =
+						li.querySelector(
+							".option-text"
+						).innerHTML;
+					selectedCity.innerHTML = optionText;
+					container.classList.remove("show");
 				});
+			});
 		});
 	});
 
@@ -387,11 +437,15 @@ if (
 	const accordions = document.querySelectorAll(".accordion");
 	accordions.forEach((accordion) => {
 		const accordion_btn = accordion.querySelector(".accordion-btn");
-		const accordion_body = accordion.querySelector(".accordion-collapse");
+		const accordion_body = accordion.querySelector(
+			".accordion-collapse"
+		);
 		accordion_body.classList.remove("show");
 
 		accordion_btn.addEventListener("click", () => {
-			accordion.querySelector(".acc-order").classList.toggle("open");
+			accordion
+				.querySelector(".acc-order")
+				.classList.toggle("open");
 		});
 	});
 }
@@ -415,7 +469,8 @@ if (document.getElementsByTagName("body")[0].classList.contains("main-page1")) {
 			setTimeout(() => {
 				modal.style.display = "flex";
 				setTimeout(() => {
-					ModalContent.style.transform = "translateY(-50%) scale(1)";
+					ModalContent.style.transform =
+						"translateY(-50%) scale(1)";
 				}, 10);
 
 				storyImg.style.outlineStyle = "solid";
@@ -438,7 +493,8 @@ if (document.getElementsByTagName("body")[0].classList.contains("main-page1")) {
 
 	// search bar animation
 	searchFilds.forEach((searchFild) => {
-		const searchFildInput = searchFild.querySelector("[data-searchBar]");
+		const searchFildInput =
+			searchFild.querySelector("[data-searchBar]");
 
 		searchFildInput.addEventListener("focus", () => {
 			searchFild.style.borderColor = "#4d67f5";
