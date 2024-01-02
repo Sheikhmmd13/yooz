@@ -7444,17 +7444,23 @@ header .see-all:hover {
 .intro {
     width: 100%;
     height: 100vh;
-    position: relative;
     padding-block: 3.5rem;
+    border-bottom-right-radius: 6rem;
+
+    z-index: 0;
+    position: relative;
     background-color: #fafbfb;
-    z-index: -3;
+}
+
+.intro .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .intro .intro-el {
-    /* position: absolute; */
-    /* top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     display: flex;
     align-items: center;
     justify-content: start;
@@ -7625,10 +7631,8 @@ header .see-all:hover {
 
 .intro .brands_slider {
     width: 80%;
-    position: absolute;
-    bottom: 3%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-inline: auto;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7770,7 +7774,32 @@ header .see-all:hover {
 }
 
 .archive__products {
+    border-top-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
     padding: 4.5rem 0;
+    position: relative;
+    background-color: #f3f4f4;
+}
+
+.archive__products::before {
+    content: '';
+    height: 15rem;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: -15rem;
+    z-index: -1;
+    background-color: #f3f4f4;
+}
+
+.archive__products::after {
+    content: '';
+    height: 15rem;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    bottom: -15rem;
+    z-index: -1;
     background-color: #f3f4f4;
 }
 
@@ -8101,6 +8130,7 @@ header .see-all:hover {
 
 .offer__products {
     width: 100%;
+    border-bottom-left-radius: 6rem;
     height: 33rem;
     padding: 4rem 0;
     background-color: #fafbfb;
@@ -8354,7 +8384,11 @@ header .see-all:hover {
 
 .product_features {
     width: 100%;
+    border-top-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+    position: relative;
     padding-block: 5rem;
+    z-index: 0;
     background-color: #f3f4f4;
 }
 
@@ -8394,6 +8428,8 @@ header .see-all:hover {
 .tech__articles {
     width: 100%;
     padding: 4rem;
+    position: relative;
+    z-index: 10;
 }
 
 .tech__articles main {
@@ -8478,7 +8514,7 @@ header .see-all:hover {
 }
 
 
-.tech__articles main  .other_articles .small_article main .article_footer .article_icons {
+.tech__articles main .other_articles .small_article main .article_footer .article_icons {
     display: flex;
     justify-content: center;
     align-items: center;
