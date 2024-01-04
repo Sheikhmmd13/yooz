@@ -8906,7 +8906,7 @@ section.dress__intro .amazing__offer {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    
+
 
     filter: drop-shadow(0.907px 12.968px 19px rgba(0, 0, 0, 0.08));
     background-image: url('../img/product_bg.svg');
@@ -8922,7 +8922,7 @@ section.dress__intro .amazing__offer .offer__product_discount {
     position: absolute;
     top: 0;
     left: 0;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8933,7 +8933,8 @@ section.dress__intro .amazing__offer .offer__product_discount {
     background-image: url('../img/discount-bg.svg');
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-size: cover;}
+    background-size: cover;
+}
 
 
 section.dress__intro .amazing__offer button {
@@ -9022,6 +9023,17 @@ section.dress__intro .amazing__offer .product__price {
     align-items: center;
     flex-direction: row-reverse;
     gap: 15px;
+}
+
+section.dress__intro .amazing__offer .product__price .cart__icon {
+    padding: .6rem;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f6f3fb;
 }
 
 section.dress__intro .amazing__offer .product__price del {
