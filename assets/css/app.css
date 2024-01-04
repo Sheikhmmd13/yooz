@@ -8608,3 +8608,436 @@ header .see-all:hover {
 }
 
 /********** End index 2 Styls **********/
+
+/********** Dress Page Styls **********/
+
+.top__navbar {
+    width: 100%;
+    padding-top: .67rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top__navbar .links {
+    width: 55%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.top__navbar .links .link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.top__navbar .links .link.logo .text h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e55e6c;
+}
+
+.top__navbar .links .link p {
+    font-size: 12px;
+    color: #3f4964;
+}
+
+.top__navbar .links .link.contact {
+    position: relative;
+}
+
+.top__navbar .links .link.contact::before {
+    content: '';
+    height: 60%;
+    width: 1px;
+
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: #b1b6c1;
+}
+
+.top__navbar .search__dress {
+    width: 25%;
+    padding: .85rem .5rem;
+    border-radius: 15px;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0.907px 12.968px 43px 0px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+}
+
+.top__navbar .search__dress .search__input {
+    width: 45%;
+    height: 100%;
+    position: relative;
+}
+
+.top__navbar .search__dress input {
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color: #3f4964;
+    background: none;
+}
+
+.top__navbar .search__dress .search__input::after {
+    content: "";
+    width: 0;
+    height: 1px;
+
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+
+    opacity: .8;
+    transition: all .2s linear;
+    background: #b1b6c1;
+}
+
+.top__navbar .search__dress .search__input.hover::after {
+    width: 100%;
+}
+
+.top__navbar .search__dress .search_in_categoriees {
+    font-size: 12px;
+    color: #757779;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.top__navbar .search__dress .search_in_categoriees::before {
+    content: '';
+    height: 60%;
+    width: 1px;
+
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: #b1b6c1;
+}
+
+nav.dress__nav {
+    margin-top: 1rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0.907px 12.968px 43px 0px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+}
+
+nav.dress__nav ul {
+    width: 60%;
+    height: 100%;
+    margin-bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+nav.dress__nav ul li {
+    height: 100%;
+    padding: 1.3rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    font-size: 13px;
+    color: #767776;
+
+    gap: 5px;
+}
+
+nav.dress__nav ul li::before {
+    content: "";
+    width: 0;
+    height: 1px;
+    opacity: .5;
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    border-radius: 25px;
+
+    cursor: pointer;
+    transition: all .25s linear;
+    background: linear-gradient(-135deg, rgba(126, 17, 170, 1) 82%, rgba(68, 17, 170, 1) 85%);
+}
+
+nav.dress__nav ul li:hover::before {
+    width: 100px;
+    opacity: .9;
+}
+
+nav.dress__nav ul li:first-child {
+    color: #fff;
+    border-radius: 15px;
+    flex-direction: row-reverse;
+    cursor: pointer;
+    background: linear-gradient(-135deg, rgba(96, 17, 170, 1) 52%, rgba(68, 17, 170, 1) 85%);
+}
+
+nav.dress__nav ul li:first-child::before {
+    display: none;
+}
+
+nav.dress__nav .actions {
+    padding-left: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+nav.dress__nav .registering {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 12px;
+    color: #3c05a6;
+    font-weight: bold;
+    padding: .5rem;
+
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+nav.dress__nav .registering:hover {
+    border-radius: 25px;
+    background-color: rgba(59, 4, 145, .15);
+}
+
+nav.dress__nav .actions .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 25px;
+}
+
+nav.dress__nav .actions .icons .nav__icon {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .23s linear;
+}
+
+nav.dress__nav .actions .icons .nav__icon svg path {
+    transition: all .2s linear;
+}
+
+nav.dress__nav .actions .icons .nav__icon:hover {
+    border-radius: 50%;
+    background: rgba(229, 87, 102, .34);
+}
+
+nav.dress__nav .actions .icons .nav__icon:hover svg path {
+    fill: #e55766;
+}
+
+nav.dress__nav .actions .icons .cart {
+    position: relative;
+}
+
+nav.dress__nav .actions .icons .cart .count {
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    border-radius: 25px;
+    font-size: 12px;
+
+    position: absolute;
+    top: -8px;
+    right: -8px;
+
+    background: #e55766;
+}
+
+section.dress__intro {
+    display: flex;
+    gap: 1.4rem;
+    margin-top: 4.5rem;
+    padding: .4rem 0;
+}
+
+section.dress__intro .amazing__offer {
+    width: 400px;
+    height: 460px;
+    border-radius: 30px;
+    padding: .8rem .67rem;
+    padding-bottom: 2.5rem;
+    color: #252a36;
+    position: relative;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+
+    filter: drop-shadow(0.907px 12.968px 19px rgba(0, 0, 0, 0.08));
+    background-image: url('../img/product_bg.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+section.dress__intro .amazing__offer .offer__product_discount {
+    width: 70px;
+    height: 70px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+    color: #fff;
+
+    background-image: url('../img/discount-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;}
+
+
+section.dress__intro .amazing__offer button {
+    width: 120px;
+    height: 46px;
+    position: absolute;
+    bottom: -19px;
+    left: 49%;
+    transform: translateX(-50%);
+
+    font-size: 12px;
+    color: #3c05a6;
+    background: none;
+    transition: all .24s linear;
+}
+
+section.dress__intro .amazing__offer button:hover {
+
+    border-radius: 25px;
+    background: rgba(59, 4, 145, .15);
+}
+
+
+section.dress__intro .amazing__offer .title {
+    color: #de2228;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+
+section.dress__intro .amazing__offer .offer_img {
+    width: 60%;
+    position: relative;
+    margin-inline: auto;
+}
+
+section.dress__intro .amazing__offer .offer_img .product__size {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+
+    position: absolute;
+    right: -20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+section.dress__intro .amazing__offer .offer_img .product__size span {
+    width: 25px;
+    height: 16px;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 11px;
+    color: #4c5059;
+    background-color: #e1e1e3;
+}
+
+section.dress__intro .amazing__offer .offer_img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+section.dress__intro .amazing__offer .timer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: .4rem 1rem;
+    border: 15px;
+    gap: 10px;
+    color: #c289bd;
+
+    background: #fcf8fb;
+}
+
+section.dress__intro .amazing__offer .offer__product_name {
+    font-size: 14px;
+}
+
+section.dress__intro .amazing__offer .product__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 15px;
+}
+
+section.dress__intro .amazing__offer .product__price del {
+    color: #767776;
+    font-size: 13px;
+}
+
+
+section.dress__intro .slider {
+    width: 100%;
+    border-radius: 30px;
+
+    background-image: url('../img/intro-slider-bg.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+/********** End Dress Page Styls **********/

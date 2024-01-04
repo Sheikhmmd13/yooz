@@ -21,11 +21,11 @@
 // });
 
 //* for parallex
-const scene = document.querySelector("[data-scene]");
-var parallaxInstance = new Parallax(scene, {
-	relativeInput: true,
-	scale: 1.5,
-});
+// const scene = document.querySelector("[data-scene]");
+// var parallaxInstance = new Parallax(scene, {
+// 	relativeInput: true,
+// 	scale: 1.5,
+// });
 
 if (
 	document
@@ -504,4 +504,18 @@ if (document.getElementsByTagName("body")[0].classList.contains("main-page1")) {
 			searchFild.style.borderColor = "#eee";
 		});
 	});
+}
+
+
+if (document.getElementsByTagName("body")[0].classList.contains("dress_page")) {
+		const searchBarInHeader = document.querySelector('[data-searchInput]');
+		const searchInputInHeader = searchBarInHeader.getElementsByTagName('input')[0];
+	
+		searchInputInHeader.onfocus = () => {
+			searchBarInHeader.classList.add("hover")
+		}
+
+		searchInputInHeader.onblur = () => {
+			searchBarInHeader.classList.remove("hover")
+		}
 }
